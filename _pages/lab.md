@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /lab/
-title: lab members
-description: members of the lab or group
+title: Lab Members
+description: Current and past lab members.
 nav: true
 nav_order: 4
 ---
