@@ -20,7 +20,10 @@ nav_order: 4
    Research interests: Conflict resolution, apologies, natural language processing
 
 - **Adrian Torres** (PhD Student, Clinical-Developmental Psychology)    
-   Research interests: Performance, voice, confidence
+   Research interests: Performance, voice, confidence   
+
+- **Tatijanna Martel** (Undergraduate, Independent Research Project)    
+   Research interests: Social connetion, loneliness, cross-national similarities and differences
 
 ### Lab Alumni:
 
