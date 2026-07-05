@@ -17,7 +17,7 @@ nav_order: 4
    Research interests: attitudes towards work, cultural change, social values, temporal analysis
 
 - **Sophie Li** (PhD Student, Social-Personality Psychology)   
-   Research interests: Conflict resolution, apologies, natural language processing
+   Research interests: Conflict resolution, political apologies, natural language processing
 
 - **Adrian Torres** (PhD Student, Clinical-Developmental Psychology)    
    Research interests: Performance, voice, confidence   
