@@ -30,7 +30,7 @@ nav_order: 4
 - **Emily Drisdelle** (MA in Social-Personality Psychology, York University)<br>
    gender disparities in voice and leadership
 
-- **Memoona Arshad** (MA in Social-Personality Psychology, York University)<br> 
+- **Memoona Arshad** (MA in Social-Personality Psychology, York University)<br>
    socio-economic status, barriers to influence
 
 - **Randi Vogt** (MA in Social-Personality Psychology, University of Illinois at Urbana-Champaign)<br>
