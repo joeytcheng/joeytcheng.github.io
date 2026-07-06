@@ -4,7 +4,7 @@ permalink: /lab/
 title: Lab Members
 description: Current and past lab members.
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 ### Current Lab Members
