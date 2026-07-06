@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /Teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Courses taught.
 nav: true
 nav_order: 5
 calendar: true
