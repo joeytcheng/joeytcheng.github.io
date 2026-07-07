@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /join/
-title: Join the Lab
-description: Join our research team!
+permalink: /contact/
+title: Contact
+description: Get in touch!
 nav: true
 nav_order: 7
 ---
