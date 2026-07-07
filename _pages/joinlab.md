@@ -2,10 +2,7 @@
 layout: page
 permalink: /join/
 title: Join the Lab
-description: Join us!
+description: Join our research team!
 nav: true
-nav_order: 4
-calendar: false
+nav_order: 7
 ---
-
-## test
