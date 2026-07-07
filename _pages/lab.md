@@ -4,7 +4,7 @@ permalink: /lab/
 title: Human Connection Lab
 description: Current and past lab members.
 nav: true
-nav_order: 6
+nav_order: 3
 ---
 
 

@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: Articles & book chapters by year of publication
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 <!-- _pages/publications.md -->
@@ -18,3 +18,9 @@ nav_order: 3
 {% bibliography %}
 
 </div>
+
+## Books that I am reading, have read, or will read
+
+- The Psychology of Social Status
+- Gender
+- Current Opinion in Psychology
