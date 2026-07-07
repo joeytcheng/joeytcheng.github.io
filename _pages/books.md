@@ -1,6 +1,6 @@
 ---
 layout: book-shelf
-title: Books
+title: Books & Special Issues
 permalink: /books/
 nav: true
 nav_order: 6
@@ -12,3 +12,7 @@ collection: books
 > -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
 
 ## Books that I am reading, have read, or will read
+
+- The Psychology of Social Status
+- Gender
+- Current Opinion in Psychology
