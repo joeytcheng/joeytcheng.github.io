@@ -2,7 +2,7 @@
 layout: page
 permalink: /lab/
 title: Human Connection Lab
-description: Current and past lab members.
+description: Meet the team.
 nav: true
 nav_order: 3
 ---
@@ -68,24 +68,38 @@ nav_order: 3
   flex: 1;
 }
 
+.person-name-line {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.15rem;
+}
+
 .person-name {
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 0.15rem;
+}
+
+.person-icons-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.person-icons-inline a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.person-icons-inline a:hover {
+  color: #426f9f;
 }
 
 .person-role {
   font-style: italic;
   margin-bottom: 0.5rem;
-}
-
-.person-links {
-  font-size: 0.9rem;
-  margin-bottom: 0.75rem;
-}
-
-.person-links a {
-  text-decoration: underline;
 }
 
 .person p {
@@ -136,6 +150,11 @@ nav_order: 3
   font-style: italic;
 }
 
+.grid-person-topic {
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
 /* Mobile-friendly layout */
 
 @media (max-width: 800px) {
@@ -154,6 +173,10 @@ nav_order: 3
   .person-photo {
     width: 160px;
     height: 160px;
+  }
+
+  .person-name-line {
+    justify-content: center;
   }
 
   .people-grid.three,
@@ -180,7 +203,7 @@ nav_order: 3
 <h1 class="people-title">The Team</h1>
 
 <div class="people-banner">
-  We are growing! To learn more, please <a href="{{ '/contact/' | relative_url }}">contact</a> us.
+  We are growing! To learn more, please <a href="{{ '/contact/' | relative_url }}">contact us</a>.
 </div>
 
 <section class="people-section">
@@ -188,23 +211,35 @@ nav_order: 3
 <h2>Lab Director</h2>
 
 <div class="person">
-  <img class="person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Joey T. Cheng">
+  <img class="person-photo" src="{{ '/assets/img/profile-cheng.jpg' | relative_url }}" alt="Joey T. Cheng">
 
   <div class="person-info">
-    <div class="person-name">Joey T. Cheng</div>
-    <div class="person-role">Lab Director</div>
 
-    <div class="person-links">
-      <a href="{{ '/cv/' | relative_url }}">CV</a> |
-      <a href="mailto:your-email@yorku.ca">Email</a> |
-      <a href="https://scholar.google.com/">Google Scholar</a> |
-      <a href="https://osf.io/">OSF</a>
+    <div class="person-name-line">
+      <div class="person-name">Joey T. Cheng</div>
+
+      <div class="person-icons-inline">
+        <a href="mailto:your-email@yorku.ca" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="{{ '/cv/' | relative_url }}" aria-label="CV">
+          <i class="ai ai-cv"></i>
+        </a>
+
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </div>
     </div>
+
+    <div class="person-role">Lab Director</div>
 
     <p>
       Joey studies social behavior, leadership, status, and social connection. Her research examines how people
       navigate groups, how leaders emerge, and why people are becoming more or less connected to one another.
     </p>
+
   </div>
 </div>
 
@@ -215,74 +250,114 @@ nav_order: 3
 <h2>Current Graduate Students</h2>
 
 <div class="person">
-  <img class="person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Miranda Too">
+  <img class="person-photo" src="{{ '/assets/img/profile-too.jpg' | relative_url }}" alt="Miranda Too">
 
   <div class="person-info">
-    <div class="person-name">Miranda Too</div>
-    <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
-    <div class="person-links">
-      <a href="mailto:student-email@yorku.ca">Email</a> |
-      <a href="https://example.com">Website</a>
+    <div class="person-name-line">
+      <div class="person-name">Miranda Too</div>
+
+      <div class="person-icons-inline">
+        <a href="mailto:mtoo@yorku.ca" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="http://mirandatoo.com/" target="_blank" rel="noopener noreferrer" aria-label="Website">
+          <i class="fas fa-globe"></i>
+        </a>
+      </div>
     </div>
+
+    <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
     <p>
       Miranda studies humility, prestige, and reputation.
     </p>
+
   </div>
 </div>
 
 <div class="person">
-  <img class="person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Spencer Arshinoff">
+  <img class="person-photo" src="{{ '/assets/img/profile-arshinoff.jpg' | relative_url }}" alt="Spencer Arshinoff">
 
   <div class="person-info">
-    <div class="person-name">Spencer Arshinoff</div>
-    <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
-    <div class="person-links">
-      <a href="mailto:student-email@yorku.ca">Email</a> |
-      <a href="https://example.com">Website</a>
+    <div class="person-name-line">
+      <div class="person-name">Spencer Arshinoff</div>
+
+      <div class="person-icons-inline">
+        <a href="mailto:sarshin@yorku.ca" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/spencerarshinoff/" target="_blank" rel="noopener noreferrer" aria-label="Website">
+          <i class="fas fa-globe"></i>
+        </a>
+      </div>
     </div>
+
+    <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
     <p>
       Spencer studies attitudes toward work, cultural change, social values, and temporal analysis.
     </p>
+
   </div>
 </div>
 
 <div class="person">
-  <img class="person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Sophie Li">
+  <img class="person-photo" src="{{ '/assets/img/profile-lisophie.jpg' | relative_url }}" alt="Sophie Li">
 
   <div class="person-info">
-    <div class="person-name">Sophie Li</div>
-    <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
-    <div class="person-links">
-      <a href="mailto:student-email@yorku.ca">Email</a> |
-      <a href="https://example.com">Website</a>
+    <div class="person-name-line">
+      <div class="person-name">Sophie Li</div>
+
+      <div class="person-icons-inline">
+        <a href="mailto:sophie96@yorku.ca" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://jysophieli.weebly.com/" target="_blank" rel="noopener noreferrer" aria-label="Website">
+          <i class="fas fa-globe"></i>
+        </a>
+      </div>
     </div>
+
+    <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
     <p>
       Sophie studies conflict resolution, political apologies, and natural language processing.
     </p>
+
   </div>
 </div>
 
 <div class="person">
-  <img class="person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Adrian Torres">
+  <img class="person-photo" src="{{ '/assets/img/profile-torres.jpg' | relative_url }}" alt="Adrian Torres">
 
   <div class="person-info">
-    <div class="person-name">Adrian Torres</div>
-    <div class="person-role">PhD Student, Clinical-Developmental Psychology</div>
 
-    <div class="person-links">
-      <a href="mailto:student-email@yorku.ca">Email</a> |
-      <a href="https://example.com">Website</a>
+    <div class="person-name-line">
+      <div class="person-name">Adrian Torres</div>
+
+      <div class="person-icons-inline">
+        <a href="mailto:apt98@yorku.ca" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://maggietoplak.com/lab-members/" target="_blank" rel="noopener noreferrer" aria-label="Website">
+          <i class="fas fa-globe"></i>
+        </a>
+      </div>
     </div>
+
+    <div class="person-role">PhD Student, Clinical-Developmental Psychology</div>
 
     <p>
       Adrian studies performance, voice, and confidence.
     </p>
+
   </div>
 </div>
 
@@ -295,21 +370,10 @@ nav_order: 3
 <div class="people-grid three">
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Tatijanna Martel">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-martelt.jpg' | relative_url }}" alt="Tatijanna Martel">
     <div class="grid-person-name">Tatijanna Martel</div>
-    <div class="grid-person-role">Undergraduate Researcher</div>
-  </div>
-
-  <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Student Name">
-    <div class="grid-person-name">Student Name</div>
-    <div class="grid-person-role">Undergraduate Researcher</div>
-  </div>
-
-  <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Student Name">
-    <div class="grid-person-name">Student Name</div>
-    <div class="grid-person-role">Undergraduate Researcher</div>
+    <div class="grid-person-role">Independent Research Project</div>
+    <div class="grid-person-topic">Loneliness &amp; Social Isolation</div>
   </div>
 
 </div>
@@ -323,60 +387,119 @@ nav_order: 3
 <div class="people-grid three">
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Emily Drisdelle">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-drisdelle.jpg' | relative_url }}" alt="Emily Drisdelle">
     <div class="grid-person-name">Emily Drisdelle</div>
     <div class="grid-person-role">MA Alumna</div>
   </div>
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Memoona Arshad">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-arshad.jpg' | relative_url }}" alt="Memoona Arshad">
     <div class="grid-person-name">Memoona Arshad</div>
     <div class="grid-person-role">Graduate Alumna</div>
   </div>
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Student Name">
-    <div class="grid-person-name">Student Name</div>
-    <div class="grid-person-role">Graduate Alum</div>
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-vogt.jpg' | relative_url }}" alt="Randi Vogt">
+    <div class="grid-person-name">Randi Vogt</div>
+    <div class="grid-person-role">Graduate Alumna</div>
   </div>
 
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-chenfx.jpg' | relative_url }}" alt="Fan Xuan Chen">
+    <div class="grid-person-name">Fan Xuan Chen</div>
+    <div class="grid-person-role">MA Alumna</div>
+  </div>
+
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-watanabe.jpg' | relative_url }}" alt="Shoko Watanabe">
+    <div class="grid-person-name">Shoko Watanabe</div>
+    <div class="grid-person-role">Graduate Alumna</div>
+  </div>
+
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-wuyuejun.jpg' | relative_url }}" alt="Yue Jun Wu">
+    <div class="grid-person-name">Yue Jun Wu</div>
+    <div class="grid-person-role">Graduate Alumna</div>
+  </div>
+
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-liamy.jpg' | relative_url }}" alt="Amy Li">
+    <div class="grid-person-name">Amy Li</div>
+    <div class="grid-person-role">Graduate Alumna</div>
+  </div>
+
+</div>
+
+
+</section>
+
+<section class="people-grid-section">
+
+<h2>Former Visiting Researchers</h2>
+
+<div class="people-grid three">
+
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-leckelt.jpg' | relative_url }}" alt="Marius Leckelt">
+    <div class="grid-person-name">Marius Leckelt</div>
+    <div class="grid-person-role">Graduate Alumnus</div>
+  </div>
+
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-redhead.jpg' | relative_url }}" alt="Daniel Redhead">
+    <div class="grid-person-name">Daniel Redhead</div>
+    <div class="grid-person-role">Graduate Alumnus</div>
+  </div>
+  
 </div>
 
 </section>
 
 <section class="people-grid-section">
 
-<h2>Undergraduate Lab Alumni</h2>
+<h2>Undergraduate Lab Alumni (selected)</h2>
 
 <div class="people-grid five">
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Student Name">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-aiyub.jpg' | relative_url }}" alt="Aliya Aiyub">
+    <div class="grid-person-name"></div>
+    <div class="grid-person-role">Undergraduate Alum</div>
+  </div>
+
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-ikram.jpg' | relative_url }}" alt="Student Name">
+    <div class="grid-person-name">Yumna Ikram</div>
+    <div class="grid-person-role">Undergraduate Alum</div>
+  </div>
+
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-padala.jpg' | relative_url }}" alt="Student Name">
+    <div class="grid-person-name">Akhila Padala</div>
+    <div class="grid-person-role">Undergraduate Alum</div>
+  </div>
+
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-wangmilton.jpg' | relative_url }}" alt="Milton Wang">
     <div class="grid-person-name">Student Name</div>
     <div class="grid-person-role">Undergraduate Alum</div>
   </div>
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Student Name">
-    <div class="grid-person-name">Student Name</div>
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-helm.jpg' | relative_url }}" alt="Student Name">
+    <div class="grid-person-name">Eric Helm</div>
     <div class="grid-person-role">Undergraduate Alum</div>
   </div>
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Student Name">
-    <div class="grid-person-name">Student Name</div>
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-clifford.jpg' | relative_url }}" alt="Florence Clifford">
+    <div class="grid-person-name">Florence Clifford</div>
     <div class="grid-person-role">Undergraduate Alum</div>
   </div>
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Student Name">
-    <div class="grid-person-name">Student Name</div>
-    <div class="grid-person-role">Undergraduate Alum</div>
-  </div>
-
-  <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/cheng-profile.jpg' | relative_url }}" alt="Student Name">
-    <div class="grid-person-name">Student Name</div>
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-zhangyiwei.jpg' | relative_url }}" alt="Yiwei Zhang">
+    <div class="grid-person-name">Yiwei Zhang</div>
     <div class="grid-person-role">Undergraduate Alum</div>
   </div>
 
@@ -385,42 +508,3 @@ nav_order: 3
 </section>
 
 </div>
-
-
-
-### Current Lab Members
-
-- **Miranda Too** (PhD Student, Social-Personality Psychology)<br>
-  humility, prestige, reputation
-
-- **Spencer Arshinoff** (PhD Student, Social-Personality Psychology)<br>
-  attitudes towards work, cultural change, social values, temporal analysis
-
-- **Sophie Li** (PhD Student, Social-Personality Psychology)<br>
-  conflict resolution, political apologies, natural language processing
-
-- **Adrian Torres** (PhD Student, Clinical-Developmental Psychology)<br>
-  performance, voice, confidence
-
-- **Tatijanna Martel** (Undergraduate, Independent Research Project)<br>
-  social connection, loneliness, cross-national similarities and differences
-
-### Lab Alumni
-
-- **Emily Drisdelle** (MA in Social-Personality Psychology, York University)<br>
-  gender disparities in voice and leadership
-
-- **Memoona Arshad** (MA in Social-Personality Psychology, York University)<br>
-  socio-economic status, barriers to influence
-
-- **Randi Vogt** (MA in Social-Personality Psychology, University of Illinois at Urbana-Champaign)<br>
-  overconfidence, persistence
-
-- **Fan Xuan Chen** (MA in Social-Personality Psychology, University of Illinois at Urbana-Champaign)<br>
-  dominance, punishment, leadership
-
-- **Shoko Watanabe** (PhD in Social-Personality Psychology, University of Illinois at Urbana-Champaign)<br>
-  trust, reputation, reciprocity
-
-- **Daniel Redhead** (PhD in Psychology, University of Essex)<br>
-  social networks, dominance, prestige
