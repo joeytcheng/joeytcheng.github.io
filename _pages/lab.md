@@ -404,11 +404,15 @@ nav_order: 3
     <div class="grid-person-role">MA Alumna</div>
   </div>
 
-  <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/profile-arshad.jpg' | relative_url }}" alt="Memoona Arshad">
-    <div class="grid-person-name">Memoona Arshad</div>
-    <div class="grid-person-role">Graduate Alumna</div>
+<div class="grid-person">
+  <img class="grid-person-photo" src="{{ '/assets/img/profile-arshad.jpg' | relative_url }}" alt="Memoona Arshad">
+  <div class="grid-person-name">
+    <a href="https://www.linkedin.com/in/memoona-arshad-017630238/" target="_blank" rel="noopener noreferrer">
+      Memoona Arshad
+    </a>
   </div>
+  <div class="grid-person-topic">Program Evaluation Lead, Jack.org</div>
+</div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-vogt.jpg' | relative_url }}" alt="Randi Vogt">
