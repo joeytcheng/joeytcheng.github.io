@@ -259,7 +259,7 @@ nav_order: 3
 
 <section class="people-section">
 
-<h2>Current Graduate Students</h2>
+<h2>Graduate Students</h2>
 
 <div class="person">
   <img class="person-photo" src="{{ '/assets/img/profile-too.jpg' | relative_url }}" alt="Miranda Too">
@@ -377,7 +377,7 @@ nav_order: 3
 
 <section class="people-grid-section">
 
-<h2>Current Undergraduate Researchers</h2>
+<h2>Undergraduate Researchers</h2>
 
 <div class="people-grid three">
 
