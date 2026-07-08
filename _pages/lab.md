@@ -230,6 +230,18 @@ nav_order: 3
         <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
           <i class="ai ai-google-scholar"></i>
         </a>
+
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://osf.io/" target="_blank" rel="noopener noreferrer" aria-label="OSF">
+          <i class="ai ai-osf"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
     </div>
 
@@ -463,12 +475,12 @@ nav_order: 3
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-aiyub.jpg' | relative_url }}" alt="Aliya Aiyub">
-    <div class="grid-person-name"></div>
+    <div class="grid-person-name">Aliya Aiyub</div>
     <div class="grid-person-role">Undergraduate Alum</div>
   </div>
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/profile-ikram.jpg' | relative_url }}" alt="Student Name">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-ikram.jpg' | relative_url }}" alt="Yumna Ikram">
     <div class="grid-person-name">Yumna Ikram</div>
     <div class="grid-person-role">Undergraduate Alum</div>
   </div>
@@ -481,7 +493,7 @@ nav_order: 3
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-wangmilton.jpg' | relative_url }}" alt="Milton Wang">
-    <div class="grid-person-name">Student Name</div>
+    <div class="grid-person-name">Milton Wang</div>
     <div class="grid-person-role">Undergraduate Alum</div>
   </div>
 
