@@ -34,6 +34,25 @@ nav_order: 5
     </section>
 
     <section class="contact-item">
+      <p class="contact-label">MEDIA AND SPEAKING</p>
+
+      <h2 class="contact-item-title">Interviews and Events</h2>
+
+      <p class="contact-description">
+        For media interviews, research commentary, invited talks, or other
+        public-facing requests, please email me with the topic, format, and
+        proposed timeline.
+      </p>
+
+      <p class="contact-link">
+        <a href="mailto:chengjt@yorku.ca?subject=Media%20or%20Speaking%20Inquiry">
+          Send an inquiry ↗
+        </a>
+      </p>
+    </section>
+
+
+    <section class="contact-item">
       <p class="contact-label">INSTITUTION</p>
 
       <h2 class="contact-item-title">York University</h2>
@@ -72,7 +91,8 @@ nav_order: 5
       <p class="contact-description contact-description-spaced">
         Prospective applicants are encouraged to contact me in late summer or
         early September, before applying, to briefly introduce themselves and
-        discuss their research interests and potential fit with the lab. See the FAQ section below for more on graduate applications.
+        discuss their research interests and potential fit with the lab. See the
+        <a href="#faq">FAQ section below</a> for more on graduate applications.
       </p>
 
       <div class="graduate-links">
@@ -114,7 +134,9 @@ nav_order: 5
         Are you an undergraduate student at York University or elsewhere
         interested in research on social connection, loneliness, cultural
         norms, and interpersonal dynamics? Submit an application to tell us
-        about your interests, experience, and availability. See the FAQ section below for more on undergraduate research.
+        about your interests, experience, and availability. See the
+        <a href="#faq">FAQ section below</a> for more on undergraduate
+        applications.
       </p>
 
       <p class="contact-link">
@@ -132,27 +154,10 @@ nav_order: 5
       </p>
     </section>
 
-    <section class="contact-item">
-      <p class="contact-label">MEDIA AND SPEAKING</p>
-
-      <h2 class="contact-item-title">Interviews and Events</h2>
-
-      <p class="contact-description">
-        For media interviews, research commentary, invited talks, or other
-        public-facing requests, please email me with the topic, format, and
-        proposed timeline.
-      </p>
-
-      <p class="contact-link">
-        <a href="mailto:chengjt@yorku.ca?subject=Media%20or%20Speaking%20Inquiry">
-          Send an inquiry ↗
-        </a>
-      </p>
-    </section>
 
   </div>
 
-  <section class="faq-section">
+  <section class="faq-section" id="faq">
 
     <div class="faq-heading">
       <p class="contact-eyebrow">FREQUENTLY ASKED QUESTIONS</p>
@@ -439,12 +444,14 @@ nav_order: 5
     margin-top: 1.1rem;
   }
 
+  .contact-description a,
   .contact-link a:not(.application-button),
   .faq-answer a {
     color: var(--global-theme-color);
     text-decoration: none;
   }
 
+  .contact-description a:hover,
   .contact-link a:not(.application-button):hover,
   .faq-answer a:hover {
     text-decoration: underline;
@@ -492,6 +499,7 @@ nav_order: 5
     margin-top: 6rem;
     padding-top: 3.5rem;
     border-top: 1px solid var(--global-divider-color);
+    scroll-margin-top: 6rem;
   }
 
   .faq-heading {
