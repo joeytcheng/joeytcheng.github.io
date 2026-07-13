@@ -54,18 +54,67 @@ nav_order: 5
       </p>
     </section>
 
-    <section class="contact-item">
-      <p class="contact-label">JOIN THE LAB</p>
+    <section class="contact-item graduate-opportunities">
+      <p class="contact-label">GRADUATE STUDY</p>
 
-      <h2 class="contact-item-title">Research Opportunities</h2>
+      <p class="recruitment-status">Actively recruiting</p>
+
+      <h2 class="contact-item-title">
+        MA and PhD Students
+      </h2>
+
+      <p class="contact-description">
+        I supervise MA and PhD students in York University’s Social and
+        Personality Psychology program and am actively recruiting prospective
+        students whose interests align with that of our group.
+      </p>
+
+      <p class="contact-description contact-description-spaced">
+        Prospective applicants are encouraged to contact me in late summer or
+        early September, before applying, to briefly introduce themselves and
+        discuss their research interests and potential fit with the lab. See the FAQ section below for more on graduate applications.
+      </p>
+
+      <div class="graduate-links">
+        <p class="contact-link">
+          <a
+            href="mailto:chengjt@yorku.ca?subject=Prospective%20Graduate%20Student%20Inquiry">
+            Contact me about graduate study ↗
+          </a>
+        </p>
+
+        <p class="contact-link">
+          <a
+            href="https://www.yorku.ca/gradstudies/psychology/future-students/how-to-apply/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Application instructions ↗
+          </a>
+        </p>
+
+        <p class="contact-link">
+          <a
+            href="https://www.yorku.ca/gradstudies/psychology/future-students/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Graduate program information ↗
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-item">
+      <p class="contact-label">UNDERGRADUATE OPPORTUNITIES</p>
+
+      <h2 class="contact-item-title">
+        Join the Human Connection Lab
+      </h2>
 
       <p class="contact-description">
         Are you an undergraduate student at York University or elsewhere
-        interested in joining the Human Connection Lab? Submit a brief
-        application to tell us about your research interests, experience, and
-        availability. We welcome applications from undergraduate students
-        interested in research on social connection, loneliness, culture,
-        leadership, and group processes.
+        interested in research on social connection, loneliness, cultural
+        norms, and interpersonal dynamics? Submit an application to tell us
+        about your interests, experience, and availability. See the FAQ section below for more on undergraduate research.
       </p>
 
       <p class="contact-link">
@@ -117,18 +166,48 @@ nav_order: 5
 
         <div class="faq-answer">
           <p>
-            I review applications from students whose interests fit closely
-            with the Human Connection Lab’s research areas, including
-            leadership, status, gender disparities in groups, loneliness,
-            social isolation, culture, and computational approaches to social
-            behaviour.
+            Yes. I am actively recruiting prospective MA and PhD students
+            through York University’s Social and Personality Psychology
+            program.
           </p>
 
           <p>
-            Availability varies from year to year. Prospective graduate
-            students should consult the relevant York University program
-            information and briefly explain how their interests connect with
-            the lab’s current research.
+            I am especially interested in applicants whose interests fit
+            closely with the Human Connection Lab’s research on social
+            connection and loneliness, leadership and status, gender
+            disparities in groups, cultural norms, and computational
+            approaches to understanding social behaviour.
+          </p>
+
+          <p>
+            The deadline to submit a complete application to the York
+            University Graduate Program in Psychology is December 1.
+            Applications typically open in mid-October. Because applicants
+            must arrange references and prepare several supporting documents,
+            I strongly recommend beginning the process early.
+          </p>
+
+          <p>
+            Prospective applicants are encouraged to email me in late summer
+            or early September, before applying. Please briefly describe your
+            academic background, research interests, relevant research or
+            technical experience, and how your interests connect with the
+            lab’s current work. You may also attach a current CV.
+          </p>
+
+          <p>
+            Graduate applicants should apply through York University’s formal
+            graduate admissions process. The undergraduate lab application
+            form on this page is not used for MA or PhD admissions.
+          </p>
+
+          <p>
+            <a
+              href="https://www.yorku.ca/gradstudies/psychology/future-students/how-to-apply/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Review the graduate application instructions ↗
+            </a>
           </p>
         </div>
       </details>
@@ -165,8 +244,9 @@ nav_order: 5
           <p>
             Opportunities depend on current projects, supervision capacity,
             relevant experience, and the amount of time a student can commit.
-            Interested students should complete the lab application rather than
-            sending only a general expression of interest.
+            Interested undergraduate students should complete the lab
+            application rather than sending only a general expression of
+            interest.
           </p>
         </div>
       </details>
@@ -188,6 +268,12 @@ nav_order: 5
             of opportunity you are seeking, and a current résumé or CV when
             appropriate.
           </p>
+
+          <p>
+            Prospective graduate applicants should also identify whether they
+            are interested in the MA or PhD program and describe one or two
+            potential research questions they might be interested in pursuing.
+          </p>
         </div>
       </details>
 
@@ -204,9 +290,10 @@ nav_order: 5
 
           <p>
             Applicants should accurately describe their current experience
-            with tools such as R, Python, SPSS, Qualtrics, data management, or
-            qualitative coding. Interest in learning new methods is also
-            important.
+            with tools such as R, Python, SPSS, Qualtrics, GitHub, data
+            management, machine learning, natural-language processing, or
+            qualitative coding. A strong interest in developing new technical
+            and methodological skills is also important.
           </p>
         </div>
       </details>
@@ -284,12 +371,32 @@ nav_order: 5
     min-width: 0;
   }
 
+  .graduate-opportunities {
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--global-theme-color);
+  }
+
   .contact-label {
     margin: 0 0 1.15rem;
     color: var(--global-text-color-light);
     font-family: monospace;
     font-size: 0.78rem;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .recruitment-status {
+    display: inline-block;
+    margin: 0 0 0.8rem;
+    padding: 0.24rem 0.55rem;
+    color: var(--global-theme-color);
+    border: 1px solid var(--global-theme-color);
+    border-radius: 999px;
+    font-family: monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
     text-transform: uppercase;
   }
 
@@ -316,16 +423,30 @@ nav_order: 5
     line-height: 1.65;
   }
 
+  .contact-description-spaced {
+    margin-top: 0.9rem;
+  }
+
   .contact-link {
     margin: 1.1rem 0 0;
   }
 
-  .contact-link a:not(.application-button) {
+  .graduate-links .contact-link {
+    margin-top: 0.55rem;
+  }
+
+  .graduate-links .contact-link:first-child {
+    margin-top: 1.1rem;
+  }
+
+  .contact-link a:not(.application-button),
+  .faq-answer a {
     color: var(--global-theme-color);
     text-decoration: none;
   }
 
-  .contact-link a:not(.application-button):hover {
+  .contact-link a:not(.application-button):hover,
+  .faq-answer a:hover {
     text-decoration: underline;
     text-underline-offset: 0.2rem;
   }
