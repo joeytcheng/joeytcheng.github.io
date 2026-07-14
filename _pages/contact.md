@@ -31,6 +31,15 @@ nav_order: 5
         Best for questions about research, collaboration, graduate study,
         media inquiries, or other academic matters.
       </p>
+
+      <p class="contact-link">
+        <a
+          href="https://www.yorku.ca/health/psychology/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Department website ↗
+        </a>
+      </p>
     </section>
 
     <section class="contact-item">
@@ -51,27 +60,6 @@ nav_order: 5
       </p>
     </section>
 
-
-    <section class="contact-item">
-      <p class="contact-label">INSTITUTION</p>
-
-      <h2 class="contact-item-title">York University</h2>
-
-      <p class="contact-description">
-        Department of Psychology<br>
-        Faculty of Health<br>
-        Toronto, Ontario, Canada
-      </p>
-
-      <p class="contact-link">
-        <a
-          href="https://www.yorku.ca/health/psychology/"
-          target="_blank"
-          rel="noopener noreferrer">
-          Department website ↗
-        </a>
-      </p>
-    </section>
 
     <section class="contact-item graduate-opportunities">
       <p class="contact-label">GRADUATE STUDY</p>
@@ -123,7 +111,7 @@ nav_order: 5
       </div>
     </section>
 
-    <section class="contact-item">
+    <section class="contact-item undergraduate-opportunities">
       <p class="contact-label">UNDERGRADUATE OPPORTUNITIES</p>
 
       <h2 class="contact-item-title">
@@ -376,7 +364,8 @@ nav_order: 5
     min-width: 0;
   }
 
-  .graduate-opportunities {
+  .graduate-opportunities,
+  .undergraduate-opportunities {
     padding-top: 1.5rem;
     border-top: 2px solid var(--global-theme-color);
   }
