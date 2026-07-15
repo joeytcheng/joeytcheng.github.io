@@ -1,0 +1,210 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Director Bio | Joey T. Cheng </title> <meta name="author" content="Joey T. Cheng"> <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. "> <meta name="keywords" content="team dynamics, power, status, gender disparities, social connection, loneliness"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/jc-icon.png?v=976318fd6732f7405b05b33e2e5b9174"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://joeytcheng.github.io/bio/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Joey</span> T. Cheng </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/"> </a> </li> <li class="nav-item active"> <a class="nav-link" href="/bio/">Director Bio <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/lab/">Human Connection Lab </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">Contact </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Director Bio</h1> <p class="post-description"></p> </header> <article> <style>
+.about-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-label {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  color: var(--global-theme-color);
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about-label::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: var(--global-theme-color);
+  display: inline-block;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.about-sidebar img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.about-socials {
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  gap: 0.75rem;
+  font-size: 1.3rem;
+  justify-content: center;
+  max-width: 230px;
+}
+
+.about-socials a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.about-socials a:hover {
+  color: var(--global-theme-color);
+}
+
+.about-card {
+  background: var(--global-card-bg-color);
+  border-left: 1px solid var(--global-theme-color);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.about-card-title {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  color: var(--global-theme-color);
+  margin-bottom: 0.65rem;
+}
+
+.about-card p {
+  margin-bottom: 0.35rem;
+  line-height: 1.45;
+}
+
+.about-card a {
+  color: var(--global-text-color);
+  text-decoration: underline;
+}
+
+.about-main h1 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  margin-bottom: 1.75rem;
+  font-weight: 500;
+}
+
+.about-main h1 em {
+  color: var(--global-theme-color);
+  font-style: italic;
+}
+
+.about-main p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.35rem;
+}
+
+.about-main a {
+  text-decoration: underline;
+}
+
+.about-pill {
+  display: inline-block;
+  border: 1px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+  text-decoration: none;
+}
+
+.about-pill:hover {
+  color: var(--global-bg-color);
+  background: var(--global-theme-color);
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-sidebar img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-socials {
+    max-width: 220px;
+  }
+
+  .about-main h1 {
+    font-size: 2rem;
+  }
+}
+</style> <div class="about-custom"> <div class="about-label">About</div> <div class="about-layout"> <aside class="about-sidebar"> <img src="/assets/img/profile-cheng.jpg" alt="Joey T. Cheng"> <div class="about-socials"> <a href="mailto:your-email@yorku.ca" aria-label="Email"> <i class="fas fa-envelope"></i> </a> <a href="/cv/" aria-label="CV"> <i class="ai ai-cv"></i> </a> <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"> <i class="ai ai-google-scholar"></i> </a> <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"> <i class="fab fa-github"></i> </a> <a href="https://osf.io/" target="_blank" rel="noopener noreferrer" aria-label="OSF"> <i class="ai ai-osf"></i> </a> <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i class="fab fa-linkedin"></i> </a> </div> <div class="about-card"> <div class="about-card-title">Affiliation</div> <p><a href="https://www.yorku.ca/health/psychology/" target="_blank" rel="noopener noreferrer">Department of Psychology</a></p> <p>York University</p> </div> <div class="about-card"> <div class="about-card-title">Research Focus</div> <p>Social Connection · Loneliness · Leadership · Status · Groups · Culture</p> </div> <div class="about-card"> <div class="about-card-title">Roles</div> <p>Associate Professor</p> <p>York Research Chair in Leadership, Collaboration, &amp; Teams</p> <p>Human Connection Lab Director</p> <p>Area Head, Social-Personality Psychology Unit</p> </div> <div class="about-card"> <div class="about-card-title">Editorial Roles</div> <p>Associate Editor</p> <p>Editorial Board Member</p> </div> <div class="about-card"> <div class="about-card-title">Education</div> <p>PhD, University of British Columbia</p> <p>BSc, University of Toronto</p> </div> </aside> <main class="about-main"> <h1> I study <em>human connection</em> and the social forces that bring people together or pull them apart. </h1> <p> I am a social psychologist interested in how people navigate social life. My research examines how people gain influence in groups, how leaders emerge, and why some people become more connected to others while others become socially isolated. </p> <p> One major focus of my work is leadership and social status. I study the psychological and behavioral processes that shape influence, including confidence, voice, dominance, prestige, and fairness preferences. Much of this work asks why some people are more likely than others to be heard, recognized, and selected as leaders. </p> <p> My newer research examines loneliness and social isolation. I am interested in how social disconnection varies across people, places, and cultures, and how contemporary narratives about independence, self-protection, and withdrawal may shape the value people place on social connection. </p> <p> I am an Associate Professor in the <a href="https://www.yorku.ca/health/psychology/" target="_blank" rel="noopener noreferrer">Department of Psychology at York University</a>, where I direct the Human Connection Lab. </p> <p> My work has appeared in journals including <em>Journal of Experimental Psychology: General</em>, <em>Journal of Personality and Social Psychology</em>, <em>Psychological Science</em>, and other outlets in social, personality, and organizational psychology. </p> <p> In the Human Connection Lab, my students, collaborators, and I study topics including leadership, gender disparities in groups, prestige and dominance, social connection, loneliness, cultural change, and natural language processing approaches to social behavior. </p> <p> My academic journey: I earned my PhD (Social-Personality Psychology, with a minor in Quantitative Methods) at the University of British Columbia in 2013, then chased my curiosity about status and leadership south for a stint as a Visiting Scholar and Postdoctoral Fellow at UC Berkeley's Haas School of Business. These days I'm at York University, where I've been since 2019 — first as an Assistant Professor and, since 2023, as an Associate Professor in the Department of Psychology, and since 2022, the York Research Chair in Leadership, Collaboration, and Teams — proof that studying how people work together eventually convinces someone to let you lead a few things yourself. </p> <p> What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new technical skill or an entirely new way of thinking about an old problem, and using what I learn to say something true about how people connect, lead, and belong. I care about doing this work carefully and honestly, and about building it together with people who care as much about getting it right as I do. </p> <p> Here are the <a href="https://joeytcheng.github.io/teaching/">courses I’ve taught</a>. </p> <a class="about-pill" href="https://joeytcheng.github.io/research/"> Human Connection Lab Research </a> </main> </div> </div> </article> </div> </div> <style>
+.site-footer {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+  padding: 2.5rem 2rem 1.5rem;
+  margin-top: 3rem;
+}
+
+.site-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-footer-heading {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.site-footer-text {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.site-footer-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+.site-footer a {
+  color: var(--global-bg-color);
+  text-decoration: underline;
+}
+
+.site-footer-bottom {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .site-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+</style> <footer class="site-footer"> <div class="site-footer-grid"> <div> <div class="site-footer-heading">Human Connection Lab</div> <div class="site-footer-text"> Department of Psychology<br> York University<br> Toronto, Ontario, Canada </div> <div class="site-footer-link"> <a href="/lab/">More about the lab →</a> </div> </div> <div> <div class="site-footer-heading">Lab Director</div> <div class="site-footer-text"> Joey T. Cheng<br> Associate Professor<br> York Research Chair in Leadership, Collaboration, and Teams </div> <div class="site-footer-link"> <a href="mailto:chengjt@yorku.ca">Email Joey</a> </div> <div class="site-footer-link"> <a href="/bio/">More about Joey →</a> </div> </div> <div> <div class="site-footer-heading">Contact us</div> <div class="site-footer-text"> Interested in our work or joining the lab? Reach out any time. </div> <div class="site-footer-link"> <a href="/contact/">Contact us →</a> </div> </div> </div> <div class="site-footer-bottom"> © 2026 Human Connection Lab, York University </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> </body> </html>
