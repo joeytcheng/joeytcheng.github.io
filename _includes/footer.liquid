@@ -1,0 +1,104 @@
+<style>
+.site-footer {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+  padding: 2.5rem 2rem 1.5rem;
+  margin-top: 3rem;
+}
+
+.site-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-footer-heading {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.site-footer-text {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.site-footer-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+.site-footer a {
+  color: var(--global-bg-color);
+  text-decoration: underline;
+}
+
+.site-footer-bottom {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .site-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+</style>
+
+<footer class="site-footer">
+
+  <div class="site-footer-grid">
+
+    <div>
+      <div class="site-footer-heading">Human Connection Lab</div>
+      <div class="site-footer-text">
+        Department of Psychology<br>
+        York University<br>
+        Toronto, Ontario, Canada
+      </div>
+      <div class="site-footer-link">
+        <a href="{{ '/lab/' | relative_url }}">More about the lab &rarr;</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="site-footer-heading">Lab Director</div>
+      <div class="site-footer-text">
+        Joey T. Cheng<br>
+        Associate Professor<br>
+        York Research Chair in Leadership, Collaboration, and Teams
+      </div>
+      <div class="site-footer-link">
+        <a href="mailto:chengjt@yorku.ca">Email Joey</a>
+      </div>
+      <div class="site-footer-link">
+        <a href="{{ '/bio/' | relative_url }}">More about Joey &rarr;</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="site-footer-heading">Contact us</div>
+      <div class="site-footer-text">
+        Interested in our work or joining the lab? Reach out any time.
+      </div>
+      <div class="site-footer-link">
+        <a href="{{ '/contact/' | relative_url }}">Contact us &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="site-footer-bottom">
+    &copy; {{ site.time | date: '%Y' }} Human Connection Lab, York University
+  </div>
+
+</footer>
