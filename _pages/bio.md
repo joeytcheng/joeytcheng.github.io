@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Bio
-permalink: /
-nav: false
+title: Director Bio
+permalink: /bio/
+nav: true
+nav_order: 1
 ---
 
 <style>
@@ -247,6 +248,14 @@ nav: false
 
     <p>
       In the Human Connection Lab, my students, collaborators, and I study topics including leadership, gender disparities in groups, prestige and dominance, social connection, loneliness, cultural change, and natural language processing approaches to social behavior.
+    </p>
+
+    <p>
+      My academic journey: I earned my PhD (Social-Personality Psychology, with a minor in Quantitative Methods) at the University of British Columbia in 2013, then chased my curiosity about status and leadership south for a stint as a Visiting Scholar and Postdoctoral Fellow at UC Berkeley's Haas School of Business. These days I'm at York University, where I've been since 2019 — first as an Assistant Professor and, since 2023, as an Associate Professor in the Department of Psychology, and since 2022, the York Research Chair in Leadership, Collaboration, and Teams — proof that studying how people work together eventually convinces someone to let you lead a few things yourself.
+    </p>
+
+    <p>
+      What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new technical skill or an entirely new way of thinking about an old problem, and using what I learn to say something true about how people connect, lead, and belong. I care about doing this work carefully and honestly, and about building it together with people who care as much about getting it right as I do.
     </p>
 
     <p>

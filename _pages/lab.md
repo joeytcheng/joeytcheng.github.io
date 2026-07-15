@@ -13,6 +13,15 @@ nav_order: 3
   margin: 0 auto;
 }
 
+.people-kicker {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  color: var(--global-theme-color);
+  margin-bottom: 0.5rem;
+}
+
 .people-title {
   text-align: center;
   text-transform: uppercase;
@@ -21,8 +30,8 @@ nav_order: 3
 }
 
 .people-banner {
-  background: #426f9f;
-  color: white;
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
   text-align: center;
   padding: 0.75rem;
   margin-bottom: 2rem;
@@ -30,14 +39,14 @@ nav_order: 3
 }
 
 .people-banner a {
-  color: white;
+  color: var(--global-bg-color);
   text-decoration: underline;
   font-weight: 600;
 }
 
 .people-section {
   margin-top: 2.5rem;
-  border-bottom: 2px solid #426f9f;
+  border-bottom: 1px solid var(--global-divider-color);
   padding-bottom: 1.5rem;
 }
 
@@ -94,7 +103,7 @@ nav_order: 3
 }
 
 .person-icons-inline a:hover {
-  color: #426f9f;
+  color: var(--global-theme-color);
 }
 
 .person-role {
@@ -110,7 +119,7 @@ nav_order: 3
 
 .people-grid-section {
   margin-top: 2.5rem;
-  border-bottom: 2px solid #426f9f;
+  border-bottom: 1px solid var(--global-divider-color);
   padding-bottom: 2rem;
 }
 
@@ -199,6 +208,8 @@ nav_order: 3
 </style>
 
 <div class="people-page">
+
+<div class="people-kicker">Human Connection Lab</div>
 
 <h1 class="people-title">The Team</h1>
 

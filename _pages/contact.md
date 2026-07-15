@@ -206,6 +206,32 @@ nav_order: 5
       </details>
 
       <details class="faq-item">
+        <summary>What qualities make a grad applicant more successful?</summary>
+
+        <div class="faq-answer">
+          <p>
+            In principle, I'm interested in innovative research on any
+            aspect of leadership, social status, group dynamics, and human
+            connection, from theoretical questions about why people gain
+            influence or become disconnected, to novel methods, including
+            computational and natural-language approaches, for studying
+            these questions in psychology, organizations, and everyday
+            social life. Applied work that makes a genuine empirical
+            contribution or sheds new light on an existing question is just
+            as welcome as more theoretical work.
+          </p>
+
+          <p>
+            Doing research in this space is challenging but rewarding. I
+            look for originality of ideas, and I care most about working
+            with students who are genuinely curious and motivated about
+            research on human connection, rather than any particular prior
+            background or credential.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
         <summary>What kinds of research projects do students work on?</summary>
 
         <div class="faq-answer">
