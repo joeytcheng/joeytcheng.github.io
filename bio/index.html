@@ -46,9 +46,11 @@
 }
 
 .about-sidebar img {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  border-radius: 16px;
   object-fit: cover;
   margin-bottom: 1rem;
 }
@@ -63,7 +65,7 @@
 }
 
 .about-socials a {
-  color: var(--global-text-color);
+  color: var(--icon-muted-color);
   text-decoration: none;
 }
 
@@ -106,17 +108,13 @@
 }
 
 .about-name-link {
-  display: inline-block;
+  display: block;
   color: var(--global-theme-color);
   font-weight: 700;
   font-size: 2.4rem;
   font-family: Georgia, 'Times New Roman', serif;
   text-decoration: none;
   line-height: 1.1;
-}
-
-.about-name-link:hover {
-  opacity: 0.85;
 }
 
 .about-divider {
@@ -173,8 +171,10 @@
   }
 
   .about-sidebar img {
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 3 / 4;
   }
 
   .about-socials {
@@ -185,7 +185,7 @@
     font-size: 2rem;
   }
 }
-</style> <div class="about-custom"> <div class="about-label">About</div> <div class="about-layout"> <aside class="about-sidebar"> <img src="/assets/img/profile-cheng.jpg" alt="Joey T. Cheng"> <div class="about-socials"> <a href="mailto:chengjt@yorku.ca" aria-label="Email"> <i class="fas fa-envelope"></i> </a> <a href="https://scholar.google.com/citations?user=lweBpmIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"> <i class="ai ai-google-scholar"></i> </a> <a href="https://www.linkedin.com/in/joeytcheng/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i class="fab fa-linkedin"></i> </a> </div> <div class="about-card"> <div class="about-card-title">Affiliation</div> <p><a href="https://www.yorku.ca/health/psychology/" target="_blank" rel="noopener noreferrer">Department of Psychology</a></p> <p>York University</p> </div> <div class="about-card"> <div class="about-card-title">Research Focus</div> <p>Social Connection · Loneliness · Leadership · Status · Groups · Culture</p> </div> <div class="about-card"> <div class="about-card-title">Roles</div> <p>Associate Professor</p> <p>York Research Chair in Leadership, Collaboration, &amp; Teams</p> <p>Lab Director, Human Connection Lab</p> <p>Area Head, Social-Personality Psychology Unit</p> </div> <div class="about-card"> <div class="about-card-title">Education</div> <p>Postdoc, University of California, Berkeley</p> <p>PhD, University of British Columbia</p> <p>BSc, University of Toronto</p> </div> </aside> <main class="about-main"> <div class="about-eyebrow">Associate Professor · Department of Psychology · York University</div> <a class="about-name-link" href="#">Joey T. Cheng</a> <hr class="about-divider"> <h1> I study human connection — what brings people together, and what drives them apart. </h1> <p> I am an Associate Professor of Psychology and York Research Chair at York University, where I direct the <a href="/lab/">Human Connection Lab</a>. I completed my undergraduate degree at the University of Toronto in 2007, and my doctoral degree at the University of British Columbia in 2013. I then spent the next six years in the United States -- first as a Postdoctoral Fellow at University of California, Berkeley's Haas School of Business, then as faculty at the University of California, Irvine and the University of Illinois at Urbana-Champaign. I returned home to Toronto and York University in 2019. </p> <p> I am a behavioral scientist and social psychologist interested in how people navigate social life. My research examines how people gain influence in groups, how leaders emerge, and why some people become more connected to others while others become socially isolated. </p> <p> One major focus of my work is leadership and social status. I study the psychological and behavioral processes that shape influence, including confidence, voice, dominance, prestige, and fairness preferences. Much of this work asks why some people are more likely than others to be heard, recognized, and selected as leaders. </p> <p> My newer research examines loneliness and social isolation. I am interested in how social disconnection varies across people, places, and cultures, and how contemporary narratives about independence, self-protection, and withdrawal may shape the value people place on social connection. </p> <p> What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new method or data analytic skill or an entirely new way of thinking about an old problem, and using what I learn to say something about how people connect, lead, and belong. I care about exploring these questions with curiosity, and about building it together with people who care as much about getting it right as I do. </p> </main> </div> </div> </article> </div> </div> <style>
+</style> <div class="about-custom"> <div class="about-label">About</div> <div class="about-layout"> <aside class="about-sidebar"> <img src="/assets/img/profile-cheng.jpg" alt="Joey T. Cheng"> <div class="about-socials"> <a href="mailto:chengjt@yorku.ca" aria-label="Email"> <i class="fas fa-envelope"></i> </a> <a href="https://scholar.google.com/citations?user=lweBpmIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"> <i class="ai ai-google-scholar"></i> </a> <a href="https://www.linkedin.com/in/joeytcheng/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i class="fab fa-linkedin"></i> </a> </div> <div class="about-card"> <div class="about-card-title">Affiliation</div> <p><a href="https://www.yorku.ca/health/psychology/" target="_blank" rel="noopener noreferrer">Department of Psychology</a></p> <p>York University</p> </div> <div class="about-card"> <div class="about-card-title">Research Focus</div> <p>Social Connection · Loneliness · Leadership · Status · Groups · Culture</p> </div> <div class="about-card"> <div class="about-card-title">Roles</div> <p>Associate Professor</p> <p>York Research Chair in Leadership, Collaboration, &amp; Teams</p> <p>Lab Director, Human Connection Lab</p> <p>Area Head, Social-Personality Psychology Unit</p> </div> <div class="about-card"> <div class="about-card-title">Education</div> <p>Postdoc, University of California, Berkeley</p> <p>PhD, University of British Columbia</p> <p>BSc, University of Toronto</p> </div> </aside> <main class="about-main"> <div class="about-eyebrow">Associate Professor · Department of Psychology<br>York University</div> <div class="about-name-link">Joey T. Cheng</div> <hr class="about-divider"> <h1> I study human connection — what brings people together, and what drives them apart. </h1> <p> I am an Associate Professor of Psychology and York Research Chair at York University, where I direct the <a href="/lab/">Human Connection Lab</a>. I completed my undergraduate degree at the University of Toronto in 2007, and my doctoral degree at the University of British Columbia in 2013. I then spent the next six years in the United States -- first as a Postdoctoral Fellow at University of California, Berkeley's Haas School of Business, then as faculty at the University of California, Irvine and the University of Illinois at Urbana-Champaign. I returned home to Toronto and York University in 2019. </p> <p> I am a behavioral scientist and social psychologist interested in how people navigate social life. My research examines how people gain influence in groups, how leaders emerge, and why some people become more connected to others while others become socially isolated. </p> <p> One major focus of my work is leadership and social status. I study the psychological and behavioral processes that shape influence, including confidence, voice, dominance, prestige, and fairness preferences. Much of this work asks why some people are more likely than others to be heard, recognized, and selected as leaders. </p> <p> My newer research examines loneliness and social isolation. I am interested in how social disconnection varies across people, places, and cultures, and how contemporary narratives about independence, self-protection, and withdrawal may shape the value people place on social connection. </p> <p> What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new method or data analytic skill or an entirely new way of thinking about an old problem, and using what I learn to say something about how people connect, lead, and belong. I care about exploring these questions with curiosity, and about building it together with people who care as much about getting it right as I do. </p> </main> </div> </div> </article> </div> </div> <style>
 :root {
   --global-bg-color: #F3EAD9;
   --global-card-bg-color: #FFFFFF;
@@ -193,6 +193,7 @@
   --global-text-color: #1B1B2F;
   --global-text-color-light: #4a4a55;
   --global-divider-color: #E5DDC8;
+  --icon-muted-color: #9C9BA6;
 }
 
 html[data-theme="dark"] {
@@ -202,6 +203,7 @@ html[data-theme="dark"] {
   --global-text-color: #F3EAD9;
   --global-text-color-light: #C9BFC2;
   --global-divider-color: #4A3B4D;
+  --icon-muted-color: #B7AEC2;
 }
 
 .research-title,
@@ -245,7 +247,7 @@ html[data-theme="dark"] {
 }
 
 .site-footer-link {
-  display: inline-block;
+  display: block;
   font-size: 0.8rem;
   margin-top: 0.75rem;
 }
@@ -271,7 +273,7 @@ html[data-theme="dark"] {
     gap: 1.75rem;
   }
 }
-</style> <footer class="site-footer"> <div class="site-footer-grid"> <div> <div class="site-footer-heading">Human Connection Lab</div> <div class="site-footer-text"> Department of Psychology<br> York University<br> Toronto, Ontario, Canada </div> <div class="site-footer-link"> <a href="/lab/">More about the lab →</a> </div> </div> <div> <div class="site-footer-heading">Lab Director</div> <div class="site-footer-text"> Joey T. Cheng<br> Associate Professor<br> York Research Chair in Leadership, Collaboration, and Teams </div> <div class="site-footer-link"> <a href="mailto:chengjt@yorku.ca">Email Joey</a> </div> <div class="site-footer-link"> <a href="/bio/">More about Joey →</a> </div> <div class="site-footer-link"> <a href="#">Institutional Profile: York University Faculty Page →</a> </div> </div> <div> <div class="site-footer-heading">Contact us</div> <div class="site-footer-text"> Interested in our work or joining the lab? Reach out any time. </div> <div class="site-footer-link"> <a href="/contact/">Contact us →</a> </div> </div> </div> <div class="site-footer-bottom"> © 2026 Human Connection Lab, York University </div> </footer> <script>
+</style> <footer class="site-footer"> <div class="site-footer-grid"> <div> <div class="site-footer-heading">Human Connection Lab</div> <div class="site-footer-text"> Department of Psychology<br> York University<br> Toronto, Ontario, Canada </div> <div class="site-footer-link"> <a href="/lab/">Meet lab members →</a> </div> </div> <div> <div class="site-footer-heading">Lab Director</div> <div class="site-footer-text"> Joey T. Cheng<br> Associate Professor<br> York Research Chair in Leadership, Collaboration, and Teams </div> <div class="site-footer-link"> <a href="mailto:chengjt@yorku.ca">Email Joey</a> </div> <div class="site-footer-link"> <a href="/bio/">More about Joey →</a> </div> <div class="site-footer-link"> <a href="#">York faculty website →</a> </div> </div> <div> <div class="site-footer-heading">Contact us</div> <div class="site-footer-text"> Interested in our work or joining the lab? Reach out any time. </div> <div class="site-footer-link"> <a href="/contact/">Contact us →</a> </div> <div class="site-footer-link"> <a href="/contact/#faq">Lab FAQ →</a> </div> </div> </div> <div class="site-footer-bottom"> © 2026 Human Connection Lab, York University </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
