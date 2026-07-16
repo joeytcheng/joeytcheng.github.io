@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Director Bio
+title: Lab Director Bio
 permalink: /bio/
 nav: true
 nav_order: 1
@@ -254,7 +254,7 @@ nav_order: 1
     </h1>
 
     <p>
-      I am an Associate Professor of Psychology and York Research Chair in Leadership, Collaboration, and Teams at York University, where I direct the <a href="{{ '/lab/' | relative_url }}">Human Connection Lab</a>. I completed my undergraduate degree at the University of Toronto in 2007, and my doctoral degree at the University of British Columbia in 2013. I then spent the next six years in the United States--first as a Postdoctoral Fellow at University of California, Berkeley's Haas School of Business, then as faculty at the University of California, Irvine and the University of Illinois at Urbana-Champaign. I returned home to Toronto and York University in 2019.
+      I am an Associate Professor of Psychology and York Research Chair at York University, where I direct the <a href="{{ '/lab/' | relative_url }}">Human Connection Lab</a>. I completed my undergraduate degree at the University of Toronto in 2007, and my doctoral degree at the University of British Columbia in 2013. I then spent the next six years in the United States -- first as a Postdoctoral Fellow at University of California, Berkeley's Haas School of Business, then as faculty at the University of California, Irvine and the University of Illinois at Urbana-Champaign. I returned home to Toronto and York University in 2019.
     </p>
 
     <p>
@@ -270,7 +270,7 @@ nav_order: 1
     </p>
 
     <p>
-      What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new method or data analytic skill or an entirely new way of thinking about an old problem, and using what I learn to say something about how people connect, lead, and belong. I care about exploring this work with curiosity, and about building it together with people who care as much about getting it right as I do.
+      What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new method or data analytic skill or an entirely new way of thinking about an old problem, and using what I learn to say something about how people connect, lead, and belong. I care about exploring these questions with curiosity, and about building it together with people who care as much about getting it right as I do.
     </p>
 
   </main>

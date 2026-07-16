@@ -1,11 +1,20 @@
 <style>
 :root {
-  --global-bg-color: #F3EAD9 !important;
-  --global-card-bg-color: #FFFFFF !important;
-  --global-theme-color: #2F5D50 !important;
-  --global-text-color: #1B1B2F !important;
-  --global-text-color-light: #4a4a55 !important;
-  --global-divider-color: #E5DDC8 !important;
+  --global-bg-color: #F3EAD9;
+  --global-card-bg-color: #FFFFFF;
+  --global-theme-color: #6B3A5D;
+  --global-text-color: #1B1B2F;
+  --global-text-color-light: #4a4a55;
+  --global-divider-color: #E5DDC8;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #1F1620;
+  --global-card-bg-color: #2B1F2E;
+  --global-theme-color: #6B3A5D;
+  --global-text-color: #F3EAD9;
+  --global-text-color-light: #C9BFC2;
+  --global-divider-color: #4A3B4D;
 }
 
 .research-title,
@@ -21,7 +30,7 @@
 
 .site-footer {
   background: var(--global-theme-color);
-  color: var(--global-bg-color);
+  color: #ffffff;
   padding: 2.5rem 2rem 1.5rem;
   margin-top: 3rem;
 }
@@ -35,12 +44,14 @@
 }
 
 .site-footer-heading {
+  color: #ffffff;
   font-size: 0.95rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .site-footer-text {
+  color: #ffffff;
   font-size: 0.8rem;
   line-height: 1.8;
   opacity: 0.9;
@@ -53,11 +64,12 @@
 }
 
 .site-footer a {
-  color: var(--global-bg-color);
+  color: #ffffff !important;
   text-decoration: underline;
 }
 
 .site-footer-bottom {
+  color: #ffffff;
   max-width: 1100px;
   margin: 2rem auto 0;
   padding-top: 1rem;
