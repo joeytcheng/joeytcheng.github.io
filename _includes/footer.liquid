@@ -6,6 +6,7 @@
   --global-text-color: #1B1B2F;
   --global-text-color-light: #4a4a55;
   --global-divider-color: #E5DDC8;
+  --icon-muted-color: #9C9BA6;
 }
 
 html[data-theme="dark"] {
@@ -15,6 +16,7 @@ html[data-theme="dark"] {
   --global-text-color: #F3EAD9;
   --global-text-color-light: #C9BFC2;
   --global-divider-color: #4A3B4D;
+  --icon-muted-color: #B7AEC2;
 }
 
 .research-title,
@@ -58,7 +60,7 @@ html[data-theme="dark"] {
 }
 
 .site-footer-link {
-  display: inline-block;
+  display: block;
   font-size: 0.8rem;
   margin-top: 0.75rem;
 }
@@ -98,7 +100,7 @@ html[data-theme="dark"] {
         Toronto, Ontario, Canada
       </div>
       <div class="site-footer-link">
-        <a href="{{ '/lab/' | relative_url }}">More about the lab &rarr;</a>
+        <a href="{{ '/lab/' | relative_url }}">Meet lab members &rarr;</a>
       </div>
     </div>
 
@@ -116,7 +118,7 @@ html[data-theme="dark"] {
         <a href="{{ '/bio/' | relative_url }}">More about Joey &rarr;</a>
       </div>
       <div class="site-footer-link">
-        <a href="#">Institutional Profile: York University Faculty Page &rarr;</a>
+        <a href="#">York faculty website &rarr;</a>
       </div>
     </div>
 
@@ -127,6 +129,9 @@ html[data-theme="dark"] {
       </div>
       <div class="site-footer-link">
         <a href="{{ '/contact/' | relative_url }}">Contact us &rarr;</a>
+      </div>
+      <div class="site-footer-link">
+        <a href="{{ '/contact/#faq' | relative_url }}">Lab FAQ &rarr;</a>
       </div>
     </div>
 

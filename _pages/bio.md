@@ -48,9 +48,11 @@ nav_order: 1
 }
 
 .about-sidebar img {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  border-radius: 16px;
   object-fit: cover;
   margin-bottom: 1rem;
 }
@@ -65,7 +67,7 @@ nav_order: 1
 }
 
 .about-socials a {
-  color: var(--global-text-color);
+  color: var(--icon-muted-color);
   text-decoration: none;
 }
 
@@ -108,17 +110,13 @@ nav_order: 1
 }
 
 .about-name-link {
-  display: inline-block;
+  display: block;
   color: var(--global-theme-color);
   font-weight: 700;
   font-size: 2.4rem;
   font-family: Georgia, 'Times New Roman', serif;
   text-decoration: none;
   line-height: 1.1;
-}
-
-.about-name-link:hover {
-  opacity: 0.85;
 }
 
 .about-divider {
@@ -175,8 +173,10 @@ nav_order: 1
   }
 
   .about-sidebar img {
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 3 / 4;
   }
 
   .about-socials {
@@ -243,9 +243,9 @@ nav_order: 1
 
   <main class="about-main">
 
-    <div class="about-eyebrow">Associate Professor &middot; Department of Psychology &middot; York University</div>
+    <div class="about-eyebrow">Associate Professor &middot; Department of Psychology<br>York University</div>
 
-    <a class="about-name-link" href="#">Joey T. Cheng</a>
+    <div class="about-name-link">Joey T. Cheng</div>
 
     <hr class="about-divider">
 

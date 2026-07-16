@@ -107,7 +107,7 @@ nav_order: 3
 }
 
 .person-icons-inline a {
-  color: inherit;
+  color: var(--icon-muted-color);
   text-decoration: none;
 }
 
