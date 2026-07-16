@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
-description: Research themes in the Human Connection Lab.
+#description: Research themes in the Human Connection Lab.
 nav: true
 nav_order: 2
 ---
@@ -10,7 +10,16 @@ nav_order: 2
 <style>
 .research-page {
   max-width: 1050px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background: var(--global-card-bg-color);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+}
+
+@media (max-width: 700px) {
+  .research-page {
+    padding: 1.75rem;
+  }
 }
 
 .research-kicker {
@@ -37,6 +46,58 @@ nav_order: 2
 
 .research-intro a {
   text-decoration: underline;
+}
+
+.rq-band {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+  padding: 2.75rem 2rem 3.25rem;
+  border-radius: 12px;
+  margin-bottom: 3.5rem;
+}
+
+.rq-band h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+}
+
+.rq-band-intro {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 620px;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.rq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.rq-card {
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.rq-icon {
+  font-size: 2.5rem;
+  color: var(--global-theme-color);
+  margin-bottom: 1rem;
+}
+
+.rq-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.rq-body {
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .theme-list {
@@ -170,6 +231,10 @@ nav_order: 2
     font-size: 2.2rem;
   }
 
+  .rq-grid {
+    grid-template-columns: 1fr;
+  }
+
   .theme-card {
     grid-template-columns: 95px 45px 1fr;
     gap: 1rem;
@@ -223,12 +288,50 @@ nav_order: 2
 
 <div class="research-intro">
   <p>
-    In the Human Connection Lab, we study how people connect, compete, lead, withdraw, and find their place in social life. Our work brings together social psychology, personality psychology, organizational psychology, cultural psychology, and computational methods to understand how people navigate groups and relationships.
+    In the Human Connection Lab, we study how people connect, lead, and belong in groups, organizations, and society, asking questions like who gets recognized and why societies have become increasingly lonely, alongside the stories we tell about connection.
   </p>
 
   <p>
-    Across projects, we ask how social environments shape who is heard, who gains influence, who feels connected, and who becomes socially isolated. We use experiments, surveys, behavioral data, cross-cultural datasets, and natural language processing to study these questions.
+    We study these questions using tools ranging from behavioral experiments and archival "big data" analysis, to computational text analysis.
   </p>
+</div>
+
+<div class="rq-band">
+
+  <h2>Research questions</h2>
+
+  <p class="rq-band-intro">
+    A brief preview of the questions that organize our work.
+  </p>
+
+  <div class="rq-grid">
+
+    <div class="rq-card">
+      <div class="rq-icon"><i class="fas fa-map-location-dot"></i></div>
+      <div class="rq-title">Why are so many of us feeling more disconnected?</div>
+      <div class="rq-body">We use "big data" archival analysis, behavioral data, and text analysis to investigate why loneliness is on the rise.</div>
+    </div>
+
+    <div class="rq-card">
+      <div class="rq-icon"><i class="fas fa-network-wired"></i></div>
+      <div class="rq-title">How do the stories we tell shape whether we feel connected?</div>
+      <div class="rq-body">We study how cultural narratives about independence, self-protection, and belonging shape social life, and how social life reciprocally reflect shifting cultural values.</div>
+    </div>
+
+    <div class="rq-card">
+      <div class="rq-icon"><i class="fas fa-comments"></i></div>
+      <div class="rq-title">Why do some voices get heard more than others?</div>
+      <div class="rq-body">We study why certain people are more likely to be recognized, included, and heard in groups, and what that means for equity.</div>
+    </div>
+
+    <div class="rq-card">
+      <div class="rq-icon"><i class="fas fa-users"></i></div>
+      <div class="rq-title">What makes someone worth following?</div>
+      <div class="rq-body">We study the everyday behaviors, confidence, voice, and fairness, that shape who earns influence and trust.</div>
+    </div>
+
+  </div>
+
 </div>
 
 <div class="theme-list">

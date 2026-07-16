@@ -1,4 +1,24 @@
 <style>
+:root {
+  --global-bg-color: #F3EAD9 !important;
+  --global-card-bg-color: #FFFFFF !important;
+  --global-theme-color: #2F5D50 !important;
+  --global-text-color: #1B1B2F !important;
+  --global-text-color-light: #4a4a55 !important;
+  --global-divider-color: #E5DDC8 !important;
+}
+
+.research-title,
+.theme-text h2,
+.feature-text h2,
+.rq-band h2,
+.people-title,
+.faq-heading h2,
+.contact-item-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700 !important;
+}
+
 .site-footer {
   background: var(--global-theme-color);
   color: var(--global-bg-color);
@@ -82,6 +102,9 @@
       </div>
       <div class="site-footer-link">
         <a href="{{ '/bio/' | relative_url }}">More about Joey &rarr;</a>
+      </div>
+      <div class="site-footer-link">
+        <a href="#">Institutional Profile: York University Faculty Page &rarr;</a>
       </div>
     </div>
 

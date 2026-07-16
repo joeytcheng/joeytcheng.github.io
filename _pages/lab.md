@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /lab/
-title: Human Connection Lab
+title: The Team
 description: Meet the team.
 nav: true
 nav_order: 3
@@ -10,7 +10,16 @@ nav_order: 3
 <style>
 .people-page {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background: var(--global-card-bg-color);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+}
+
+@media (max-width: 700px) {
+  .people-page {
+    padding: 1.75rem;
+  }
 }
 
 .people-kicker {

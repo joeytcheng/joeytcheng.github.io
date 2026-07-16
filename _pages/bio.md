@@ -9,7 +9,16 @@ nav_order: 1
 <style>
 .about-custom {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background: var(--global-card-bg-color);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+}
+
+@media (max-width: 700px) {
+  .about-custom {
+    padding: 1.75rem;
+  }
 }
 
 .about-label {
@@ -89,16 +98,45 @@ nav_order: 1
   text-decoration: underline;
 }
 
-.about-main h1 {
-  font-size: 2.5rem;
-  line-height: 1.15;
-  margin-bottom: 1.75rem;
-  font-weight: 500;
+.about-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  margin-bottom: 1rem;
 }
 
-.about-main h1 em {
+.about-name-link {
+  display: inline-block;
   color: var(--global-theme-color);
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  text-decoration: none;
+  line-height: 1.1;
+}
+
+.about-name-link:hover {
+  opacity: 0.85;
+}
+
+.about-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--global-theme-color);
+  border: none;
+  margin: 1.25rem 0;
+}
+
+.about-main h1 {
+  font-size: 1.3rem;
+  line-height: 1.5;
   font-style: italic;
+  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', serif;
+  margin-bottom: 1.75rem;
+  max-width: 620px;
 }
 
 .about-main p {
@@ -162,27 +200,15 @@ nav_order: 1
     <img src="{{ '/assets/img/profile-cheng.jpg' | relative_url }}" alt="Joey T. Cheng">
 
     <div class="about-socials">
-      <a href="mailto:your-email@yorku.ca" aria-label="Email">
+      <a href="mailto:chengjt@yorku.ca" aria-label="Email">
         <i class="fas fa-envelope"></i>
       </a>
 
-      <a href="{{ '/cv/' | relative_url }}" aria-label="CV">
-        <i class="ai ai-cv"></i>
-      </a>
-
-      <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+      <a href="https://scholar.google.com/citations?user=lweBpmIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
         <i class="ai ai-google-scholar"></i>
       </a>
 
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-
-      <a href="https://osf.io/" target="_blank" rel="noopener noreferrer" aria-label="OSF">
-        <i class="ai ai-osf"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/joeytcheng/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
     </div>
@@ -202,18 +228,13 @@ nav_order: 1
       <div class="about-card-title">Roles</div>
       <p>Associate Professor</p>
       <p>York Research Chair in Leadership, Collaboration, & Teams</p>
-      <p>Human Connection Lab Director</p>
+      <p>Lab Director, Human Connection Lab</p>
       <p>Area Head, Social-Personality Psychology Unit</p>
     </div>
 
     <div class="about-card">
-      <div class="about-card-title">Editorial Roles</div>
-      <p>Associate Editor</p>
-      <p>Editorial Board Member</p>
-    </div>
-
-    <div class="about-card">
       <div class="about-card-title">Education</div>
+      <p>Postdoc, University of California, Berkeley</p>
       <p>PhD, University of British Columbia</p>
       <p>BSc, University of Toronto</p>
     </div>
@@ -222,12 +243,22 @@ nav_order: 1
 
   <main class="about-main">
 
+    <div class="about-eyebrow">Associate Professor &middot; Department of Psychology &middot; York University</div>
+
+    <a class="about-name-link" href="#">Joey T. Cheng</a>
+
+    <hr class="about-divider">
+
     <h1>
-      I study <em>human connection</em> and the social forces that bring people together or pull them apart.
+      I study human connection — what brings people together, and what drives them apart.
     </h1>
 
     <p>
-      I am a social psychologist interested in how people navigate social life. My research examines how people gain influence in groups, how leaders emerge, and why some people become more connected to others while others become socially isolated.
+      I am an Associate Professor of Psychology and York Research Chair in Leadership, Collaboration, and Teams at York University, where I direct the <a href="{{ '/lab/' | relative_url }}">Human Connection Lab</a>. I completed my undergraduate degree at the University of Toronto in 2007, and my doctoral degree at the University of British Columbia in 2013. I then spent the next six years in the United States--first as a Postdoctoral Fellow at University of California, Berkeley's Haas School of Business, then as faculty at the University of California, Irvine and the University of Illinois at Urbana-Champaign. I returned home to Toronto and York University in 2019.
+    </p>
+
+    <p>
+      I am a behavioral scientist and social psychologist interested in how people navigate social life. My research examines how people gain influence in groups, how leaders emerge, and why some people become more connected to others while others become socially isolated.
     </p>
 
     <p>
@@ -239,32 +270,8 @@ nav_order: 1
     </p>
 
     <p>
-      I am an Associate Professor in the <a href="https://www.yorku.ca/health/psychology/" target="_blank" rel="noopener noreferrer">Department of Psychology at York University</a>, where I direct the Human Connection Lab.
+      What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new method or data analytic skill or an entirely new way of thinking about an old problem, and using what I learn to say something about how people connect, lead, and belong. I care about exploring this work with curiosity, and about building it together with people who care as much about getting it right as I do.
     </p>
-
-    <p>
-      My work has appeared in journals including <em>Journal of Experimental Psychology: General</em>, <em>Journal of Personality and Social Psychology</em>, <em>Psychological Science</em>, and other outlets in social, personality, and organizational psychology.
-    </p>
-
-    <p>
-      In the Human Connection Lab, my students, collaborators, and I study topics including leadership, gender disparities in groups, prestige and dominance, social connection, loneliness, cultural change, and natural language processing approaches to social behavior.
-    </p>
-
-    <p>
-      My academic journey: I earned my PhD (Social-Personality Psychology, with a minor in Quantitative Methods) at the University of British Columbia in 2013, then chased my curiosity about status and leadership south for a stint as a Visiting Scholar and Postdoctoral Fellow at UC Berkeley's Haas School of Business. These days I'm at York University, where I've been since 2019 — first as an Assistant Professor and, since 2023, as an Associate Professor in the Department of Psychology, and since 2022, the York Research Chair in Leadership, Collaboration, and Teams — proof that studying how people work together eventually convinces someone to let you lead a few things yourself.
-    </p>
-
-    <p>
-      What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new technical skill or an entirely new way of thinking about an old problem, and using what I learn to say something true about how people connect, lead, and belong. I care about doing this work carefully and honestly, and about building it together with people who care as much about getting it right as I do.
-    </p>
-
-    <p>
-      Here are the <a href="https://joeytcheng.github.io/teaching/">courses I’ve taught</a>.
-    </p>
-
-    <a class="about-pill" href="https://joeytcheng.github.io/research/">
-      Human Connection Lab Research
-    </a>
 
   </main>
 

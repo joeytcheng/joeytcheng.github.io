@@ -360,6 +360,18 @@ nav_order: 5
 <style>
   .contact-page {
     width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    background: var(--global-card-bg-color);
+    border-radius: 16px;
+    padding: 2.5rem 3rem;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 700px) {
+    .contact-page {
+      padding: 1.75rem;
+    }
   }
 
   .contact-eyebrow {

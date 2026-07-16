@@ -7,181 +7,93 @@ nav: false
 
 <style>
 .landing-page {
-  max-width: 1050px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
 .landing-hero {
-  padding: 3.5rem 0 3rem;
+  background: var(--global-card-bg-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 2.6fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 2.5rem 0 3rem;
 }
 
-.landing-badge {
-  display: inline-block;
-  background: var(--global-theme-color);
-  color: var(--global-bg-color);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  padding: 0.35rem 0.75rem;
-  border-radius: 4px;
-  margin-bottom: 1.25rem;
+.landing-illustration svg {
+  width: 100%;
+  height: auto;
+  max-width: 750px;
 }
 
-.landing-title {
-  font-size: 2.6rem;
-  line-height: 1.15;
-  font-weight: 500;
-  margin-bottom: 1.25rem;
+.landing-headline {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-bottom: 1rem;
 }
 
 .landing-intro {
-  font-size: 1.02rem;
-  line-height: 1.8;
-  max-width: 620px;
+  font-size: 1rem;
+  line-height: 1.7;
   margin-bottom: 1.25rem;
 }
 
-.landing-director {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--global-text-color-light);
-  max-width: 620px;
-  margin-bottom: 1.75rem;
-}
-
-.landing-actions {
-  display: flex;
-  gap: 0.9rem;
-  flex-wrap: wrap;
-}
-
-.landing-link {
+.landing-readmore {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   color: var(--global-theme-color);
-  font-size: 0.95rem;
   text-decoration: none;
 }
 
-.landing-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-}
-
-.landing-questions {
-  background: var(--global-theme-color);
-  color: var(--global-bg-color);
-  padding: 2.75rem 2rem 3.25rem;
-  border-radius: 12px;
-  margin-bottom: 3rem;
-}
-
-.questions-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.questions-header h2 {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: 0;
-}
-
-.questions-link {
-  font-size: 0.85rem;
-  color: var(--global-bg-color);
-  text-decoration: underline;
-  white-space: nowrap;
-}
-
-.questions-link:hover {
-  color: var(--global-bg-color);
-}
-
-.questions-intro {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  max-width: 620px;
-  opacity: 0.9;
-  margin-bottom: 2rem;
-}
-
-.questions-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-
-.question-card {
-  background: var(--global-bg-color);
-  color: var(--global-text-color);
-  border-radius: 10px;
-  padding: 1.5rem;
-}
-
-.question-icon {
-  font-size: 2.5rem;
-  color: var(--global-theme-color);
-  margin-bottom: 1rem;
-}
-
-.question-title {
-  font-size: 1.05rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.question-body {
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.landing-footer {
-  background: var(--global-theme-color);
-  color: var(--global-bg-color);
-  padding: 2.5rem 2rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.footer-heading {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.footer-line {
-  font-size: 0.9rem;
-  line-height: 1.9;
-}
-
-.footer-line a {
-  color: var(--global-bg-color);
+.landing-readmore:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 700px) {
-  .landing-title {
-    font-size: 2rem;
+.ln {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: landing-draw 0.6s ease-out forwards;
+}
+
+.nd {
+  opacity: 0;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: landing-pop 0.5s ease-out forwards;
+}
+
+.dash {
+  animation: landing-fadein 0.8s ease-out forwards;
+}
+
+@keyframes landing-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes landing-pop {
+  0% { opacity: 0; transform: scale(0.3); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes landing-fadein {
+  to { opacity: 0.5; }
+}
+
+@media (max-width: 800px) {
+  .landing-hero {
+    grid-template-columns: 1fr;
+    padding: 2rem;
   }
 
-  .questions-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
+  .landing-headline {
+    font-size: 1.6rem;
   }
 }
 </style>
@@ -190,81 +102,49 @@ nav: false
 
 <section class="landing-hero">
 
-  <div class="landing-badge">York University</div>
+  <div class="landing-illustration">
+    <svg viewBox="0 0 300 300" role="img" aria-label="Illustration of a network of connected people">
+      <g fill="none" stroke="var(--global-theme-color)" stroke-width="1.5" stroke-linecap="round">
+        <line class="ln" style="animation-delay:.1s" x1="150" y1="90" x2="90" y2="140" />
+        <line class="ln" style="animation-delay:.1s" x1="150" y1="90" x2="210" y2="140" />
+        <line class="ln" style="animation-delay:.5s" x1="90" y1="140" x2="60" y2="200" />
+        <line class="ln" style="animation-delay:.5s" x1="90" y1="140" x2="130" y2="200" />
+        <line class="ln" style="animation-delay:.5s" x1="210" y1="140" x2="170" y2="200" />
+        <line class="ln" style="animation-delay:.5s" x1="210" y1="140" x2="240" y2="200" />
+        <line class="ln" style="animation-delay:.9s" x1="130" y1="200" x2="170" y2="200" />
+        <line class="ln" style="animation-delay:.9s" x1="60" y1="200" x2="95" y2="250" />
+        <line class="ln" style="animation-delay:.9s" x1="130" y1="200" x2="95" y2="250" />
+        <line class="ln" style="animation-delay:.9s" x1="130" y1="200" x2="150" y2="260" />
+        <line class="ln" style="animation-delay:.9s" x1="170" y1="200" x2="150" y2="260" />
+        <line class="ln" style="animation-delay:.9s" x1="170" y1="200" x2="205" y2="250" />
+        <line class="ln" style="animation-delay:.9s" x1="240" y1="200" x2="205" y2="250" />
+        <line class="dash" style="animation-delay:1.5s" x1="90" y1="140" x2="210" y2="140" stroke-dasharray="2 5" opacity="0" />
+        <line class="dash" style="animation-delay:1.6s" x1="60" y1="200" x2="240" y2="200" stroke-dasharray="2 5" opacity="0" />
+        <line class="dash" style="animation-delay:1.7s" x1="95" y1="250" x2="205" y2="250" stroke-dasharray="2 5" opacity="0" />
+        <path class="dash" style="animation-delay:1.8s" d="M40,270 C90,290 210,290 260,270" stroke-width="1" stroke-dasharray="1 5" opacity="0" />
 
-  <h1 class="landing-title">Human Connection Lab</h1>
-
-  <p class="landing-intro">
-    Welcome to the <strong>Human Connection Lab</strong> at York University. We study how people connect, lead, and belong in groups, organizations, and society, and how social forces bring people together or pull them apart.
-  </p>
-
-  <p class="landing-director">
-    Directed by Joey T. Cheng, Associate Professor of Psychology, York University.
-  </p>
-
-  <div class="landing-actions">
-    <a class="landing-link" href="{{ '/bio/' | relative_url }}">Lab Director Bio ↗</a>
-    <a class="landing-link" href="{{ '/lab/' | relative_url }}">Meet the lab ↗</a>
+        <circle class="nd" style="animation-delay:0s" cx="150" cy="90" r="16" />
+        <circle class="nd" style="animation-delay:.4s" cx="90" cy="140" r="14" />
+        <circle class="nd" style="animation-delay:.4s" cx="210" cy="140" r="14" />
+        <circle class="nd" style="animation-delay:.8s" cx="60" cy="200" r="12" />
+        <circle class="nd" style="animation-delay:.8s" cx="130" cy="200" r="13" />
+        <circle class="nd" style="animation-delay:.8s" cx="170" cy="200" r="13" />
+        <circle class="nd" style="animation-delay:.8s" cx="240" cy="200" r="12" />
+        <circle class="nd" style="animation-delay:1.2s" cx="95" cy="250" r="10" />
+        <circle class="nd" style="animation-delay:1.2s" cx="150" cy="260" r="11" />
+        <circle class="nd" style="animation-delay:1.2s" cx="205" cy="250" r="10" />
+      </g>
+    </svg>
   </div>
 
-</section>
+  <div>
+    <h1 class="landing-headline">What creates human connections, and what breaks them apart?</h1>
 
-<section class="landing-questions">
+    <p class="landing-intro">
+      At the <strong>Human Connection Lab</strong>, we study the tension between our need for connection and the modern conditions — busy institutions, shifting cultural narratives, digital life — that make forming connections harder.
+    </p>
 
-  <div class="questions-header">
-    <h2>Research questions</h2>
-    <a class="questions-link" href="{{ '/research/' | relative_url }}">More on our research &rarr;</a>
-  </div>
-
-  <p class="questions-intro">
-    A brief preview of the questions that organize our work.
-  </p>
-
-  <div class="questions-grid">
-
-    <div class="question-card">
-      <div class="question-icon"><i class="fas fa-map-location-dot"></i></div>
-      <div class="question-title">Why are so many of us feeling more disconnected?</div>
-      <div class="question-body">We use surveys, behavioral data, and text analysis to measure loneliness and well-being across people, places, and cultures.</div>
-    </div>
-
-    <div class="question-card">
-      <div class="question-icon"><i class="fas fa-network-wired"></i></div>
-      <div class="question-title">How do the stories we tell shape whether we feel connected?</div>
-      <div class="question-body">We study how cultural narratives about independence, self-protection, and belonging shape social life.</div>
-    </div>
-
-    <div class="question-card">
-      <div class="question-icon"><i class="fas fa-comments"></i></div>
-      <div class="question-title">Why do some voices get heard more than others?</div>
-      <div class="question-body">We study why certain people are more likely to be recognized, included, and heard in groups, and what that means for equity.</div>
-    </div>
-
-    <div class="question-card">
-      <div class="question-icon"><i class="fas fa-users"></i></div>
-      <div class="question-title">What makes someone worth following?</div>
-      <div class="question-body">We study the everyday behaviors, confidence, voice, and fairness, that shape who earns influence and trust.</div>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="landing-footer">
-
-  <div class="footer-grid">
-
-    <div>
-      <div class="footer-heading">Contact info</div>
-      <div class="footer-line">Email | <a href="mailto:chengjt@yorku.ca">chengjt@yorku.ca</a></div>
-      <div class="footer-line"><a href="{{ '/contact/' | relative_url }}">Contact page &rarr;</a></div>
-    </div>
-
-    <div>
-      <div class="footer-heading">Join the team</div>
-      <div class="footer-line">If you're interested in joining, you can find out more <a href="{{ '/contact/' | relative_url }}">here</a>.</div>
-    </div>
-
+    <a class="landing-readmore" href="{{ '/research/' | relative_url }}">More on our research &rarr;</a>
   </div>
 
 </section>
