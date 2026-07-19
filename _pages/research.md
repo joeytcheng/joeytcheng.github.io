@@ -164,7 +164,7 @@ html[data-theme="dark"] .feature-visual {
 
 <div class="research-intro">
   <p>
-    In the Human Connection Lab, we study how people connect, lead, and belong in groups, organizations, and society, asking questions like who gets recognized and why societies have become increasingly lonely, alongside the stories we tell about connection.
+    In the Human Connection Lab, we study how people connect and belong, and how they come to trust one another. We ask questions like who gets recognized, why societies have become increasingly lonely, and what stories we tell about connection.
   </p>
 
   <p>

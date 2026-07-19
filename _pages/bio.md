@@ -298,15 +298,11 @@ nav_order: 1
     </p>
 
     <p>
-      One major focus of my work is leadership and social status. I study the psychological and behavioral processes that shape influence, including confidence, voice, dominance, prestige, and fairness preferences. Much of this work asks why some people are more likely than others to be heard, recognized, and selected as leaders.
+      My work spans two threads. One examines the tensions that make collaboration work — and sometimes make it hard — the confidence, voice, dominance, prestige, and egalitarian preferences that shape who is heard, respected, and trusted to lead. The other, newer thread examines loneliness and social isolation: how disconnection varies across people, places, and cultures, and how narratives about independence and self-protection shape the value we place on connection.
     </p>
 
     <p>
-      My newer research examines loneliness and social isolation. I am interested in how social disconnection varies across people, places, and cultures, and how contemporary narratives about independence, self-protection, and withdrawal may shape the value people place on social connection.
-    </p>
-
-    <p>
-      What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new method or data analytic skill or an entirely new way of thinking about an old problem, and using what I learn to say something about how people connect, lead, and belong. I care about exploring these questions with curiosity, and about building it together with people who care as much about getting it right as I do.
+      What I love about research is the process of chasing a question I don't yet understand — picking up a new method or data analytic skill, or an entirely new way of thinking about an old problem — and using what I learn to say something about how people connect, collaborate, and belong. I care about exploring these questions, and about building this work together with people who care as much about getting it right as I do.
     </p>
 
     <div class="research-links">

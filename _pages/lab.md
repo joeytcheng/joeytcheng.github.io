@@ -255,7 +255,7 @@ nav_order: 4
 
 <div class="people-banner">
   <span class="people-banner-pill">Now hiring</span>
-  <a href="{{ '/join-us/' | relative_url }}"><span class="people-banner-link-text">Explore opportunities to join</span> ↗</a>
+  <a href="{{ '/join-us/' | relative_url }}"><span class="people-banner-link-text">Join us</span> ↗</a>
 </div>
 
 <section class="people-section">
@@ -271,23 +271,23 @@ nav_order: 4
       <div class="person-name">Joey T. Cheng</div>
 
       <div class="person-icons-inline">
-        <a href="mailto:your-email@yorku.ca" aria-label="Email">
+        <a href="mailto:chengjt@yorku.ca" aria-label="Email">
           <i class="fas fa-envelope"></i>
         </a>
 
-        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+        <a href="https://scholar.google.com/citations?user=lweBpmIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
           <i class="ai ai-google-scholar"></i>
         </a>
 
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a href="https://github.com/joeytcheng" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
 
-        <a href="https://osf.io/" target="_blank" rel="noopener noreferrer" aria-label="OSF">
+        <a href="https://osf.io/gvqfm/" target="_blank" rel="noopener noreferrer" aria-label="OSF">
           <i class="ai ai-osf"></i>
         </a>
 
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/joeytcheng/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
@@ -296,8 +296,7 @@ nav_order: 4
     <div class="person-role">Lab Director</div>
 
     <p>
-      Joey studies social behavior, leadership, status, and social connection. Her research examines how people
-      navigate groups, how leaders emerge, and why people are becoming more or less connected to one another.
+      Joey is a behavioral scientist and social psychologist studying how people navigate social connection — both the connections we seek out, and the more complicated ones shaped by power and status. Her work spans two threads: the confidence, voice, dominance, prestige, and egalitarian preferences that shape who is heard, respected, and trusted to lead; and, more recently, how and why loneliness and social disconnection vary across people, places, and cultures.
     </p>
 
   </div>
@@ -331,7 +330,7 @@ nav_order: 4
     <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
     <p>
-      Miranda studies humility, prestige, and reputation.
+      Miranda studies humility, prestige, and reputation — asking how modest, other-focused behavior shapes the way people are seen and valued within their groups. She's interested in when humility earns genuine respect and prestige, and when it goes unnoticed or gets taken advantage of. Her work approaches the lab's broader question of what makes someone worth following from a different angle than confidence or dominance.
     </p>
 
   </div>
@@ -359,7 +358,7 @@ nav_order: 4
     <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
     <p>
-      Spencer studies attitudes toward work, cultural change, social values, and temporal analysis.
+      Spencer studies how attitudes toward work have shifted alongside broader cultural change, using large-scale text and survey data to trace evolving social values over time. His work traces how narratives about ambition, career, and time itself change across decades, and what that reveals about shifting priorities. This connects to the lab's interest in how the stories a culture tells shape everyday behavior and belonging.
     </p>
 
   </div>
@@ -387,7 +386,7 @@ nav_order: 4
     <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
     <p>
-      Sophie studies conflict resolution, political apologies, and natural language processing.
+      Sophie studies conflict resolution and political apologies, using natural language processing to analyze how leaders and institutions communicate accountability after wrongdoing. Her work asks what makes an apology land as sincere rather than hollow, and how language choices shape whether trust can be repaired. This ties into the lab's broader interest in how the stories we tell shape social repair and connection.
     </p>
 
   </div>
@@ -415,7 +414,7 @@ nav_order: 4
     <div class="person-role">PhD Student, Clinical-Developmental Psychology</div>
 
     <p>
-      Adrian studies performance, voice, and confidence.
+      Adrian studies how knowledge of true ability — our own and others' — shapes who earns status in a group. He finds that revealing relative performance strengthens the link between ability and how much someone speaks, which in turn boosts peer-perceived prestige; when performance stays hidden, that link disappears. The work asks whether making competence visible can produce a more meritocratic distribution of status, rewarding real ability rather than just confidence or volume.
     </p>
 
   </div>
@@ -448,8 +447,12 @@ nav_order: 4
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-drisdelle.jpg' | relative_url }}" alt="Emily Drisdelle">
-    <div class="grid-person-name">Emily Drisdelle</div>
-    <div class="grid-person-role">MA Alumna</div>
+    <div class="grid-person-name">
+      <a href="https://www.linkedin.com/in/emilydrisdelle/" target="_blank" rel="noopener noreferrer">
+        Emily Drisdelle
+      </a>
+    </div>
+    <div class="grid-person-topic">Researcher &amp; Analyst</div>
   </div>
 
 <div class="grid-person">
@@ -459,37 +462,47 @@ nav_order: 4
       Memoona Arshad
     </a>
   </div>
-  <div class="grid-person-topic">Program Evaluation Lead, Jack.org</div>
+  <div class="grid-person-topic">Program Evaluation Lead<br>Jack.org</div>
 </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-vogt.jpg' | relative_url }}" alt="Randi Vogt">
-    <div class="grid-person-name">Randi Vogt</div>
-    <div class="grid-person-role">Graduate Alumna</div>
+    <div class="grid-person-name">
+      <a href="https://www.geisinger.edu/gchs/research/about-gchs-research/find-an-investigator/2023/03/03/14/01/randi-vogt" target="_blank" rel="noopener noreferrer">
+        Randi Vogt
+      </a>
+    </div>
+    <div class="grid-person-topic">Postdoctoral Fellow<br>Geisinger Research Institute</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-chenfx.jpg' | relative_url }}" alt="Fan Xuan Chen">
-    <div class="grid-person-name">Fan Xuan Chen</div>
-    <div class="grid-person-role">MA Alumna</div>
+    <div class="grid-person-name">
+      <a href="https://scholar.google.com/citations?user=Lr3gBXQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+        Fan Xuan Chen
+      </a>
+    </div>
+    <div class="grid-person-topic">AI Model Evaluation Lead<br>Turing.com</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-watanabe.jpg' | relative_url }}" alt="Shoko Watanabe">
-    <div class="grid-person-name">Shoko Watanabe</div>
-    <div class="grid-person-role">Graduate Alumna</div>
+    <div class="grid-person-name">
+      <a href="https://www.sed.tohoku.ac.jp/laboratory/detail---id-80.html" target="_blank" rel="noopener noreferrer">
+        Shoko Watanabe
+      </a>
+    </div>
+    <div class="grid-person-topic">Specially Appointed Assistant Professor<br>Tohoku University, Japan</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-wuyuejun.jpg' | relative_url }}" alt="Yue Jun Wu">
     <div class="grid-person-name">Yue Jun Wu</div>
-    <div class="grid-person-role">Graduate Alumna</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-liamy.jpg' | relative_url }}" alt="Amy Li">
     <div class="grid-person-name">Amy Li</div>
-    <div class="grid-person-role">Graduate Alumna</div>
   </div>
 
 </div>
@@ -505,14 +518,22 @@ nav_order: 4
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-leckelt.jpg' | relative_url }}" alt="Marius Leckelt">
-    <div class="grid-person-name">Marius Leckelt</div>
-    <div class="grid-person-role">Graduate Alumnus</div>
+    <div class="grid-person-name">
+      <a href="https://www.linkedin.com/in/mariusleckelt/" target="_blank" rel="noopener noreferrer">
+        Marius Leckelt
+      </a>
+    </div>
+    <div class="grid-person-topic">Data Scientist &amp; Machine Learning Engineer<br>Bain &amp; Company, Switzerland</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-redhead.jpg' | relative_url }}" alt="Daniel Redhead">
-    <div class="grid-person-name">Daniel Redhead</div>
-    <div class="grid-person-role">Graduate Alumnus</div>
+    <div class="grid-person-name">
+      <a href="https://www.rug.nl/staff/d.j.redhead/" target="_blank" rel="noopener noreferrer">
+        Daniel Redhead
+      </a>
+    </div>
+    <div class="grid-person-topic">Assistant Professor<br>University of Groningen, Netherlands</div>
   </div>
   
 </div>
@@ -527,44 +548,64 @@ nav_order: 4
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-aiyub.jpg' | relative_url }}" alt="Aliya Aiyub">
-    <div class="grid-person-name">Aliya Aiyub</div>
-    <div class="grid-person-role">Undergraduate Alum</div>
+    <div class="grid-person-name">
+      <a href="https://www.psychologytoday.com/ca/therapists/simcoe-county-psychotherapy-alliston-on/1796066" target="_blank" rel="noopener noreferrer">
+        Aliya Aiyub
+      </a>
+    </div>
+    <div class="grid-person-topic">Psychotherapist</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-ikram.jpg' | relative_url }}" alt="Yumna Ikram">
     <div class="grid-person-name">Yumna Ikram</div>
-    <div class="grid-person-role">Undergraduate Alum</div>
+    <div class="grid-person-topic">Registered Social Worker</div>
   </div>
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/profile-padala.jpg' | relative_url }}" alt="Student Name">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-padala.jpg' | relative_url }}" alt="Akhila Padala">
     <div class="grid-person-name">Akhila Padala</div>
-    <div class="grid-person-role">Undergraduate Alum</div>
+    <div class="grid-person-topic">Master of Social Work Student</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-wangmilton.jpg' | relative_url }}" alt="Milton Wang">
-    <div class="grid-person-name">Milton Wang</div>
-    <div class="grid-person-role">Undergraduate Alum</div>
+    <div class="grid-person-name">
+      <a href="https://www.linkedin.com/in/milton-wang-767188124/" target="_blank" rel="noopener noreferrer">
+        Milton Wang
+      </a>
+    </div>
+    <div class="grid-person-topic">HR Specialist<br>U.S. Department of Veterans Affairs</div>
   </div>
 
   <div class="grid-person">
-    <img class="grid-person-photo" src="{{ '/assets/img/profile-helm.jpg' | relative_url }}" alt="Student Name">
-    <div class="grid-person-name">Eric Helm</div>
-    <div class="grid-person-role">Undergraduate Alum</div>
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-helm.jpg' | relative_url }}" alt="Eric Helm">
+    <div class="grid-person-name">
+      <a href="https://www.linkedin.com/in/eric-helm-844562125/" target="_blank" rel="noopener noreferrer">
+        Eric Helm
+      </a>
+    </div>
+    <div class="grid-person-topic">Data Scientist<br>Google</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-clifford.jpg' | relative_url }}" alt="Florence Clifford">
-    <div class="grid-person-name">Florence Clifford</div>
-    <div class="grid-person-role">Undergraduate Alum</div>
+    <div class="grid-person-name">
+      <a href="https://www.linkedin.com/in/florence-clifford/" target="_blank" rel="noopener noreferrer">
+        Florence Clifford
+      </a>
+    </div>
+    <div class="grid-person-topic">Business Systems and Insights Lead<br>Watson Board Advisors</div>
   </div>
 
   <div class="grid-person">
     <img class="grid-person-photo" src="{{ '/assets/img/profile-zhangyiwei.jpg' | relative_url }}" alt="Yiwei Zhang">
-    <div class="grid-person-name">Yiwei Zhang</div>
-    <div class="grid-person-role">Undergraduate Alum</div>
+    <div class="grid-person-name">
+      <a href="https://www.linkedin.com/in/yiwei-zhang-2701687a/" target="_blank" rel="noopener noreferrer">
+        Yiwei Zhang
+      </a>
+    </div>
+    <div class="grid-person-topic">Data Scientist<br>McKinsey &amp; Company</div>
   </div>
 
 </div>

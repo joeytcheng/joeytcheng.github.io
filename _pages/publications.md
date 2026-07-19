@@ -792,9 +792,37 @@ nav_order: 3
   html[data-theme="dark"] .pub-cite-box {
     background: #3A2732;
   }
+
+  /* =========================================================
+     CLOSING LINKS BAR
+     ========================================================= */
+
+  .publications-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  .publications-links a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
+  .publications-links .link-underline-text {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    color: var(--global-theme-color);
+  }
+
+  .publications-links .back-to-top {
+    margin-left: auto;
+  }
 </style>
 
-<div class="publications-page">
+<div class="publications-page" id="top">
 
 <div class="publications-kicker">Human Connection Lab</div>
 
@@ -837,14 +865,12 @@ nav_order: 3
 
 </div>
 
-<div class="reading-list-section">
-
-## Books that I am reading, have read, or will read
-
-- *The Psychology of Social Status*
-- *Gender*
-- *Current Opinion in Psychology*
-
+<div class="publications-links">
+  <a href="{{ '/research/' | relative_url }}"><span class="link-underline-text">Research overview</span> ↗</a>
+  <a href="{{ '/bio/' | relative_url }}"><span class="link-underline-text">Lab director bio</span> ↗</a>
+  <a href="{{ '/lab/' | relative_url }}"><span class="link-underline-text">Meet the lab</span> ↗</a>
+  <a href="{{ '/contact/' | relative_url }}"><span class="link-underline-text">Contact us</span> ↗</a>
+  <a href="#top" class="back-to-top"><span class="link-underline-text">Back to top</span> ↑</a>
 </div>
 
 </div>
@@ -1330,7 +1356,53 @@ nav_order: 3
       }, 1500);
     }
 
-    function copyPublicationText(text, buttonEl) {
+    function copyPublicationText(text, buttonEl, html) {
+      /*
+       * navigator.clipboard.writeText() only ever puts plain
+       * text on the clipboard, so a pasted APA citation always
+       * lost its italics even though the on-screen box showed
+       * them correctly — copying by hand (select + Ctrl/Cmd-C)
+       * worked because that's a native browser copy, which
+       * carries the rendered HTML along with it. When an HTML
+       * version is supplied, write both a text/plain and a
+       * text/html clipboard entry via the Clipboard API so a
+       * paste into Word/Docs/Gmail etc. keeps the italics, while
+       * a paste into a plain-text field still just gets text.
+       */
+
+      if (
+        html &&
+        navigator.clipboard &&
+        navigator.clipboard.write &&
+        typeof ClipboardItem !== "undefined"
+      ) {
+        const item = new ClipboardItem({
+          "text/plain": new Blob(
+            [text],
+            { type: "text/plain" }
+          ),
+          "text/html": new Blob(
+            [html],
+            { type: "text/html" }
+          )
+        });
+
+        navigator.clipboard
+          .write([item])
+          .then(function () {
+            flashCopied(buttonEl);
+          })
+          .catch(function () {
+            copyPlainText(text, buttonEl);
+          });
+
+        return;
+      }
+
+      copyPlainText(text, buttonEl);
+    }
+
+    function copyPlainText(text, buttonEl) {
       if (
         navigator.clipboard &&
         navigator.clipboard.writeText
@@ -2333,7 +2405,8 @@ nav_order: 3
 
               copyPublicationText(
                 apaCitation.text,
-                apaCopyBtn
+                apaCopyBtn,
+                apaCitation.html
               );
             }
           );
