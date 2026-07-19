@@ -19,6 +19,27 @@ html[data-theme="dark"] {
   --icon-muted-color: #B7AEC2;
 }
 
+/*
+ * DARK-MODE-ONLY FIXES
+ * The rules below only apply under html[data-theme="dark"] and
+ * do not alter any light-mode color. They exist because a few
+ * light-mode colors elsewhere in this file are hardcoded hex
+ * values rather than the --global-* variables above, so they
+ * don't automatically adapt when dark mode is toggled on.
+ */
+
+html[data-theme="dark"] .navbar-brand-primary {
+  color: var(--global-text-color) !important;
+}
+
+html[data-theme="dark"] .navbar-brand-secondary {
+  color: var(--global-text-color-light) !important;
+}
+
+html[data-theme="dark"] .site-footer-heading {
+  color: #F3EAD9;
+}
+
 .research-title,
 .theme-text h2,
 .feature-text h2,
@@ -28,6 +49,36 @@ html[data-theme="dark"] {
 .contact-item-title {
   font-family: Georgia, 'Times New Roman', serif;
   font-weight: 700 !important;
+}
+
+.navbar-brand {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-weight: 700 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.3em;
+}
+
+.navbar-brand-primary {
+  color: #3D1F33 !important;
+  opacity: 1 !important;
+}
+
+.title-rule {
+  width: 48px;
+  height: 3px;
+  background: var(--global-theme-color);
+  margin: 0.75rem 0 1.25rem;
+  border-radius: 2px;
+}
+
+.navbar-brand-secondary {
+  color: #6B3A5D !important;
+  opacity: 1 !important;
+}
+
+.navbar {
+  border-bottom: 1px solid #C9B896 !important;
 }
 
 .site-footer {
@@ -46,28 +97,46 @@ html[data-theme="dark"] {
 }
 
 .site-footer-heading {
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+  color: var(--global-bg-color);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.9rem;
 }
 
 .site-footer-text {
   color: #ffffff;
   font-size: 0.8rem;
-  line-height: 1.8;
+  line-height: 1.55;
   opacity: 0.9;
 }
 
 .site-footer-link {
   display: block;
   font-size: 0.8rem;
-  margin-top: 0.75rem;
+  margin-top: 0.6rem;
+}
+
+.site-footer-text + .site-footer-link {
+  margin-top: 0.9rem;
+}
+
+.site-footer-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
 }
 
 .site-footer a {
   color: #ffffff !important;
+  text-decoration: none;
+}
+
+.site-footer-link-text {
   text-decoration: underline;
+  color: #ffffff !important;
 }
 
 .site-footer-bottom {
@@ -100,7 +169,10 @@ html[data-theme="dark"] {
         Toronto, Ontario, Canada
       </div>
       <div class="site-footer-link">
-        <a href="{{ '/lab/' | relative_url }}">Meet lab members &rarr;</a>
+        <a href="{{ '/lab/' | relative_url }}"><span class="site-footer-link-text">Meet lab members</span> ↗</a>
+      </div>
+      <div class="site-footer-link">
+        <a href="{{ '/publications/' | relative_url }}"><span class="site-footer-link-text">View publications</span> ↗</a>
       </div>
     </div>
 
@@ -109,29 +181,35 @@ html[data-theme="dark"] {
       <div class="site-footer-text">
         Joey T. Cheng<br>
         Associate Professor<br>
-        York Research Chair in Leadership, Collaboration, and Teams
+        York Research Chair in<br>Leadership, Collaboration, and Teams
       </div>
       <div class="site-footer-link">
-        <a href="mailto:chengjt@yorku.ca">Email Joey</a>
+        <a href="mailto:chengjt@yorku.ca" class="has-icon">
+          <span class="site-footer-link-text">Email Joey</span>
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
       </div>
       <div class="site-footer-link">
-        <a href="{{ '/bio/' | relative_url }}">More about Joey &rarr;</a>
+        <a href="{{ '/bio/' | relative_url }}"><span class="site-footer-link-text">More about Joey</span> ↗</a>
       </div>
       <div class="site-footer-link">
-        <a href="#">York faculty website &rarr;</a>
+        <a href="#"><span class="site-footer-link-text">York faculty website</span> ↗</a>
       </div>
     </div>
 
     <div>
-      <div class="site-footer-heading">Contact us</div>
+      <div class="site-footer-heading">Join us</div>
       <div class="site-footer-text">
-        Interested in our work or joining the lab? Reach out any time.
+        Interested in our work or joining the lab?<br>Reach out any time.
       </div>
       <div class="site-footer-link">
-        <a href="{{ '/contact/' | relative_url }}">Contact us &rarr;</a>
+        <a href="{{ '/join-us/' | relative_url }}"><span class="site-footer-link-text">Explore opportunities to join</span> ↗</a>
       </div>
       <div class="site-footer-link">
-        <a href="{{ '/contact/#faq' | relative_url }}">Lab FAQ &rarr;</a>
+        <a href="{{ '/join-us/#faq' | relative_url }}"><span class="site-footer-link-text">Lab FAQ</span> ↗</a>
+      </div>
+      <div class="site-footer-link">
+        <a href="{{ '/contact/' | relative_url }}"><span class="site-footer-link-text">Contact us</span> ↗</a>
       </div>
     </div>
 
@@ -142,3 +220,24 @@ html[data-theme="dark"] {
   </div>
 
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var brand = document.querySelector(".navbar-brand");
+
+  if (!brand) {
+    var navbarNav = document.getElementById("navbarNav");
+    var container = navbarNav ? navbarNav.parentElement : null;
+    if (container) {
+      brand = document.createElement("a");
+      brand.className = "navbar-brand title font-weight-lighter";
+      brand.href = "{{ '/' | relative_url }}";
+      container.insertBefore(brand, container.firstChild);
+    }
+  }
+
+  if (brand && !brand.querySelector(".navbar-brand-primary")) {
+    brand.innerHTML = '<span class="navbar-brand-primary">Human Connection</span><span class="navbar-brand-secondary">Lab</span>';
+  }
+});
+</script>

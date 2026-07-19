@@ -4,10 +4,21 @@ permalink: /lab/
 title: The Team
 description: Meet the team.
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 <style>
+/*
+ * Suppress the theme's own auto-rendered page title/
+ * description above the white card — this page already has
+ * its own kicker + title inside the card, so showing both
+ * duplicated "The Team" in two different type styles.
+ */
+
+.post-header {
+  display: none;
+}
+
 .people-page {
   max-width: 900px;
   margin: 2rem auto;
@@ -23,34 +34,53 @@ nav_order: 3
 }
 
 .people-kicker {
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-size: 0.75rem;
+  font-weight: 500;
   color: var(--global-theme-color);
   margin-bottom: 0.5rem;
 }
 
 .people-title {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
 .people-banner {
   background: var(--global-theme-color);
-  color: var(--global-bg-color);
+  color: #ffffff;
   text-align: center;
   padding: 0.75rem;
   margin-bottom: 2rem;
   font-size: 0.95rem;
 }
 
+.people-banner-pill {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+}
+
 .people-banner a {
-  color: var(--global-bg-color);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.people-banner-link-text {
   text-decoration: underline;
-  font-weight: 600;
+  color: #ffffff !important;
 }
 
 .people-section {
@@ -221,9 +251,11 @@ nav_order: 3
 <div class="people-kicker">Human Connection Lab</div>
 
 <h1 class="people-title">The Team</h1>
+<div class="title-rule"></div>
 
 <div class="people-banner">
-  We are growing! To learn more, please <a href="{{ '/contact/' | relative_url }}">contact us</a>.
+  <span class="people-banner-pill">Now hiring</span>
+  <a href="{{ '/join-us/' | relative_url }}"><span class="people-banner-link-text">Explore opportunities to join</span> ↗</a>
 </div>
 
 <section class="people-section">
@@ -241,10 +273,6 @@ nav_order: 3
       <div class="person-icons-inline">
         <a href="mailto:your-email@yorku.ca" aria-label="Email">
           <i class="fas fa-envelope"></i>
-        </a>
-
-        <a href="{{ '/cv/' | relative_url }}" aria-label="CV">
-          <i class="ai ai-cv"></i>
         </a>
 
         <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">

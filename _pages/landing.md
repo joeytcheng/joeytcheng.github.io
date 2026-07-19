@@ -6,20 +6,29 @@ nav: false
 ---
 
 <style>
+/*
+ * The page title is intentionally blank on this page, so the
+ * theme's auto-rendered header wrapper should already be empty
+ * — hidden defensively anyway, for consistency with the rest
+ * of the site and in case it renders any residual spacing.
+ */
+
+.post-header {
+  display: none;
+}
+
 .landing-page {
   max-width: 1350px;
   margin: 0 auto;
 }
 
 .landing-hero {
-  background: var(--global-card-bg-color);
-  border-radius: 12px;
-  padding: 2.5rem;
+  padding: 4rem 1rem 5rem;
   display: grid;
   grid-template-columns: 2.6fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
-  margin: 2.5rem 0 3rem;
+  margin: 1rem 0 2rem;
 }
 
 .landing-illustration svg {
@@ -30,30 +39,42 @@ nav: false
 
 .landing-headline {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 2rem;
-  line-height: 1.3;
+  font-size: 2.6rem;
+  line-height: 1.25;
   font-weight: 700;
   color: var(--global-text-color);
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.landing-headline-accent {
+  color: var(--global-theme-color);
 }
 
 .landing-intro {
   font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
+  margin-bottom: 1.75rem;
+}
+
+.landing-readmore-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .landing-readmore {
   display: inline-block;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.06em;
   color: var(--global-theme-color);
   text-decoration: none;
 }
 
-.landing-readmore:hover {
+.landing-readmore .link-underline-text {
   text-decoration: underline;
+  color: var(--global-theme-color);
 }
 
 .ln {
@@ -86,6 +107,23 @@ nav: false
   to { opacity: 0.5; }
 }
 
+.landing-text-reveal {
+  opacity: 0;
+  animation: landing-text-in 0.9s ease-out forwards;
+  animation-delay: 2.6s;
+}
+
+@keyframes landing-text-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 800px) {
   .landing-hero {
     grid-template-columns: 1fr;
@@ -93,7 +131,7 @@ nav: false
   }
 
   .landing-headline {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 </style>
@@ -103,7 +141,7 @@ nav: false
 <section class="landing-hero">
 
   <div class="landing-illustration">
-    <svg viewBox="0 0 300 300" role="img" aria-label="Illustration of a network of connected people">
+    <svg viewBox="20 65 260 240" role="img" aria-label="Illustration of a network of connected people">
       <g fill="none" stroke="var(--global-theme-color)" stroke-width="1.5" stroke-linecap="round">
         <line class="ln" style="animation-delay:.1s" x1="150" y1="90" x2="90" y2="140" />
         <line class="ln" style="animation-delay:.1s" x1="150" y1="90" x2="210" y2="140" />
@@ -137,14 +175,17 @@ nav: false
     </svg>
   </div>
 
-  <div>
-    <h1 class="landing-headline">What creates human connections, and what breaks them apart?</h1>
+  <div class="landing-text-reveal">
+    <h1 class="landing-headline">What creates <span class="landing-headline-accent">human connections</span>, and what breaks them apart?</h1>
 
     <p class="landing-intro">
       At the <strong>Human Connection Lab</strong>, we study the tension between our need for connection and the modern conditions — busy institutions, shifting cultural narratives, digital life — that make forming connections harder.
     </p>
 
-    <a class="landing-readmore" href="{{ '/research/' | relative_url }}">More on our research &rarr;</a>
+    <div class="landing-readmore-group">
+      <a class="landing-readmore" href="{{ '/research/' | relative_url }}"><span class="link-underline-text">Our research</span> ↗</a>
+      <a class="landing-readmore" href="{{ '/bio/' | relative_url }}"><span class="link-underline-text">Lab director Joey&nbsp;Cheng</span> ↗</a>
+    </div>
   </div>
 
 </section>

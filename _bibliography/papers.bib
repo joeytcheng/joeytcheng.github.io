@@ -11,12 +11,53 @@
 %    abstract = {A concise, plain-language article overview.},
 %    pdf      = {filename.pdf},
 %    html     = {https://doi.org/...},
-%    code     = {https://github.com/...},
+%    code     = {/assets/pdf/filename-supp.pdf},
 %    website  = {https://osf.io/...},
 %
-%    In the publications-page script, "website" is displayed as "Data".
+%    In the publications-page script, "website" is displayed as "Data",
+%    and "code" is repurposed to display as "Supplement" (supplemental
+%    materials), since this bibliography has no software/code entries.
+%    Note: unlike "pdf", the "code" field is NOT auto-prefixed with
+%    /assets/pdf/ by the theme, so local files need the full path.
 %
+% 4. bibtex_show = {true} is set on every entry below so the "Cite" button and
+%    its BibTeX/APA popup render for every publication.
+%
+% 5. The "Highlights" popup renders the abstract field as a bulleted list.
+%    Separate each bullet with " || " (space, two pipes, space); the first
+%    bullet should be a rhetorical-question hook. Entries without " || " fall
+%    back to an automatic sentence-boundary split, so this is optional but
+%    recommended for the best-controlled results.
+%
+
+@article{LiChengBensonInPress,
+  bibtex_show = {true},
+  author  = {Li, Z and Cheng, JT and Benson, AJ},
+  title   = {How leaders shape well-being and retention: Dominant leaders undermine and prestigious leaders enhance follower psychological need satisfaction},
+  journal = {Journal of Experimental Psychology: General},
+  abstract = {What's it actually like to work under a boss who rules by fear versus one who earns respect? || Across three studies, dominant leaders left followers feeling less competent, connected, and in control. || Prestigious leaders boosted all three of those same psychological needs instead. || Those feelings directly predicted whether followers wanted to quit. || A leader's style doesn't just decide who's in charge — it decides whether people want to stick around.},
+  year    = {in press}
+}
+@article{kuper2026culturaldifferencesinthepers,
+  bibtex_show = {true},
+  pdf = {kuper2026culturaldifferencesinthepers.pdf},
+  code = {/assets/pdf/kuper2026culturaldifferencesinthepers-supp.pdf},
+  title = {Cultural differences in the Personality Triad: The interplay of personality traits, situation characteristics, and behavioral states around the world},
+  author = {Kuper, N and Gardiner, G and Baranski, E and Funder, DC and Rauthmann, JF and Yeung, VWL and {International Situations Project}},
+  journal = {Journal of Personality and Social Psychology},
+  volume = {130},
+  number = {5},
+  pages = {1002--1046},
+  abstract = {Does your personality show up the same way at a party as it does in a dull meeting — and does that depend on which country you're in? Using data from more than 15,000 participants across 61 countries, this research traces how personality traits, the situations people encounter, and their moment-to-moment behavior connect to form what the authors call the Personality Triad, then tests whether that cycle works the same way worldwide. The results show the basic links between trait, situation, and behavior hold up across cultures, even as their strength shifts from place to place.},
+  doi = {10.1037/pspp0000581},
+  html = {https://doi.org/10.1037/pspp0000581},
+  year = {2026}
+}
+
 @article{chmielowiceszymanski2026howdifferentformsofsocialran,
+  bibtex_show = {true},
+  pdf = {chmielowiceszymanski2026howdifferentformsofsocialran.pdf},
+  code = {/assets/pdf/chmielowiceszymanski2026howdifferentformsofsocialran-supp.pdf},
   title = {How different forms of social rank are expressed in social behavior: A study of emerging adults in cooperative and competitive contexts},
   author = {Chmielowice-Szymanski, NS and Cheng, JT and Millett, MA and Cillessen, AHN and others},
   journal = {International Journal of Behavioral Development},
@@ -28,9 +69,12 @@
 }
 
 @article{laustsen2025crossculturalevidencethatint,
+  bibtex_show = {true},
+  pdf = {laustsen2025crossculturalevidencethatint.pdf},
+  code = {/assets/pdf/laustsen2025crossculturalevidencethatint-supp.pdf},
   title = {Cross-cultural evidence that intergroup conflict heightens preferences for dominant leaders: A 25-country study},
   author = {Laustsen, L and Sheng, X and Ahmad, MG and Al-Shawaf, L and Banai, B and Banai, IP and others},
-  journal = {Evolution and human behavior},
+  journal = {Evolution and Human Behavior},
   volume = {46},
   number = {3},
   pages = {106674},
@@ -41,6 +85,8 @@
 }
 
 @article{li2024powermotivespersonalitycorre,
+  bibtex_show = {true},
+  pdf = {li2024powermotivespersonalitycorre.pdf},
   title = {Power motives, personality correlates, and leadership outcomes: A person-centered approach},
   author = {Li, Z and Lynch, J and Sun, T and Rizkyana, Q and Cheng, JT and Benson, AJ},
   journal = {Journal of Personality},
@@ -54,6 +100,8 @@
 }
 
 @article{cheng2024prestigebasedleadershipoffer,
+  bibtex_show = {true},
+  pdf = {cheng2024prestigebasedleadershipoffer.pdf},
   title = {Prestige-based leadership offers women leaders an advantage and reduces gender inequality in leadership},
   author = {Cheng, JT},
   journal = {Evolution and Human Behavior},
@@ -66,7 +114,36 @@
   year = {2024}
 }
 
+@article{baranski2024personalityandconception,
+  bibtex_show = {true},
+  pdf = {baranski2024personalityandconception.pdf},
+  title = {Personality and conceptions of religiosity across the world's religions},
+  author = {Baranski, E and Gardiner, G and Shaman, N and Shagan, J and Lee, D and {International Situations Project} and Funder, DC and others},
+  journal = {Journal of Research in Personality},
+  volume = {110},
+  pages = {104496},
+  abstract = {Does religiosity look the same across faiths and cultures? Drawing on data from seven religious affiliations and 61 countries, this project examines how personality traits relate to two different conceptions of religiosity, finding consistent links to agreeableness, conscientiousness, and fairness alongside notable cultural variation. The findings show that some parts of the personality-religion connection travel well across the globe, while others depend heavily on context.},
+  doi = {10.1016/j.jrp.2024.104496},
+  html = {https://doi.org/10.1016/j.jrp.2024.104496},
+  year = {2024}
+}
+
+@incollection{cheng2023dominanceandprestigeinlead,
+  bibtex_show = {true},
+  pdf = {cheng2023dominanceandprestigeinlead.pdf},
+  title = {Dominance and prestige in leadership},
+  author = {Cheng, JT},
+  booktitle = {The SAGE Encyclopedia of Leadership Studies},
+  editor = {Goethals, GR and Allison, ST and Sorenson, GJ},
+  publisher = {SAGE Publications},
+  abstract = {Why do some leaders inspire admiration while others rule through fear? This encyclopedia entry summarizes the dual strategies of dominance and prestige as distinct routes to leadership, drawing together evidence on how each shapes influence, followers' emotions, and the long-term stability of rank. The piece offers a concise reference point for understanding the two faces of leadership.},
+  html = {https://sk.sagepub.com/ency/edvol/the-sage-encyclopedia-of-leadership-studies/chpt/dominance-prestige},
+  year = {2023}
+}
+
 @article{cheng2023sexandgendereffectsonpowerst,
+  bibtex_show = {true},
+  pdf = {cheng2023sexandgendereffectsonpowerst.pdf},
   title = {Sex and gender effects on power, status, dominance, and leadership--an interdisciplinary look at human and other mammalian societies},
   author = {Cheng, JT and Hemelrijk, CK and Hentschel, T and Huchard, E and Kappeler, PM and others},
   journal = {Frontiers in Ecology and Evolution},
@@ -79,6 +156,9 @@
 }
 
 @article{cheng2023eyegazeandvisualattentionasa,
+  bibtex_show = {true},
+  pdf = {cheng2023eyegazeandvisualattentionasa.pdf},
+  code = {/assets/pdf/cheng2023eyegazeandvisualattentionasa-supp.pdf},
   title = {Eye gaze and visual attention as a window into leadership and followership: A review of empirical insights and future directions},
   author = {Cheng, JT and Gerpott, FH and Benson, AJ and Bucker, B and Foulsham, T and Lansu, TAM and others},
   journal = {The Leadership Quarterly},
@@ -92,31 +172,38 @@
 }
 
 @article{forby2023readingtheroom,
+  bibtex_show = {true},
+  pdf = {forby2023readingtheroom.pdf},
   title = {Reading the room: Autistic traits, gaze behaviour, and the ability to infer social relationships},
   author = {Forby, L and Anderson, NC and Cheng, JT and Foulsham, T and Karstadt, B and Dawson, J and others},
-  journal = {Plos one},
+  journal = {PLOS ONE},
   volume = {18},
   number = {3},
   pages = {e0282310},
-  abstract = {Can people tell who is connected to whom just by watching where others look? The research explores how autistic traits and gaze behaviour shape the ability to infer social relationships from subtle interaction cues. The findings show that attention is social: our eyes quietly track who matters, who speaks, and who seems to lead.},
+  abstract = {Can people tell who is connected to whom just by watching where others look? || The study examined how autistic traits shape gaze behaviour during social interaction. || Participants inferred relationships from subtle, fleeting visual cues alone. || Attention turned out to be deeply social — eyes quietly track who matters, who speaks, and who leads. || The findings suggest gaze itself is a hidden channel for reading group dynamics.},
   doi = {10.1371/journal.pone.0282310},
   html = {https://doi.org/10.1371/journal.pone.0282310},
   year = {2023}
 }
 
 @article{gardiner2023theeconomicwellbeingofnation,
+  bibtex_show = {true},
+  pdf = {gardiner2023theeconomicwellbeingofnation.pdf},
   title = {The economic well-being of nations is associated with positive daily situational experiences},
   author = {Gardiner, G and Lee, DI and Baranski, E and Funder, DC and Beramendi, M and Bastian, B and others},
   journal = {Current Research in Ecological and Social Psychology},
   volume = {4},
   pages = {100088},
-  abstract = {Does living in a wealthier country change what everyday life actually feels like? Across nations, greater economic well-being is linked to more positive everyday situations, suggesting that national wealth can influence the texture of daily life itself. The project highlights what people share across cultures while also showing how national context shapes everyday experience.},
+  abstract = {Does living in a wealthier country change what everyday life actually feels like? || Across nations, greater economic well-being was linked to more positive everyday situations. || The effect held even after accounting for individual and cultural differences. || National wealth seems to shape the texture of daily life itself, not just its opportunities. || The project also highlights what people share across cultures, even as context shapes the details.},
   doi = {10.1016/j.cresp.2023.100088},
   html = {https://doi.org/10.1016/j.cresp.2023.100088},
   year = {2023}
 }
 
 @article{cheng2022whentoughnessbegetsrespect,
+  bibtex_show = {true},
+  pdf = {cheng2022whentoughnessbegetsrespect.pdf},
+  code = {/assets/pdf/cheng2022whentoughnessbegetsrespect-supp.pdf},
   title = {When Toughness Begets Respect: Dominant Individuals Gain Prestige and Leadership By Facilitating Intragroup Conflict Resolution},
   author = {Cheng, JT and Dhaliwal, NA and Too, MA},
   journal = {Adaptive Human Behavior and Physiology},
@@ -130,6 +217,9 @@
 }
 
 @article{mcclanahan2022twowaystostayatthetop,
+  bibtex_show = {true},
+  pdf = {mcclanahan2022twowaystostayatthetop.pdf},
+  code = {/assets/pdf/mcclanahan2022twowaystostayatthetop-supp.pdf},
   title = {Two ways to stay at the top: Prestige and dominance are both viable strategies for gaining and maintaining social rank over time},
   author = {McClanahan, KJ and Maner, JK and Cheng, JT},
   journal = {Personality and Social Psychology Bulletin},
@@ -143,9 +233,12 @@
 }
 
 @article{chen2022thevigilanteidentityandorgan,
+  bibtex_show = {true},
+  pdf = {chen2022thevigilanteidentityandorgan.pdf},
+  code = {/assets/pdf/chen2022thevigilanteidentityandorgan-supp.pdf},
   title = {The vigilante identity and organizations},
   author = {Chen, FX and Graso, M and Aquino, K and Lin, L and Cheng, JT and DeCelles, K and Vadera, AK},
-  journal = {Organizational behavior and human decision processes},
+  journal = {Organizational Behavior and Human Decision Processes},
   volume = {170},
   pages = {104136},
   abstract = {Why do some employees see themselves as justified rule-enforcers who act outside formal authority? This article develops the idea of a vigilante identity and explains how it can shape behaviour, conflict, and control inside organizations. The idea helps explain why some people bypass formal authority and come to see rule-breaking as morally justified.},
@@ -155,6 +248,9 @@
 }
 
 @misc{zeng2022dominanceinhumans,
+  bibtex_show = {true},
+  pdf = {zeng2022dominanceinhumans.pdf},
+  code = {/assets/pdf/zeng2022dominanceinhumans-supp.pdf},
   title = {Dominance in humans},
   author = {Zeng, TC and Cheng, JT and Henrich, J},
   howpublished = {Philosophical Transactions of the Royal Society B: Biological Sciences 377 …},
@@ -165,9 +261,12 @@
 }
 
 @article{chen2021harshbutexpedient,
+  bibtex_show = {true},
+  pdf = {chen2021harshbutexpedient.pdf},
+  code = {/assets/pdf/chen2021harshbutexpedient-supp.pdf},
   title = {Harsh but expedient: dominant leaders increase group cooperation via threat of punishment},
   author = {Chen, FX and Zhang, X and Laustsen, L and Cheng, JT},
-  journal = {Psychological science},
+  journal = {Psychological Science},
   volume = {32},
   number = {12},
   pages = {2005--2022},
@@ -178,6 +277,9 @@
 }
 
 @article{cheng2021dominanceisnecessarytoexplai,
+  bibtex_show = {true},
+  pdf = {cheng2021dominanceisnecessarytoexplai.pdf},
+  code = {/assets/pdf/cheng2021dominanceisnecessarytoexplai-supp.pdf},
   title = {Dominance is necessary to explain human status hierarchies},
   author = {Cheng, JT and Tracy, JL and Henrich, J},
   journal = {Proceedings of the National Academy of Sciences},
@@ -190,20 +292,12 @@
   year = {2021}
 }
 
-@misc{cheng2021dominanceisnecessarytoexplai2,
-  title = {Dominance is necessary to explain human status hierarchies [exposition of three concerns]},
-  author = {Cheng, J and Tracy, J and Henrich, J},
-  howpublished = {OSF},
-  abstract = {Why is dominance so often left out of explanations of human hierarchy? It clarifies why coercive influence should not be collapsed into prestige and why both pathways are needed to explain standing in a group. The work sheds light on why fear, toughness, and the capacity to impose costs remain powerful forces in human groups.},
-  doi = {10.1073/pnas.2103870118},
-  html = {https://doi.org/10.1073/pnas.2103870118},
-  year = {2021}
-}
-
 @article{baranski2021internationaloptimism,
+  bibtex_show = {true},
+  pdf = {baranski2021internationaloptimism.pdf},
   title = {International optimism: Correlates and consequences of dispositional optimism across 61 countries},
   author = {Baranski, E and Sweeny, K and Gardiner, G and {International Situations Project} and others},
-  journal = {Journal of personality},
+  journal = {Journal of Personality},
   volume = {89},
   number = {2},
   pages = {288--304},
@@ -213,17 +307,24 @@
   year = {2021}
 }
 
-@misc{cheng2021dominanceisnecessarytoexplai3,
-  title = {Dominance is necessary to explain human status hierarchies-Extended online version and supplemental},
-  author = {Cheng, J and Tracy, J and Henrich, J},
-  howpublished = {OSF},
-  abstract = {What gets missed when human status is explained only through admiration and respect? The work sheds light on why fear, toughness, and the capacity to impose costs remain powerful forces in human groups.},
-  doi = {10.1073/pnas.2103870118},
-  html = {https://doi.org/10.1073/pnas.2103870118},
+@article{baranski2021whointheworldistrying,
+  bibtex_show = {true},
+  pdf = {baranski2021whointheworldistrying.pdf},
+  title = {Who in the world is trying to change their personality traits? Volitional personality change among college students in six continents},
+  author = {Baranski, E and Sweeny, K and Gardiner, G and Funder, DC and others},
+  journal = {Journal of Personality and Social Psychology},
+  volume = {121},
+  number = {5},
+  pages = {1140--1156},
+  abstract = {How many people, across how many cultures, are actively trying to become a different kind of person? Drawing on more than 13,000 college students across 56 countries, this project finds that most people are trying to change something about their personality, most often toward greater emotional stability, conscientiousness, or extraversion. The findings reveal both a near-universal desire for self-change and the specific traits people most want to develop.},
+  doi = {10.1037/pspp0000389},
+  html = {https://doi.org/10.1037/pspp0000389},
   year = {2021}
 }
 
 @article{redhead2021takingchargeandsteppingin,
+  bibtex_show = {true},
+  pdf = {redhead2021takingchargeandsteppingin.pdf},
   title = {Taking charge and stepping in: Individuals who punish are rewarded with prestige and dominance},
   author = {Redhead, D and Dhaliwal, N and Cheng, JT},
   journal = {Social and Personality Psychology Compass},
@@ -237,9 +338,12 @@
 }
 
 @article{aung2021lowfundamentalandformantfreq,
+  bibtex_show = {true},
+  pdf = {aung2021lowfundamentalandformantfreq.pdf},
+  code = {/assets/pdf/aung2021lowfundamentalandformantfreq-supp.pdf},
   title = {Low fundamental and formant frequencies predict fighting ability among male mixed martial arts fighters},
   author = {Aung, T and Goetz, S and Adams, J and McKenna, C and Hess, C and Roytman, S and Cheng, JT and others},
-  journal = {Scientific reports},
+  journal = {Scientific Reports},
   volume = {11},
   number = {1},
   pages = {1--10},
@@ -250,6 +354,8 @@
 }
 
 @incollection{redhead2021statuscompetitionandpeerrela,
+  bibtex_show = {true},
+  pdf = {redhead2021statuscompetitionandpeerrela.pdf},
   title = {Status Competition and Peer Relationships in Childhood},
   author = {Redhead, D and Cheng, JT and O'Gorman, R},
   booktitle = {Encyclopedia of Evolutionary Psychological Science},
@@ -261,30 +367,25 @@
 }
 
 @incollection{redhead2021individualsthatimposecosts,
+  bibtex_show = {true},
+  pdf = {redhead2021individualsthatimposecosts.pdf},
   title = {Individuals that Impose Costs},
   author = {Redhead, D and Cheng, JT and O'Gorman, R},
   booktitle = {Encyclopedia of Evolutionary Psychological Science},
+  publisher = {Springer},
+  address = {Cham},
   pages = {4084--4089},
+  isbn = {978-3-319-19649-7},
   abstract = {Why do some people command deference even when others do not particularly like them? The chapter shows how the capacity to impose costs contributes to dominance, deterrence, and rank within social groups. The work turns an everyday social puzzle into a testable scientific question with implications for how people live and relate to one another.},
   doi = {10.1007/978-3-319-19650-3_3572},
   html = {https://doi.org/10.1007/978-3-319-19650-3_3572},
   year = {2021}
 }
 
-@inproceedings{anismanrazin2021managingvoicesforthegreaterg,
-  title = {Managing Voices for the Greater Good: Insights on the Risks and Consequences of Speaking Up},
-  author = {Anisman Razin, M and Aquino, K and Cheng, J and Hussain, I and Morse, L and Ok, E and others},
-  booktitle = {Academy of Management Proceedings},
-  volume = {2021},
-  number = {1},
-  pages = {15631},
-  abstract = {Why can speaking up be both good for a group and risky for the person who does it? This work examines when voice is rewarded, when it backfires, and how organizations can better manage dissent in ways that serve the collective good. The study suggests that subtle features of speech can shape who gets noticed, followed, and granted influence.},
-  doi = {10.5465/AMBPP.2021.15631abstract},
-  html = {https://doi.org/10.5465/AMBPP.2021.15631abstract},
-  year = {2021}
-}
-
 @article{cheng2021thesocialtransmissionofoverc,
+  bibtex_show = {true},
+  pdf = {cheng2021thesocialtransmissionofoverc.pdf},
+  code = {/assets/pdf/cheng2021thesocialtransmissionofoverc-supp.pdf},
   title = {The social transmission of overconfidence.},
   author = {Cheng, JT and Anderson, C and Tenney, ER and Brion, S and Moore, DA and Logg, JM},
   journal = {Journal of Experimental Psychology: General},
@@ -297,10 +398,48 @@
   year = {2021}
 }
 
+@article{cheng2020overconfidenceiscontagious,
+  bibtex_show = {true},
+  pdf = {cheng2020overconfidenceiscontagious.pdf},
+  title = {Overconfidence is contagious},
+  author = {Cheng, JT and Tenney, ER and Moore, DA and Logg, JM},
+  journal = {Harvard Business Review},
+  abstract = {Can one overconfident voice in a group make everyone around them overconfident too? This piece translates research on the social transmission of overconfidence into practical guidance for teams and leaders, showing how confidence, even when miscalibrated, can spread from person to person and shape group decisions.},
+  html = {https://hbr.org/2020/11/overconfidence-is-contagious},
+  year = {2020}
+}
+
+@article{cheng2018forceandpersuasionhowdowe,
+  bibtex_show = {true},
+  pdf = {cheng2018forceandpersuasionhowdowe.pdf},
+  title = {Force and Persuasion: How do we Humans Climb the Social Hierarchy?},
+  author = {Cheng, JT},
+  journal = {University of Illinois Psychology Times Newsletter},
+  abstract = {What separates leaders who rule by fear from those who earn genuine respect? This newsletter piece introduces the dual strategies of dominance and prestige in plain language, translating research on social rank into an accessible account of how people climb, and hold onto, positions of influence.},
+  html = {https://psychology.illinois.edu/system/files/inline-files/PsychTimesWinter2019.pdf},
+  year = {2018}
+}
+
+@incollection{gardiner2019towardsmeaningfulcompariso,
+  bibtex_show = {true},
+  pdf = {gardiner2019towardsmeaningfulcompariso.pdf},
+  title = {Towards meaningful comparisons of personality in large-scale cross-cultural studies},
+  author = {Gardiner, G and Sauerberger, K and {International Situations Project} and Funder, DC and others},
+  booktitle = {In Praise of an Inquisitive Mind: A Festschrift in Honor of Jüri Allik on the Occasion of His 70th Birthday},
+  editor = {Realo, A},
+  pages = {123--139},
+  publisher = {University of Tartu Press},
+  abstract = {How can personality researchers meaningfully compare people across dozens of countries and cultures at once? Written for a festschrift honoring Jüri Allik, this chapter lays out the methodological challenges of large-scale cross-cultural personality research and proposes practical solutions. The work offers guidance for researchers designing the next generation of global personality studies.},
+  html = {https://www.situationslab.com/s/Gardiner-et-al-Allik-Festschrift-2019-cr7g.pdf},
+  year = {2019}
+}
+
 @incollection{redhead2021higherstatusingroup,
+  bibtex_show = {true},
+  pdf = {redhead2021higherstatusingroup.pdf},
   title = {Higher status in group},
   author = {Redhead, D and Cheng, JT and O'Gorman, R},
-  booktitle = {Encyclopedia of evolutionary psychological science},
+  booktitle = {Encyclopedia of Evolutionary Psychological Science},
   pages = {3705--3709},
   abstract = {What does it mean to hold higher status in a group? The chapter shows how rank emerges, how it is recognized by others, and how higher-status individuals come to receive greater attention, influence, and deference. The research offers a clearer view of how people gain standing, keep it, and respond to those above and below them.},
   doi = {10.1007/978-3-319-19650-3_3495},
@@ -309,6 +448,8 @@
 }
 
 @article{lee2020situationalexperiencearoundt,
+  bibtex_show = {true},
+  pdf = {lee2020situationalexperiencearoundt.pdf},
   title = {Situational experience around the world: A replication and extension in 62 countries},
   author = {Lee, DI and Gardiner, G and Baranski, E and {International Situations Project} and others},
   journal = {Journal of Personality},
@@ -322,6 +463,8 @@
 }
 
 @article{vankleef2020powerstatusandhierarchy,
+  bibtex_show = {true},
+  pdf = {vankleef2020powerstatusandhierarchy.pdf},
   title = {Power, status, and hierarchy: current trends and future challenges.},
   author = {van Kleef, GA and Cheng, JT},
   journal = {Current Opinion in Psychology},
@@ -334,6 +477,8 @@
 }
 
 @article{cheng2020dominanceprestigeandtheroleo,
+  bibtex_show = {true},
+  pdf = {cheng2020dominanceprestigeandtheroleo.pdf},
   title = {Dominance, prestige, and the role of leveling in human social hierarchy and equality},
   author = {Cheng, JT},
   journal = {Current Opinion in Psychology},
@@ -346,6 +491,8 @@
 }
 
 @article{cheng2020whysocialstatusisessentialbu,
+  bibtex_show = {true},
+  pdf = {cheng2020whysocialstatusisessentialbu.pdf},
   title = {Why social status is essential (but sometimes insufficient) for leadership},
   author = {Cheng, JT and Tracy, JL},
   journal = {Trends in Cognitive Sciences},
@@ -359,6 +506,8 @@
 }
 
 @article{vogt2020childhoodgrowthinmathandread,
+  bibtex_show = {true},
+  pdf = {vogt2020childhoodgrowthinmathandread.pdf},
   title = {Childhood growth in math and reading differentially predicts adolescent non-ability-based confidence: An examination in the SECCYD},
   author = {Vogt, RL and Cheng, JT and Briley, DA},
   journal = {Learning and Individual Differences},
@@ -372,9 +521,15 @@
 }
 
 @incollection{cheng2020theneurobiologyofhumansocial,
+  bibtex_show = {true},
+  pdf = {cheng2020theneurobiologyofhumansocial.pdf},
   title = {The neurobiology of human social behavior: A review of how testosterone and cortisol underpin competition and affiliation dynamics},
   author = {Cheng, JT and Kornienko, O},
-  booktitle = {Salivary Bioscience: Foundations of Interdisciplinary Saliva Research and …},
+  booktitle = {Salivary Bioscience: Foundations of Interdisciplinary Saliva Research and Applications},
+  editor = {Granger, DA and Taylor, MK},
+  publisher = {Springer},
+  address = {Cham},
+  isbn = {978-3-030-35783-2},
   abstract = {How do hormones help decide whether we compete, connect, or back down? The article explains how testosterone and cortisol work together to shape competition, affiliation, status-seeking, and responses to social threat. The work connects social experience to biology, showing how relationships and competition can become written into the body.},
   doi = {10.1007/978-3-030-35784-9_22},
   html = {https://doi.org/10.1007/978-3-030-35784-9_22},
@@ -382,9 +537,12 @@
 }
 
 @incollection{tracy2020theevolutionofprideandsocial,
+  bibtex_show = {true},
+  pdf = {tracy2020theevolutionofprideandsocial.pdf},
   title = {The evolution of pride and social hierarchy},
   author = {Tracy, JL and Mercadante, E and Witkower, Z and Cheng, JT},
-  booktitle = {Advances in Experimental Social Psychology 62},
+  booktitle = {Advances in Experimental Social Psychology},
+  volume = {62},
   pages = {51--114},
   abstract = {Why did humans evolve to feel pride? This chapter traces how pride may have evolved to help people communicate success, earn status, and manage their place in social hierarchies. The research offers a clearer view of how people gain standing, keep it, and respond to those above and below them.},
   doi = {10.1016/bs.aesp.2020.04.002},
@@ -393,9 +551,12 @@
 }
 
 @article{witkower2020twosignalsofsocialrank,
+  bibtex_show = {true},
+  pdf = {witkower2020twosignalsofsocialrank.pdf},
+  code = {/assets/pdf/witkower2020twosignalsofsocialrank-supp.pdf},
   title = {Two signals of social rank: Prestige and dominance are associated with distinct nonverbal displays.},
   author = {Witkower, Z and Tracy, JL and Cheng, JT and Henrich, J},
-  journal = {Journal of personality and social psychology},
+  journal = {Journal of Personality and Social Psychology},
   volume = {118},
   number = {1},
   pages = {89},
@@ -405,7 +566,20 @@
   year = {2020}
 }
 
+@article{cheng2014jobmarketmemoir,
+  bibtex_show = {true},
+  pdf = {cheng2014jobmarketmemoir.pdf},
+  title = {Job Market Memoir},
+  author = {Cheng, JT},
+  journal = {SPSP Spotlight, Society for Personality and Social Psychology},
+  abstract = {What does the academic job market actually feel like from the inside? Written for the Society for Personality and Social Psychology's spotlight series, this personal essay reflects on navigating the transition from graduate student to faculty member, offering an honest, first-hand account for early-career researchers facing the same uncertainty.},
+  html = {http://spsp.org/news-center/blog/job-market-memoirs},
+  year = {2014}
+}
+
 @article{gardiner2019assessingpersonalityacross13,
+  bibtex_show = {true},
+  pdf = {gardiner2019assessingpersonalityacross13.pdf},
   title = {Assessing personality across 13 countries using the California Adult Q-set},
   author = {Gardiner, G and Guillaume, E and Stauner, N and Bae, J and Han, G and Moon, J and Bronin, I and others},
   journal = {International Journal of Personality Psychology},
@@ -417,7 +591,25 @@
   year = {2019}
 }
 
+@article{gardiner2020happinessaroundtheworld,
+  bibtex_show = {true},
+  pdf = {gardiner2020happinessaroundtheworld.pdf},
+  title = {Happiness around the world: A combined etic-emic approach across 63 countries},
+  author = {Gardiner, G and Lee, D and Baranski, E and Funder, D and {International Situations Project} and others},
+  journal = {PLOS ONE},
+  volume = {15},
+  number = {12},
+  pages = {e0242718},
+  abstract = {Does happiness mean the same thing everywhere? Combining a Western measure of independent happiness with a Japanese measure of interdependent happiness across 63 countries, this project tests whether both forms of happiness generalize across cultures. The findings help clarify which parts of happiness are broadly shared and which are shaped by cultural context.},
+  doi = {10.1371/journal.pone.0242718},
+  html = {https://doi.org/10.1371/journal.pone.0242718},
+  year = {2020}
+}
+
 @article{redhead2019onthedynamicsofsocialhierarc,
+  bibtex_show = {true},
+  pdf = {redhead2019onthedynamicsofsocialhierarc.pdf},
+  code = {/assets/pdf/redhead2019onthedynamicsofsocialhierarc-supp.pdf},
   title = {On the dynamics of social hierarchy: A longitudinal investigation of the rise and fall of prestige, dominance, and social rank in naturalistic task groups},
   author = {Redhead, DJ and Cheng, JT and Driver, C and Foulsham, T and O'Gorman, R},
   journal = {Evolution and Human Behavior},
@@ -430,17 +622,9 @@
   year = {2019}
 }
 
-@incollection{redhead2018individualsthatimposecosts,
-  title = {Individuals that impose costs},
-  author = {Redhead, D and Cheng, J and O'Gorman, R},
-  booktitle = {Encyclopedia of Evolutionary Psychological Science},
-  abstract = {What makes people defer to someone they may not admire? The chapter shows how cost-imposing capacity shapes deference, fear, and rank within groups. The work turns an everyday social puzzle into a testable scientific question with implications for how people live and relate to one another.},
-  doi = {10.1007/978-3-319-16999-6_3572-1},
-  html = {https://doi.org/10.1007/978-3-319-16999-6_3572-1},
-  year = {2018}
-}
-
 @article{cheng2018prestigeinalargescalesocialg,
+  bibtex_show = {true},
+  pdf = {cheng2018prestigeinalargescalesocialg.pdf},
   title = {Prestige in a large-scale social group predicts longitudinal changes in testosterone},
   author = {Cheng, JT and Kornienko, O and Granger, DA},
   journal = {Journal of Personality and Social Psychology},
@@ -454,6 +638,9 @@
 }
 
 @article{weidman2018thepsychologicalstructureofh,
+  bibtex_show = {true},
+  pdf = {weidman2018thepsychologicalstructureofh.pdf},
+  code = {/assets/pdf/weidman2018thepsychologicalstructureofh-supp.pdf},
   title = {The psychological structure of humility},
   author = {Weidman, AC and Cheng, JT and Tracy, JL},
   journal = {Journal of Personality and Social Psychology},
@@ -467,6 +654,8 @@
 }
 
 @article{baranski2017comparisonsofdailybehaviorac,
+  bibtex_show = {true},
+  pdf = {baranski2017comparisonsofdailybehaviorac.pdf},
   title = {Comparisons of Daily Behavior Across 21 Countries},
   author = {Baranski, EN and Gardiner, G and Guillaume, E and Aveyard, M and Bastian, B and Bronin, I and others},
   journal = {Social Psychological and Personality Science},
@@ -480,9 +669,11 @@
 }
 
 @article{guillaume2016theworldat7,
+  bibtex_show = {true},
+  pdf = {guillaume2016theworldat7.pdf},
   title = {The world at 7: 00: Comparing the experience of situations across 20 countries},
   author = {Guillaume, E and Baranski, E and Todd, E and Bastian, B and Bronin, I and Ivanova, C and others},
-  journal = {Journal of personality},
+  journal = {Journal of Personality},
   volume = {84},
   number = {4},
   pages = {493--509},
@@ -493,6 +684,9 @@
 }
 
 @article{cheng2016listenfollowme,
+  bibtex_show = {true},
+  pdf = {cheng2016listenfollowme.pdf},
+  code = {/assets/pdf/cheng2016listenfollowme-supp.pdf},
   title = {Listen, follow me: Dynamic vocal signals of dominance predict emergent social rank in humans},
   author = {Cheng, JT and Tracy, JL and Ho, S and Henrich, J},
   journal = {Journal of Experimental Psychology: General},
@@ -506,8 +700,10 @@
 }
 
 @article{weidman2015isshetheonepersonalityjudgme,
+  bibtex_show = {true},
+  pdf = {weidman2015isshetheonepersonalityjudgme.pdf},
   title = {Is she the one? Personality judgments from online personal advertisements},
-  author = {WEIDMAN, AC and CHENG, JT and CHISHOLM, C and TRACY, JL},
+  author = {Weidman, AC and Cheng, JT and Chisholm, C and Tracy, JL},
   journal = {Personal Relationships},
   volume = {22},
   number = {4},
@@ -519,6 +715,8 @@
 }
 
 @article{shi2015crossculturalevidenceforthet,
+  bibtex_show = {true},
+  pdf = {shi2015crossculturalevidenceforthet.pdf},
   title = {Cross-cultural evidence for the two-facet structure of pride},
   author = {Shi, Y and Chung, JM and Cheng, JT and Tracy, JL and Robins, RW and Chen, X and Zheng, Y},
   journal = {Journal of Research in Personality},
@@ -531,6 +729,7 @@
 }
 
 @book{anderson2014thepsychologyofsocialstatus,
+  bibtex_show = {true},
   title = {The psychology of social status},
   editor = {Anderson, C and Cheng, JT and Tracy, JL},
   publisher = {Springer New York},
@@ -541,9 +740,11 @@
 }
 
 @incollection{cheng2014theassessmentofsocialstatus,
+  bibtex_show = {true},
+  pdf = {cheng2014theassessmentofsocialstatus.pdf},
   title = {The assessment of social status: A review of measures and experimental manipulations},
   author = {Cheng, JT and Weidman, AC and Tracy, JL},
-  booktitle = {The psychology of social status},
+  booktitle = {The Psychology of Social Status},
   pages = {347--362},
   abstract = {How can scientists measure something as slippery as social status? This chapter reviews the major ways researchers measure and manipulate social status, offering a practical roadmap for studying rank. The research offers a clearer view of how people gain standing, keep it, and respond to those above and below them.},
   doi = {10.1007/978-1-4939-0867-7_16},
@@ -552,9 +753,11 @@
 }
 
 @incollection{cheng2014towardaunifiedscienceofhiera,
+  bibtex_show = {true},
+  pdf = {cheng2014towardaunifiedscienceofhiera.pdf},
   title = {Toward a unified science of hierarchy: Dominance and prestige are two fundamental pathways to human social rank},
   author = {Cheng, JT and Tracy, JL},
-  booktitle = {The psychology of social status},
+  booktitle = {The Psychology of Social Status},
   pages = {3--27},
   abstract = {Do people rise to the top because they are feared or because they are respected? This chapter develops the dominance–prestige model as a unifying framework for understanding human standing in a group. The findings help explain why some people gain influence through admiration while others rise by making resistance feel costly.},
   doi = {10.1007/978-1-4939-0867-7_1},
@@ -563,21 +766,25 @@
 }
 
 @incollection{tracy2014pride,
+  bibtex_show = {true},
+  pdf = {tracy2014pride.pdf},
   title = {Pride: The fundamental emotion of success, power, and status},
   author = {Tracy, JL and Weidman, AC and Cheng, JT and Martens, JP},
-  booktitle = {Handbook of positive emotion},
+  booktitle = {Handbook of Positive Emotion},
   pages = {294--310},
   abstract = {What is pride actually for? The chapter shows how pride motivates achievement, communicates rank, and links the emotional experience of success to power and status. The research offers a clearer view of how people gain standing, keep it, and respond to those above and below them.},
   year = {2014}
 }
 
 @article{cheng2013arenarcissistshardyorvulnera,
+  bibtex_show = {true},
+  pdf = {cheng2013arenarcissistshardyorvulnera.pdf},
   title = {Are narcissists hardy or vulnerable? The role of narcissism in the production of stress-related biomarkers in response to emotional distress.},
   author = {Cheng, JT and Tracy, JL and Miller, GE},
   journal = {Emotion},
   volume = {13},
   number = {6},
-  pages = {1004},
+  pages = {1004--1011},
   abstract = {Do narcissists stay cool under pressure, or are they more fragile than they appear? The research explores whether narcissistic individuals show resilience or hidden physiological vulnerability when facing emotional distress. The research helps explain why outward confidence can coexist with emotional volatility and sensitivity to threat.},
   doi = {10.1037/a0034410},
   html = {https://doi.org/10.1037/a0034410},
@@ -585,6 +792,8 @@
 }
 
 @article{cheng2013theimpactofwealthonprestigea,
+  bibtex_show = {true},
+  pdf = {cheng2013theimpactofwealthonprestigea.pdf},
   title = {The impact of wealth on prestige and dominance rank relationships},
   author = {Cheng, JT and Tracy, JL},
   journal = {Psychological Inquiry},
@@ -598,6 +807,8 @@
 }
 
 @article{cheng2013twowaystothetop,
+  bibtex_show = {true},
+  pdf = {cheng2013twowaystothetop.pdf},
   title = {Two ways to the top: Evidence that dominance and prestige are distinct yet viable avenues to social rank and influence},
   author = {Cheng, JT and Tracy, JL and Foulsham, T and Kingstone, A and Henrich, J},
   journal = {Journal of Personality and Social Psychology},
@@ -611,6 +822,8 @@
 }
 
 @article{feinberg2012gossipasaneffectiveandlowcos,
+  bibtex_show = {true},
+  pdf = {feinberg2012gossipasaneffectiveandlowcos.pdf},
   title = {Gossip as an effective and low-cost form of punishment},
   author = {Feinberg, M and Cheng, JT and Willer, R},
   journal = {Behavioral and Brain Sciences},
@@ -624,27 +837,21 @@
 }
 
 @incollection{tracy2012theemotionaldynamicsofnarcis,
-  title = {The emotional dynamics of narcissism},
+  bibtex_show = {true},
+  pdf = {tracy2012theemotionaldynamicsofnarcis.pdf},
+  title = {The Emotional Dynamics of Narcissism: Inflated by Pride, Deflated by Shame},
   author = {Tracy, JL and Cheng, JT and Martens, JP and Robins, RW},
-  booktitle = {The handbook of narcissism and narcissistic personality disorder …},
-  abstract = {Why can narcissism swing so quickly between swagger and insecurity? The chapter looks at how pride, shame, admiration, and threat interact to produce the characteristic highs and lows of narcissistic experience. The research helps explain why outward confidence can coexist with emotional volatility and sensitivity to threat.},
+  booktitle = {The Handbook of Narcissism and Narcissistic Personality Disorder: Theoretical Approaches, Empirical Findings, and Treatments},
+  pages = {330--343},
+  abstract = {What emotions lie beneath narcissism's confident surface? This chapter argues that pride and shame drive the cognitive and behavioral dynamics of both grandiose and vulnerable narcissism, helping explain the swings between swagger and insecurity. The work shows how an emotion that feels deeply personal can also help organize status, ambition, and social relationships.},
   doi = {10.1002/9781118093108.ch29},
-  html = {https://doi.org/10.1002/9781118093108.ch29},
+  html = {https://onlinelibrary.wiley.com/doi/10.1002/9781118093108.ch29},
   year = {2012}
 }
 
-@incollection{tracy2011theaffectivecoreofnarcissism,
-  title = {The affective core of narcissism: Inflated by pride, deflated by shame},
-  author = {Tracy, JL and Cheng, JT and Martens, JP and Robins, RW},
-  booktitle = {Handbook of narcissism and narcissistic personality disorder},
-  pages = {330--343},
-  abstract = {What emotions lie beneath narcissism's confident surface? This chapter argues that pride and shame form its emotional core, helping explain both grandiosity and vulnerability. The work shows how an emotion that feels deeply personal can also help organize status, ambition, and social relationships.},
-  doi = {10.1002/9781118093108.ch29},
-  html = {https://doi.org/10.1002/9781118093108.ch29},
-  year = {2011}
-}
-
 @article{foulsham2010gazeallocationinadynamicsitu,
+  bibtex_show = {true},
+  pdf = {foulsham2010gazeallocationinadynamicsitu.pdf},
   title = {Gaze allocation in a dynamic situation: Effects of social status and speaking},
   author = {Foulsham, T and Cheng, JT and Tracy, JL and Henrich, J and Kingstone, A},
   journal = {Cognition},
@@ -658,6 +865,8 @@
 }
 
 @article{shariff2010furtherthoughtsontheevolutio,
+  bibtex_show = {true},
+  pdf = {shariff2010furtherthoughtsontheevolutio.pdf},
   title = {Further thoughts on the evolution of pride's two facets: A response to Clark},
   author = {Shariff, AF and Tracy, JL and Cheng, JT and Henrich, J},
   journal = {Emotion Review},
@@ -671,6 +880,8 @@
 }
 
 @article{cheng2010pridepersonalityandtheevolut,
+  bibtex_show = {true},
+  pdf = {cheng2010pridepersonalityandtheevolut.pdf},
   title = {Pride, personality, and the evolutionary foundations of human social status},
   author = {Cheng, JT and Tracy, JL and Henrich, J},
   journal = {Evolution and Human Behavior},
@@ -684,6 +895,8 @@
 }
 
 @article{shariff2010naturalismandthetaleoftwofac,
+  bibtex_show = {true},
+  pdf = {shariff2010naturalismandthetaleoftwofac.pdf},
   title = {Naturalism and the tale of two facets},
   author = {Shariff, AF and Tracy, JL and Cheng, JT},
   journal = {Emotion Review},
@@ -697,6 +910,8 @@
 }
 
 @article{tracy2010anaturalistsviewofpride,
+  bibtex_show = {true},
+  pdf = {tracy2010anaturalistsviewofpride.pdf},
   title = {A naturalist's view of pride},
   author = {Tracy, JL and Shariff, AF and Cheng, JT},
   journal = {Emotion Review},
@@ -709,20 +924,12 @@
   year = {2010}
 }
 
-@inproceedings{foulsham2010lookwhostalkingandfollowthel,
-  title = {Look who's talking (and follow the leader)! Eye movements in a social interaction reveal effects of speaking and social status},
-  author = {Foulsham, T and Cheng, J and Tracy, J and Henrich, J and Kingstone, A},
-  booktitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
-  volume = {32},
-  number = {32},
-  abstract = {Who do people watch most closely in a group conversation? Eye movements reveal that people look more at whoever is speaking—and especially at those who hold higher social status. The research offers a clearer view of how people gain standing, keep it, and respond to those above and below them.},
-  year = {2010}
-}
-
 @article{tracy2009authenticandhubristicpride,
+  bibtex_show = {true},
+  pdf = {tracy2009authenticandhubristicpride.pdf},
   title = {Authentic and hubristic pride: The affective core of self-esteem and narcissism},
   author = {Tracy, JL and Cheng, JT and Robins, RW and Trzesniewski, KH},
-  journal = {Self and identity},
+  journal = {Self and Identity},
   volume = {8},
   number = {2-3},
   pages = {196--213},

@@ -8,6 +8,17 @@ nav_order: 2
 ---
 
 <style>
+/*
+ * Suppress the theme's own auto-rendered page title/
+ * description above the white card — this page already has
+ * its own kicker + title inside the card, so showing both
+ * duplicated "Research" in two different type styles.
+ */
+
+.post-header {
+  display: none;
+}
+
 .research-page {
   max-width: 1050px;
   margin: 2rem auto;
@@ -26,21 +37,24 @@ nav_order: 2
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-size: 0.75rem;
+  font-weight: 500;
   color: var(--global-theme-color);
   margin-bottom: 0.5rem;
 }
 
 .research-title {
-  font-size: 2.8rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.4rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .research-intro {
   max-width: 760px;
   font-size: 1.02rem;
-  line-height: 1.8;
+  line-height: 1.7;
+  color: var(--global-text-color-light);
   margin-bottom: 3rem;
 }
 
@@ -48,121 +62,9 @@ nav_order: 2
   text-decoration: underline;
 }
 
-.rq-band {
-  background: var(--global-theme-color);
-  color: var(--global-bg-color);
-  padding: 2.75rem 2rem 3.25rem;
-  border-radius: 12px;
-  margin-bottom: 3.5rem;
-}
-
-.rq-band h2 {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: 0 0 0.5rem;
-}
-
-.rq-band-intro {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  max-width: 620px;
-  opacity: 0.9;
-  margin-bottom: 2rem;
-}
-
-.rq-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-
-.rq-card {
-  background: var(--global-bg-color);
-  color: var(--global-text-color);
-  border-radius: 10px;
-  padding: 1.5rem;
-}
-
-.rq-icon {
-  font-size: 2.5rem;
-  color: var(--global-theme-color);
-  margin-bottom: 1rem;
-}
-
-.rq-title {
-  font-size: 1.05rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.rq-body {
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.theme-list {
-  border-top: 1px solid var(--global-divider-color);
-  margin-bottom: 3.5rem;
-}
-
-.theme-card {
-  display: grid;
-  grid-template-columns: 135px 55px 1fr;
-  gap: 1.5rem;
-  align-items: center;
-  padding: 1.6rem 1.2rem;
-  border-bottom: 1px solid var(--global-divider-color);
-  background: var(--global-card-bg-color);
-}
-
-.theme-visual {
-  width: 115px;
-  height: 115px;
-  border: 1.5px solid var(--global-theme-color);
-  border-radius: 20px;
-  color: var(--global-theme-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.25rem;
-  justify-self: start;
-}
-
-.theme-visual.circle {
-  border-radius: 50%;
-}
-
-.theme-visual.soft {
-  border-radius: 35px;
-}
-
-.theme-visual.no-border {
-  border: none;
-  font-size: 3rem;
-}
-
-.theme-number {
-  color: var(--global-theme-color);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  align-self: start;
-  padding-top: 0.4rem;
-}
-
-.theme-text h2 {
-  font-size: 1.45rem;
-  margin-bottom: 0.75rem;
-  font-weight: 500;
-}
-
-.theme-text p {
-  line-height: 1.7;
-  margin-bottom: 0;
-}
-
 .feature-section {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 320px 1fr;
   gap: 3rem;
   align-items: center;
   padding: 3rem 0;
@@ -170,7 +72,7 @@ nav_order: 2
 }
 
 .feature-section.reverse {
-  grid-template-columns: 1fr 220px;
+  grid-template-columns: 1fr 320px;
 }
 
 .feature-text h2 {
@@ -186,25 +88,20 @@ nav_order: 2
 }
 
 .feature-visual {
-  width: 180px;
-  height: 180px;
-  border: 2px solid var(--global-theme-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--global-theme-color);
-  font-size: 3rem;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 3 / 2;
+  border-radius: 14px;
+  overflow: hidden;
   margin: 0 auto;
+  background: #ffffff;
 }
 
-.feature-visual.square {
-  border-radius: 18px;
-}
-
-.feature-visual.no-border {
-  border: none;
-  font-size: 4rem;
+.feature-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .research-links {
@@ -222,30 +119,13 @@ nav_order: 2
   text-decoration: none;
 }
 
-.research-links a:hover {
+.research-links .link-underline-text {
   text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  color: var(--global-theme-color);
 }
 
 @media (max-width: 850px) {
-  .research-title {
-    font-size: 2.2rem;
-  }
-
-  .rq-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .theme-card {
-    grid-template-columns: 95px 45px 1fr;
-    gap: 1rem;
-  }
-
-  .theme-visual {
-    width: 85px;
-    height: 85px;
-    font-size: 1.9rem;
-  }
-
   .feature-section,
   .feature-section.reverse {
     grid-template-columns: 1fr;
@@ -257,26 +137,21 @@ nav_order: 2
   }
 
   .feature-visual {
-    width: 150px;
-    height: 150px;
-    font-size: 2.5rem;
+    max-width: 300px;
   }
 }
 
-@media (max-width: 600px) {
-  .theme-card {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
+/*
+ * DARK-MODE-ONLY FIX
+ * .feature-visual's background below is a hardcoded white,
+ * chosen as a frame for illustrations in light mode. Light mode
+ * is untouched; this rule only applies under
+ * html[data-theme="dark"], swapping in the theme's dark card
+ * color so the frame doesn't stay a bright white box.
+ */
 
-  .theme-number {
-    padding-top: 0;
-  }
-
-  .theme-visual {
-    width: 100px;
-    height: 100px;
-  }
+html[data-theme="dark"] .feature-visual {
+  background: var(--global-card-bg-color);
 }
 </style>
 
@@ -285,6 +160,7 @@ nav_order: 2
 <div class="research-kicker">Human Connection Lab</div>
 
 <h1 class="research-title">Research</h1>
+<div class="title-rule"></div>
 
 <div class="research-intro">
   <p>
@@ -296,190 +172,63 @@ nav_order: 2
   </p>
 </div>
 
-<div class="rq-band">
-
-  <h2>Research questions</h2>
-
-  <p class="rq-band-intro">
-    A brief preview of the questions that organize our work.
-  </p>
-
-  <div class="rq-grid">
-
-    <div class="rq-card">
-      <div class="rq-icon"><i class="fas fa-map-location-dot"></i></div>
-      <div class="rq-title">Why are so many of us feeling more disconnected?</div>
-      <div class="rq-body">We use "big data" archival analysis, behavioral data, and text analysis to investigate why loneliness is on the rise.</div>
-    </div>
-
-    <div class="rq-card">
-      <div class="rq-icon"><i class="fas fa-network-wired"></i></div>
-      <div class="rq-title">How do the stories we tell shape whether we feel connected?</div>
-      <div class="rq-body">We study how cultural narratives about independence, self-protection, and belonging shape social life, and how social life reciprocally reflect shifting cultural values.</div>
-    </div>
-
-    <div class="rq-card">
-      <div class="rq-icon"><i class="fas fa-comments"></i></div>
-      <div class="rq-title">Why do some voices get heard more than others?</div>
-      <div class="rq-body">We study why certain people are more likely to be recognized, included, and heard in groups, and what that means for equity.</div>
-    </div>
-
-    <div class="rq-card">
-      <div class="rq-icon"><i class="fas fa-users"></i></div>
-      <div class="rq-title">What makes someone worth following?</div>
-      <div class="rq-body">We study the everyday behaviors, confidence, voice, and fairness, that shape who earns influence and trust.</div>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="theme-list">
-
-  <div class="theme-card">
-    <div class="theme-visual circle">
-      <i class="fas fa-users"></i>
-    </div>
-
-    <div class="theme-number">01</div>
-
-    <div class="theme-text">
-      <h2>Leadership, Status, and Social Influence</h2>
-      <p>
-        How do people gain influence in groups? One line of research examines how leadership emerges through confidence, voice, dominance, prestige, and reputation. We study why some people are more likely to be heard and selected as leaders, and how different paths to influence shape group functioning.
-      </p>
-    </div>
-  </div>
-
-  <div class="theme-card">
-    <div class="theme-visual soft">
-      <i class="fas fa-comments"></i>
-    </div>
-
-    <div class="theme-number">02</div>
-
-    <div class="theme-text">
-      <h2>Gender Disparities in Groups</h2>
-      <p>
-        Why do men and women sometimes experience group life differently? This work examines gender disparities in confidence, speaking time, recognition, and leadership emergence. We are especially interested in how group interaction patterns can amplify or reduce inequalities in voice and influence.
-      </p>
-    </div>
-  </div>
-
-  <div class="theme-card">
-    <div class="theme-visual">
-      <i class="fas fa-map-location-dot"></i>
-    </div>
-
-    <div class="theme-number">03</div>
-
-    <div class="theme-text">
-      <h2>Loneliness and Social Isolation</h2>
-      <p>
-        Why are people becoming more socially disconnected, and who is most at risk? This research examines loneliness and social isolation across individuals, communities, and cultures. We study how social disconnection varies geographically and how changing social norms may shape the value people place on connection.
-      </p>
-    </div>
-  </div>
-
-  <div class="theme-card">
-    <div class="theme-visual no-border">
-      <i class="fas fa-network-wired"></i>
-    </div>
-
-    <div class="theme-number">04</div>
-
-    <div class="theme-text">
-      <h2>Culture, Narratives, and Social Connection</h2>
-      <p>
-        How do cultural narratives shape social life? This line of work studies how people talk about independence, self-protection, withdrawal, connection, and belonging. Using natural language processing and large-scale text data, we examine how cultural messages may encourage or discourage social connection.
-      </p>
-    </div>
-  </div>
-
-</div>
-
 <section class="feature-section">
-  <div class="feature-visual no-border">
-    <i class="fas fa-users"></i>
+  <div class="feature-visual">
+    <img src="{{ '/assets/img/img-theme-loneliness-white.jpg' | relative_url }}" alt="A lonely figure sitting alone on a small island in the rain">
   </div>
 
   <div class="feature-text">
-    <h2>Understanding how people navigate groups</h2>
+    <h2>Why are so many of us feeling more disconnected?</h2>
     <p>
-      Much of our work begins with the small-group settings where people speak, listen, compete, cooperate, and form impressions of one another. We study how these everyday behaviors shape broader outcomes, including leadership, influence, recognition, and belonging.
+      We use "big data" archival analysis, behavioral data, and text analysis to investigate why loneliness is on the rise. This research examines loneliness and social isolation across individuals, communities, and cultures, asking who is most at risk and why. We study how social disconnection varies geographically, and how changing social norms and everyday conditions may shape the value people place on connection.
     </p>
   </div>
 </section>
 
 <section class="feature-section reverse">
   <div class="feature-text">
-    <h2>Studying loneliness as both personal and social</h2>
+    <h2>How do the stories we tell shape whether we feel connected?</h2>
     <p>
-      Loneliness is often experienced as a private feeling, but it is also shaped by social structures, cultural expectations, and the environments people live in. Our research examines loneliness and isolation as outcomes of both individual experiences and broader social conditions.
+      We study how cultural narratives about independence, self-protection, and belonging shape social life, and how social life reciprocally reflects shifting cultural values. This line of work looks at how people talk about withdrawal, connection, and belonging, using natural language processing and large-scale text data to trace how cultural messages may encourage or discourage social connection over time.
     </p>
   </div>
 
-  <div class="feature-visual square">
-    <i class="fas fa-map-location-dot"></i>
+  <div class="feature-visual">
+    <img src="{{ '/assets/img/img-theme-cultural-narrative-white.jpg' | relative_url }}" alt="An open book with speech bubbles, a heart, and a globe, representing stories and cultural connection">
   </div>
 </section>
 
 <section class="feature-section">
   <div class="feature-visual">
-    <i class="fas fa-comments"></i>
+    <img src="{{ '/assets/img/img-theme-gender-disparities-white.jpg' | relative_url }}" alt="A balance scale weighing male and female symbols, with a raised hand and a speech bubble">
   </div>
 
   <div class="feature-text">
-    <h2>Using language to understand cultural change</h2>
+    <h2>Why do some voices get heard more than others, and how does gender play into it?</h2>
     <p>
-      Social life is shaped not only by what people do, but also by the stories they tell about what is healthy, admirable, risky, or worthwhile. We use computational approaches to study narratives about social connection, independence, isolation, and self-protection.
+      We study why certain people are more likely to be recognized, included, and heard in groups, and what that means for equity. This work also examines gender disparities in confidence, speaking time, recognition, and leadership emergence, asking why men and women sometimes experience group life differently and how everyday group interactions can amplify or reduce inequalities in voice and influence.
     </p>
   </div>
 </section>
 
 <section class="feature-section reverse">
   <div class="feature-text">
-    <h2>Building a lab around human connection</h2>
+    <h2>What makes someone worth following?</h2>
     <p>
-      The Human Connection Lab brings together students and collaborators interested in leadership, gender, social status, loneliness, culture, and computational social science. Across these areas, our broader goal is to understand the social forces that bring people together or pull them apart.
+      We study the everyday behaviors, confidence, voice, and fairness, that shape who earns influence and trust. One line of research examines how leadership emerges through confidence, voice, dominance, prestige, and reputation, asking why some people are more likely to be heard and selected as leaders, and how different paths to influence shape how well a group functions.
     </p>
   </div>
 
-  <div class="feature-visual no-border">
-    <i class="fas fa-network-wired"></i>
+  <div class="feature-visual">
+    <img src="{{ '/assets/img/img-theme-hierarchy-egalitarian-white.jpg' | relative_url }}" alt="Chess king and pawn pieces beside a podium with a microphone and a rising bar chart">
   </div>
 </section>
 
 <div class="research-links">
-  <a href="{{ '/publications/' | relative_url }}">Full publication list →</a>
-  <a href="{{ '/lab/' | relative_url }}">Meet the lab →</a>
-  <a href="{{ '/contact/' | relative_url }}">Contact us →</a>
+  <a href="{{ '/publications/' | relative_url }}"><span class="link-underline-text">Full publication list</span> ↗</a>
+  <a href="{{ '/lab/' | relative_url }}"><span class="link-underline-text">Meet the lab</span> ↗</a>
+  <a href="{{ '/join-us/' | relative_url }}"><span class="link-underline-text">Join us</span> ↗</a>
+  <a href="{{ '/contact/' | relative_url }}"><span class="link-underline-text">Contact us</span> ↗</a>
 </div>
 
 </div>
-
-
-
-# The Human Connection Lab
-
-Research on leadership, belonging, and the social psychology of human connection.
-
-Directed by Joey T. Cheng at York University, the lab studies how people connect, lead, and belong in groups, organizations, and society.
-
-Our work examines leadership, social influence, teamwork, prestige, loneliness, social isolation, and the cultural forces shaping modern social life.
-
-
-
-## Research
-
-### 01 Leadership & Influence
-How people earn respect, gain influence, and shape group life.
-
-### 02 Belonging & Loneliness
-Why people feel connected, isolated, included, or unseen.
-
-### 03 Teams & Collaboration
-How groups coordinate, share voice, and work together effectively.
-
-### 04 Culture & Modern Social Life
-How cultural norms shape connection, independence, status, and well-being.

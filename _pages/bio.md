@@ -1,12 +1,22 @@
 ---
 layout: page
-title: Lab Director Bio
+title: Lab Director
 permalink: /bio/
 nav: true
 nav_order: 1
 ---
 
 <style>
+/*
+ * Suppress the theme's own auto-rendered page title above the
+ * white card — the eyebrow, name, and mission-statement heading
+ * already inside the card form a complete header on their own.
+ */
+
+.post-header {
+  display: none;
+}
+
 .about-custom {
   max-width: 1200px;
   margin: 2rem auto;
@@ -21,23 +31,21 @@ nav_order: 1
   }
 }
 
-.about-label {
+.about-kicker {
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 500;
   color: var(--global-theme-color);
-  margin-bottom: 2.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
-.about-label::after {
-  content: "";
-  width: 60px;
-  height: 1px;
-  background: var(--global-theme-color);
-  display: inline-block;
+.about-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .about-layout {
@@ -128,13 +136,20 @@ nav_order: 1
 }
 
 .about-main h1 {
-  font-size: 1.3rem;
-  line-height: 1.5;
+  font-size: 1.7rem;
+  line-height: 1.4;
   font-style: italic;
   font-weight: 400;
   font-family: Georgia, 'Times New Roman', serif;
+  margin-top: 1.5rem;
   margin-bottom: 1.75rem;
   max-width: 620px;
+  border-left: 3px solid var(--global-theme-color);
+  padding-left: 20px;
+}
+
+.about-quote-accent {
+  color: var(--global-theme-color);
 }
 
 .about-main p {
@@ -145,6 +160,27 @@ nav_order: 1
 
 .about-main a {
   text-decoration: underline;
+}
+
+.research-links {
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1.25rem;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.research-links a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.research-links .link-underline-text {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  color: var(--global-theme-color);
 }
 
 .about-pill {
@@ -191,7 +227,9 @@ nav_order: 1
 
 <div class="about-custom">
 
-<div class="about-label">About</div>
+<div class="about-kicker">Human Connection Lab</div>
+<h1 class="about-title">Lab Director</h1>
+<div class="title-rule"></div>
 
 <div class="about-layout">
 
@@ -247,18 +285,16 @@ nav_order: 1
 
     <div class="about-name-link">Joey T. Cheng</div>
 
-    <hr class="about-divider">
-
     <h1>
-      I study human connection — what brings people together, and what drives them apart.
+      I study <span class="about-quote-accent">human connection</span> — what brings people together, and what drives them apart.
     </h1>
 
     <p>
-      I am an Associate Professor of Psychology and York Research Chair at York University, where I direct the <a href="{{ '/lab/' | relative_url }}">Human Connection Lab</a>. I completed my undergraduate degree at the University of Toronto in 2007, and my doctoral degree at the University of British Columbia in 2013. I then spent the next six years in the United States -- first as a Postdoctoral Fellow at University of California, Berkeley's Haas School of Business, then as faculty at the University of California, Irvine and the University of Illinois at Urbana-Champaign. I returned home to Toronto and York University in 2019.
+      I am an Associate Professor of Psychology and York Research Chair at York University, where I direct the <a href="{{ '/lab/' | relative_url }}">Human Connection Lab</a>. I completed my undergraduate degree at the University of Toronto in 2007, and my doctoral degree at the University of British Columbia in 2013. I then spent the next six years in the United States — first as a Postdoctoral Fellow at University of California, Berkeley's Haas School of Business, then as faculty at the University of California, Irvine and the University of Illinois at Urbana-Champaign. I returned home to Toronto and York University in 2019.
     </p>
 
     <p>
-      I am a behavioral scientist and social psychologist interested in how people navigate social life. My research examines how people gain influence in groups, how leaders emerge, and why some people become more connected to others while others become socially isolated.
+      I am a behavioral scientist and social psychologist interested in how people navigate social connection — both the connections we seek out, and the more complicated ones shaped by power and status. My research asks how people gain influence in groups, how leaders emerge, and why some people grow more connected to others while others grow isolated.
     </p>
 
     <p>
@@ -272,6 +308,13 @@ nav_order: 1
     <p>
       What keeps me in research is curiosity. I love the process of chasing a question I don't yet understand, picking up a new method or data analytic skill or an entirely new way of thinking about an old problem, and using what I learn to say something about how people connect, lead, and belong. I care about exploring these questions with curiosity, and about building it together with people who care as much about getting it right as I do.
     </p>
+
+    <div class="research-links">
+      <a href="{{ '/publications/' | relative_url }}"><span class="link-underline-text">Publications</span> ↗</a>
+      <a href="{{ '/lab/' | relative_url }}"><span class="link-underline-text">Meet the lab</span> ↗</a>
+      <a href="{{ '/join-us/' | relative_url }}"><span class="link-underline-text">Join us</span> ↗</a>
+      <a href="{{ '/contact/' | relative_url }}"><span class="link-underline-text">Contact us</span> ↗</a>
+    </div>
 
   </main>
 
