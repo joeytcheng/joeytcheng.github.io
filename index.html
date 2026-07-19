@@ -134,27 +134,27 @@
   }
 }
 </style> <div class="landing-page"> <section class="landing-hero"> <div class="landing-illustration"> <svg viewbox="20 65 260 240" role="img" aria-label="Illustration of a network of connected people"> <g fill="none" stroke="var(--global-theme-color)" stroke-width="1.5" stroke-linecap="round"> <line class="ln" style="animation-delay:.1s" x1="150" y1="90" x2="90" y2="140"></line> <line class="ln" style="animation-delay:.1s" x1="150" y1="90" x2="210" y2="140"></line> <line class="ln" style="animation-delay:.5s" x1="90" y1="140" x2="60" y2="200"></line> <line class="ln" style="animation-delay:.5s" x1="90" y1="140" x2="130" y2="200"></line> <line class="ln" style="animation-delay:.5s" x1="210" y1="140" x2="170" y2="200"></line> <line class="ln" style="animation-delay:.5s" x1="210" y1="140" x2="240" y2="200"></line> <line class="ln" style="animation-delay:.9s" x1="130" y1="200" x2="170" y2="200"></line> <line class="ln" style="animation-delay:.9s" x1="60" y1="200" x2="95" y2="250"></line> <line class="ln" style="animation-delay:.9s" x1="130" y1="200" x2="95" y2="250"></line> <line class="ln" style="animation-delay:.9s" x1="130" y1="200" x2="150" y2="260"></line> <line class="ln" style="animation-delay:.9s" x1="170" y1="200" x2="150" y2="260"></line> <line class="ln" style="animation-delay:.9s" x1="170" y1="200" x2="205" y2="250"></line> <line class="ln" style="animation-delay:.9s" x1="240" y1="200" x2="205" y2="250"></line> <line class="dash" style="animation-delay:1.5s" x1="90" y1="140" x2="210" y2="140" stroke-dasharray="2 5" opacity="0"></line> <line class="dash" style="animation-delay:1.6s" x1="60" y1="200" x2="240" y2="200" stroke-dasharray="2 5" opacity="0"></line> <line class="dash" style="animation-delay:1.7s" x1="95" y1="250" x2="205" y2="250" stroke-dasharray="2 5" opacity="0"></line> <path class="dash" style="animation-delay:1.8s" d="M40,270 C90,290 210,290 260,270" stroke-width="1" stroke-dasharray="1 5" opacity="0"></path> <circle class="nd" style="animation-delay:0s" cx="150" cy="90" r="16"></circle> <circle class="nd" style="animation-delay:.4s" cx="90" cy="140" r="14"></circle> <circle class="nd" style="animation-delay:.4s" cx="210" cy="140" r="14"></circle> <circle class="nd" style="animation-delay:.8s" cx="60" cy="200" r="12"></circle> <circle class="nd" style="animation-delay:.8s" cx="130" cy="200" r="13"></circle> <circle class="nd" style="animation-delay:.8s" cx="170" cy="200" r="13"></circle> <circle class="nd" style="animation-delay:.8s" cx="240" cy="200" r="12"></circle> <circle class="nd" style="animation-delay:1.2s" cx="95" cy="250" r="10"></circle> <circle class="nd" style="animation-delay:1.2s" cx="150" cy="260" r="11"></circle> <circle class="nd" style="animation-delay:1.2s" cx="205" cy="250" r="10"></circle> </g> </svg> </div> <div class="landing-text-reveal"> <h1 class="landing-headline">What creates <span class="landing-headline-accent">human connections</span>, and what breaks them apart?</h1> <p class="landing-intro"> At the <strong>Human Connection Lab</strong>, we study the tension between our need for connection and the modern conditions — busy institutions, shifting cultural narratives, digital life — that make forming connections harder. </p> <div class="landing-readmore-group"> <a class="landing-readmore" href="/research/"><span class="link-underline-text">Our research</span> ↗</a> <a class="landing-readmore" href="/bio/"><span class="link-underline-text">Lab director Joey Cheng</span> ↗</a> </div> </div> </section> </div> </article> </div> </div> <style>
-:root {
-  --global-bg-color: #F3EAD9;
-  --global-card-bg-color: #FFFFFF;
-  --global-theme-color: #6B3A5D;
-  --global-text-color: #1B1B2F;
-  --global-text-color-light: #4a4a55;
-  --global-divider-color: #E5DDC8;
-  --icon-muted-color: #9C9BA6;
-}
+  :root {
+    --global-bg-color: #f3ead9;
+    --global-card-bg-color: #ffffff;
+    --global-theme-color: #6b3a5d;
+    --global-text-color: #1b1b2f;
+    --global-text-color-light: #4a4a55;
+    --global-divider-color: #e5ddc8;
+    --icon-muted-color: #9c9ba6;
+  }
 
-html[data-theme="dark"] {
-  --global-bg-color: #1F1620;
-  --global-card-bg-color: #2B1F2E;
-  --global-theme-color: #6B3A5D;
-  --global-text-color: #F3EAD9;
-  --global-text-color-light: #C9BFC2;
-  --global-divider-color: #4A3B4D;
-  --icon-muted-color: #B7AEC2;
-}
+  html[data-theme='dark'] {
+    --global-bg-color: #1f1620;
+    --global-card-bg-color: #2b1f2e;
+    --global-theme-color: #6b3a5d;
+    --global-text-color: #f3ead9;
+    --global-text-color-light: #c9bfc2;
+    --global-divider-color: #4a3b4d;
+    --icon-muted-color: #b7aec2;
+  }
 
-/*
+  /*
  * DARK-MODE-ONLY FIXES
  * The rules below only apply under html[data-theme="dark"] and
  * do not alter any light-mode color. They exist because a few
@@ -163,152 +163,152 @@ html[data-theme="dark"] {
  * don't automatically adapt when dark mode is toggled on.
  */
 
-html[data-theme="dark"] .navbar-brand-primary {
-  color: var(--global-text-color) !important;
-}
-
-html[data-theme="dark"] .navbar-brand-secondary {
-  color: var(--global-text-color-light) !important;
-}
-
-html[data-theme="dark"] .site-footer-heading {
-  color: #F3EAD9;
-}
-
-.research-title,
-.theme-text h2,
-.feature-text h2,
-.rq-band h2,
-.people-title,
-.faq-heading h2,
-.contact-item-title {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: 700 !important;
-}
-
-.navbar-brand {
-  font-family: Georgia, 'Times New Roman', serif !important;
-  font-weight: 700 !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.3em;
-}
-
-.navbar-brand-primary {
-  color: #3D1F33 !important;
-  opacity: 1 !important;
-}
-
-.title-rule {
-  width: 48px;
-  height: 3px;
-  background: var(--global-theme-color);
-  margin: 0.75rem 0 1.25rem;
-  border-radius: 2px;
-}
-
-.navbar-brand-secondary {
-  color: #6B3A5D !important;
-  opacity: 1 !important;
-}
-
-.navbar {
-  border-bottom: 1px solid #C9B896 !important;
-}
-
-.site-footer {
-  background: var(--global-theme-color);
-  color: #ffffff;
-  padding: 2.5rem 2rem 1.5rem;
-  margin-top: 3rem;
-}
-
-.site-footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.site-footer-heading {
-  color: var(--global-bg-color);
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 0.9rem;
-}
-
-.site-footer-text {
-  color: #ffffff;
-  font-size: 0.8rem;
-  line-height: 1.55;
-  opacity: 0.9;
-}
-
-.site-footer-link {
-  display: block;
-  font-size: 0.8rem;
-  margin-top: 0.6rem;
-}
-
-.site-footer-text + .site-footer-link {
-  margin-top: 0.9rem;
-}
-
-.site-footer-link a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  text-decoration: none;
-}
-
-.site-footer a {
-  color: #ffffff !important;
-  text-decoration: none;
-}
-
-.site-footer-link-text {
-  text-decoration: underline;
-  color: #ffffff !important;
-}
-
-.site-footer-bottom {
-  color: #ffffff;
-  max-width: 1100px;
-  margin: 2rem auto 0;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.75rem;
-  opacity: 0.85;
-}
-
-@media (max-width: 700px) {
-  .site-footer-grid {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
+  html[data-theme='dark'] .navbar-brand-primary {
+    color: var(--global-text-color) !important;
   }
-}
-</style> <footer class="site-footer"> <div class="site-footer-grid"> <div> <div class="site-footer-heading">Human Connection Lab</div> <div class="site-footer-text"> Department of Psychology<br> York University<br> Toronto, Ontario, Canada </div> <div class="site-footer-link"> <a href="/lab/"><span class="site-footer-link-text">Meet lab members</span> ↗</a> </div> <div class="site-footer-link"> <a href="/publications/"><span class="site-footer-link-text">View publications</span> ↗</a> </div> </div> <div> <div class="site-footer-heading">Lab Director</div> <div class="site-footer-text"> Joey T. Cheng<br> Associate Professor<br> York Research Chair in<br>Leadership, Collaboration, and Teams </div> <div class="site-footer-link"> <a href="mailto:chengjt@yorku.ca" class="has-icon"> <span class="site-footer-link-text">Email Joey</span> <i class="fas fa-envelope" aria-hidden="true"></i> </a> </div> <div class="site-footer-link"> <a href="/bio/"><span class="site-footer-link-text">More about Joey</span> ↗</a> </div> <div class="site-footer-link"> <a href="#"><span class="site-footer-link-text">York faculty website</span> ↗</a> </div> </div> <div> <div class="site-footer-heading">Join us</div> <div class="site-footer-text"> Interested in our work or joining the lab?<br>Reach out any time. </div> <div class="site-footer-link"> <a href="/join-us/"><span class="site-footer-link-text">Explore opportunities to join</span> ↗</a> </div> <div class="site-footer-link"> <a href="/join-us/#faq"><span class="site-footer-link-text">Lab FAQ</span> ↗</a> </div> <div class="site-footer-link"> <a href="/contact/"><span class="site-footer-link-text">Contact us</span> ↗</a> </div> </div> </div> <div class="site-footer-bottom"> © 2026 Human Connection Lab, York University </div> </footer> <script>
-document.addEventListener("DOMContentLoaded", function () {
-  var brand = document.querySelector(".navbar-brand");
 
-  if (!brand) {
-    var navbarNav = document.getElementById("navbarNav");
-    var container = navbarNav ? navbarNav.parentElement : null;
-    if (container) {
-      brand = document.createElement("a");
-      brand.className = "navbar-brand title font-weight-lighter";
-      brand.href = "/";
-      container.insertBefore(brand, container.firstChild);
+  html[data-theme='dark'] .navbar-brand-secondary {
+    color: var(--global-text-color-light) !important;
+  }
+
+  html[data-theme='dark'] .site-footer-heading {
+    color: #f3ead9;
+  }
+
+  .research-title,
+  .theme-text h2,
+  .feature-text h2,
+  .rq-band h2,
+  .people-title,
+  .faq-heading h2,
+  .contact-item-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 700 !important;
+  }
+
+  .navbar-brand {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    font-weight: 700 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.3em;
+  }
+
+  .navbar-brand-primary {
+    color: #3d1f33 !important;
+    opacity: 1 !important;
+  }
+
+  .title-rule {
+    width: 48px;
+    height: 3px;
+    background: var(--global-theme-color);
+    margin: 0.75rem 0 1.25rem;
+    border-radius: 2px;
+  }
+
+  .navbar-brand-secondary {
+    color: #6b3a5d !important;
+    opacity: 1 !important;
+  }
+
+  .navbar {
+    border-bottom: 1px solid #c9b896 !important;
+  }
+
+  .site-footer {
+    background: var(--global-theme-color);
+    color: #ffffff;
+    padding: 2.5rem 2rem 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .site-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .site-footer-heading {
+    color: var(--global-bg-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.9rem;
+  }
+
+  .site-footer-text {
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.55;
+    opacity: 0.9;
+  }
+
+  .site-footer-link {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+  }
+
+  .site-footer-text + .site-footer-link {
+    margin-top: 0.9rem;
+  }
+
+  .site-footer-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+  }
+
+  .site-footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+  }
+
+  .site-footer-link-text {
+    text-decoration: underline;
+    color: #ffffff !important;
+  }
+
+  .site-footer-bottom {
+    color: #ffffff;
+    max-width: 1100px;
+    margin: 2rem auto 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.75rem;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 700px) {
+    .site-footer-grid {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
     }
   }
+</style> <footer class="site-footer"> <div class="site-footer-grid"> <div> <div class="site-footer-heading">Human Connection Lab</div> <div class="site-footer-text"> Department of Psychology<br> York University<br> Toronto, Ontario, Canada </div> <div class="site-footer-link"> <a href="/lab/"><span class="site-footer-link-text">Meet lab members</span> ↗</a> </div> <div class="site-footer-link"> <a href="/publications/"><span class="site-footer-link-text">View publications</span> ↗</a> </div> </div> <div> <div class="site-footer-heading">Lab Director</div> <div class="site-footer-text"> Joey T. Cheng<br> Associate Professor<br> York Research Chair in<br> Leadership, Collaboration, and Teams </div> <div class="site-footer-link"> <a href="mailto:chengjt@yorku.ca" class="has-icon"> <span class="site-footer-link-text">Email Joey</span> <i class="fas fa-envelope" aria-hidden="true"></i> </a> </div> <div class="site-footer-link"> <a href="/bio/"><span class="site-footer-link-text">More about Joey</span> ↗</a> </div> <div class="site-footer-link"> <a href="#"><span class="site-footer-link-text">York faculty website</span> ↗</a> </div> </div> <div> <div class="site-footer-heading">Join us</div> <div class="site-footer-text"> Interested in our work or joining the lab?<br> Reach out any time. </div> <div class="site-footer-link"> <a href="/join-us/"><span class="site-footer-link-text">Explore opportunities to join</span> ↗</a> </div> <div class="site-footer-link"> <a href="/join-us/#faq"><span class="site-footer-link-text">Lab FAQ</span> ↗</a> </div> <div class="site-footer-link"> <a href="/contact/"><span class="site-footer-link-text">Contact us</span> ↗</a> </div> </div> </div> <div class="site-footer-bottom">© 2026 Human Connection Lab, York University</div> </footer> <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var brand = document.querySelector('.navbar-brand');
 
-  if (brand && !brand.querySelector(".navbar-brand-primary")) {
-    brand.innerHTML = '<span class="navbar-brand-primary">Human Connection</span><span class="navbar-brand-secondary">Lab</span>';
-  }
-});
+    if (!brand) {
+      var navbarNav = document.getElementById('navbarNav');
+      var container = navbarNav ? navbarNav.parentElement : null;
+      if (container) {
+        brand = document.createElement('a');
+        brand.className = 'navbar-brand title font-weight-lighter';
+        brand.href = "/";
+        container.insertBefore(brand, container.firstChild);
+      }
+    }
+
+    if (brand && !brand.querySelector('.navbar-brand-primary')) {
+      brand.innerHTML = '<span class="navbar-brand-primary">Human Connection</span><span class="navbar-brand-secondary">Lab</span>';
+    }
+  });
 </script> <script>
   window.alFolio = {
     compatBootstrap: false
