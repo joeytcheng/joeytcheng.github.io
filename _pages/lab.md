@@ -50,6 +50,32 @@ nav_order: 4
   margin-bottom: 1.5rem;
 }
 
+.people-links {
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1.25rem;
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.people-links a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.people-links .link-underline-text {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  color: var(--global-theme-color);
+}
+
+.people-links .back-to-top {
+  margin-left: auto;
+}
+
 .people-banner {
   background: var(--global-theme-color);
   color: #ffffff;
@@ -246,7 +272,7 @@ nav_order: 4
 }
 </style>
 
-<div class="people-page">
+<div class="people-page" id="top">
 
 <div class="people-kicker">Human Connection Lab</div>
 
@@ -611,5 +637,12 @@ nav_order: 4
 </div>
 
 </section>
+
+<div class="people-links">
+  <a href="{{ '/research/' | relative_url }}"><span class="link-underline-text">Our research</span> ↗</a>
+  <a href="{{ '/join-us/' | relative_url }}"><span class="link-underline-text">Join us</span> ↗</a>
+  <a href="{{ '/contact/' | relative_url }}"><span class="link-underline-text">Contact us</span> ↗</a>
+  <a href="#top" class="back-to-top"><span class="link-underline-text">Back to top</span> ↑</a>
+</div>
 
 </div>

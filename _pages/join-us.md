@@ -121,8 +121,7 @@ nav_order: 5
         The lab is always open to postdoctoral fellows and visiting scholars,
         and has hosted visiting researchers from around the world. If you are
         interested in visiting or pursuing a postdoctoral position, please
-        reach out directly to discuss potential fit and opportunities. See the
-        <a href="#faq"><span class="link-underline-text">FAQ section below</span></a> for more.
+        reach out directly to discuss potential fit and opportunities.
       </p>
 
       <p class="contact-link">
@@ -252,21 +251,17 @@ nav_order: 5
 
         <div class="faq-answer">
           <p>
-            Briefly describe your academic background, research interests,
-            relevant coursework or experience, and the specific parts of the
-            lab’s work that interest you.
+            Briefly describe your academic background (including any
+            independent research projects or undergrad thesis research),
+            research interests, and relevant coursework or experience.
+            Importantly, describe one or two potential research questions you
+            might be interested in pursuing.
           </p>
 
           <p>
-            It is also helpful to include your expected availability, the type
-            of opportunity you are seeking, and a current résumé or CV when
-            appropriate.
-          </p>
-
-          <p>
-            Prospective graduate applicants should also identify whether they
-            are interested in the MA or PhD program and describe one or two
-            potential research questions they might be interested in pursuing.
+            It is also helpful to include a CV or résumé, and an unofficial
+            transcript. Also let us know whether you are interested in the MA
+            or PhD program, or both.
           </p>
         </div>
       </details>
@@ -308,6 +303,16 @@ nav_order: 5
             Interested undergraduate students should complete the lab
             application rather than sending only a general expression of
             interest.
+          </p>
+
+          <p class="contact-link">
+            <a
+              class="application-button"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScqWzKCojb5APpJ9pIF8_Rl01LVSMZ_BwrwAF5tNjEqCnhYcg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer">
+              Submit undergrad lab application
+            </a>
           </p>
         </div>
       </details>
