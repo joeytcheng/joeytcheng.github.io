@@ -51,9 +51,7 @@ nav_order: 4
 }
 
 .people-links {
-  border-top: 1px solid var(--global-divider-color);
-  padding-top: 1.25rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
