@@ -531,7 +531,6 @@ nav_order: 4
 
 </div>
 
-
 </section>
 
 <section class="people-grid-section">

@@ -173,6 +173,7 @@ nav: false
         <circle class="nd" style="animation-delay:1.2s" cx="205" cy="250" r="10" />
       </g>
     </svg>
+
   </div>
 
   <div class="landing-text-reveal">
@@ -186,6 +187,7 @@ nav: false
       <a class="landing-readmore" href="{{ '/research/' | relative_url }}"><span class="link-underline-text">Our research</span> ↗</a>
       <a class="landing-readmore" href="{{ '/bio/' | relative_url }}"><span class="link-underline-text">Lab director Joey&nbsp;Cheng</span> ↗</a>
     </div>
+
   </div>
 
 </section>
