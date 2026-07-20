@@ -200,18 +200,15 @@
 
     if (brand && !brand.querySelector('.navbar-brand-primary')) {
       brand.innerHTML =
-        '<svg class="navbar-brand-icon" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
-        '<circle cx="5" cy="6" r="2.4"></circle>' +
-        '<circle cx="19" cy="6" r="2.4"></circle>' +
-        '<circle cx="12" cy="13" r="2.4"></circle>' +
-        '<circle cx="5" cy="20" r="2.4"></circle>' +
-        '<circle cx="19" cy="20" r="2.4"></circle>' +
-        '<g stroke="currentColor" stroke-width="1.4" fill="none">' +
-        '<line x1="5" y1="6" x2="12" y2="13"></line>' +
-        '<line x1="19" y1="6" x2="12" y2="13"></line>' +
-        '<line x1="12" y1="13" x2="5" y2="20"></line>' +
-        '<line x1="12" y1="13" x2="19" y2="20"></line>' +
+        '<svg class="navbar-brand-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+        '<g stroke="currentColor" stroke-width="3.4" stroke-linecap="round" fill="none">' +
+        '<line x1="6" y1="6" x2="18" y2="6"></line>' +
+        '<line x1="6" y1="6" x2="12" y2="18"></line>' +
+        '<line x1="18" y1="6" x2="12" y2="18"></line>' +
         '</g>' +
+        '<circle cx="6" cy="6" r="3.6"></circle>' +
+        '<circle cx="18" cy="6" r="3.6"></circle>' +
+        '<circle cx="12" cy="18" r="3.6"></circle>' +
         '</svg>' +
         '<span class="navbar-brand-primary">Human Connection</span><span class="navbar-brand-secondary">Lab</span>';
     }
