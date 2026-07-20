@@ -164,7 +164,10 @@ html[data-theme="dark"] .feature-visual {
   html[data-theme='dark'] {
     --global-bg-color: #1f1620;
     --global-card-bg-color: #2b1f2e;
-    --global-theme-color: #6b3a5d;
+    /* DARK-MODE-ONLY FIX: lighter plum than the light-mode #6b3a5d so
+       theme-color text, links, and accents keep enough contrast against
+       the dark background. Light mode's --global-theme-color is untouched. */
+    --global-theme-color: #a8709a;
     --global-text-color: #f3ead9;
     --global-text-color-light: #c9bfc2;
     --global-divider-color: #4a3b4d;
@@ -208,7 +211,14 @@ html[data-theme="dark"] .feature-visual {
     font-weight: 700 !important;
     display: inline-flex !important;
     align-items: center !important;
-    gap: 0.3em;
+    gap: 0.4em;
+    white-space: nowrap;
+  }
+
+  .navbar-brand-icon {
+    flex-shrink: 0;
+    fill: var(--global-theme-color);
+    color: var(--global-theme-color);
   }
 
   .navbar-brand-primary {
@@ -323,7 +333,21 @@ html[data-theme="dark"] .feature-visual {
     }
 
     if (brand && !brand.querySelector('.navbar-brand-primary')) {
-      brand.innerHTML = '<span class="navbar-brand-primary">Human Connection</span><span class="navbar-brand-secondary">Lab</span>';
+      brand.innerHTML =
+        '<svg class="navbar-brand-icon" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+        '<circle cx="5" cy="6" r="2.4"></circle>' +
+        '<circle cx="19" cy="6" r="2.4"></circle>' +
+        '<circle cx="12" cy="13" r="2.4"></circle>' +
+        '<circle cx="5" cy="20" r="2.4"></circle>' +
+        '<circle cx="19" cy="20" r="2.4"></circle>' +
+        '<g stroke="currentColor" stroke-width="1.4" fill="none">' +
+        '<line x1="5" y1="6" x2="12" y2="13"></line>' +
+        '<line x1="19" y1="6" x2="12" y2="13"></line>' +
+        '<line x1="12" y1="13" x2="5" y2="20"></line>' +
+        '<line x1="12" y1="13" x2="19" y2="20"></line>' +
+        '</g>' +
+        '</svg>' +
+        '<span class="navbar-brand-primary">Human Connection</span><span class="navbar-brand-secondary">Lab</span>';
     }
   });
 </script> <script>
