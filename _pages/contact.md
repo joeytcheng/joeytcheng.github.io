@@ -15,7 +15,7 @@ nav_order: 6
   <div class="title-rule"></div>
 
   <p class="contact-intro">
-    Always happy to hear from prospective students, collaborators, and press.
+    We're always happy to hear from prospective students, collaborators, and press — please get in touch.
   </p>
 
   <div class="contact-grid">
