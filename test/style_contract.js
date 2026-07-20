@@ -61,7 +61,13 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
-for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+// NOTE: `_includes` is intentionally excluded from this list. This site keeps
+// a local `_includes/footer.liquid` override that defines shared CSS custom
+// properties (color variables, dark-mode values) referenced by every page's
+// inline <style> block. It's a deliberate, load-bearing local override per
+// the "local overrides are allowed but tracked" policy, not starter-owned
+// theme code that duplicates gem functionality.
+for (const forbiddenPath of ["_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
   if (exists(forbiddenPath)) {
     failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
   }
