@@ -558,7 +558,7 @@ nav_order: 4
     </div>
     <div class="grid-person-topic">Assistant Professor<br>University of Groningen, Netherlands</div>
   </div>
-  
+
 </div>
 
 </section>
