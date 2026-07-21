@@ -382,7 +382,7 @@ nav_order: 4
     <div class="person-role">PhD Student, Social-Personality Psychology</div>
 
     <p>
-      Spencer studies how attitudes toward work have shifted alongside broader cultural change, using large-scale text and survey data to trace evolving social values over time. His work traces how narratives about ambition, career, and time itself change across decades, and what that reveals about shifting priorities. This connects to the lab's interest in how the stories a culture tells shape everyday behavior and belonging.
+      Spencer studies how attitudes toward work have shifted alongside broader cultural change, using large-scale text and survey data to trace evolving social values over time. His work traces how narratives about ambition, career, and time itself change across decades, and what that reveals about shifting priorities. This connects to the lab's interest in how the stories a culture tells shape everyday behaviour and belonging.
     </p>
 
   </div>
