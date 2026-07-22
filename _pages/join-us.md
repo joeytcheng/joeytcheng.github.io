@@ -36,7 +36,7 @@ nav_order: 5
         <p class="contact-description">
           I supervise MA and PhD students in York University’s Social and
           Personality Psychology program and am actively recruiting prospective
-          students whose interests align with that of our group.
+          students whose interests align with those of our group.
         </p>
 
         <p class="contact-description contact-description-spaced">
