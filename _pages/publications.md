@@ -937,8 +937,10 @@ nav_order: 3
         /*
          * Most headings are a plain four-digit year. Some
          * entries (e.g. "in press") have a non-numeric year
-         * value instead — use the heading text as-is in that
-         * case so it still appears above the title.
+         * value instead — use the heading text as-is (verbatim,
+         * no forced capitalization) in that case so it still
+         * appears above the title exactly as written in the bib
+         * entry, e.g. "in press" rather than "In press".
          */
 
         const yearMatch =
@@ -947,10 +949,7 @@ nav_order: 3
         currentYearText =
           yearMatch
             ? yearMatch[0]
-            : headingText
-              ? headingText.charAt(0).toUpperCase() +
-                headingText.slice(1)
-              : "";
+            : headingText || "";
 
         return;
       }
@@ -1458,7 +1457,7 @@ nav_order: 3
        ======================================================= */
 
     const AUTHOR_MAP = {
-      LiChengBensonInPress: "Li, Z., Cheng, J. T., & Benson, A. J.",
+      li2026howleadersshapewellbeingandr: "Li, Z., Cheng, J. T., & Benson, A. J.",
       kuper2026culturaldifferencesinthepers: "Kuper, N., Gardiner, G., Baranski, E., Funder, D. C., Rauthmann, J. F., & Members of the International Situations Project",
       chmielowiceszymanski2026howdifferentformsofsocialran: "Chmielowice-Szymanski, N. S., Cheng, J. T., Millett, M. A., Cillessen, A. H. N., & Lansu, T. A. M.",
       laustsen2025crossculturalevidencethatint: "Laustsen, L., Sheng, X., Ahmad, M. G., Al-Shawaf, L., Banai, B., Banai, I. P., Barlev, M., Bastardoz, N., Bor, A., Cheng, J. T., Chmielińska, A., Cook, A., Fousiani, K., Garfield, Z. H., Ghossainy, M., Ha, S. E., Ji, T., Jones, B. C., Kandrik, M., . . . van Vugt, M.",
@@ -2642,7 +2641,7 @@ nav_order: 3
        ======================================================= */
 
     const TOPIC_MAP = {
-      LiChengBensonInPress: ["leadership", "dominance-prestige", "well-being"],
+      li2026howleadersshapewellbeingandr: ["leadership", "dominance-prestige", "well-being"],
       kuper2026culturaldifferencesinthepers: ["culture", "personality"],
       chmielowiceszymanski2026howdifferentformsofsocialran: ["status-hierarchy"],
       laustsen2025crossculturalevidencethatint: ["leadership", "culture", "dominance-prestige"],
@@ -2724,7 +2723,7 @@ nav_order: 3
        ======================================================= */
 
     const PUB_TYPE_MAP = {
-      LiChengBensonInPress: "Journal article",
+      li2026howleadersshapewellbeingandr: "Journal article",
       kuper2026culturaldifferencesinthepers: "Journal article",
       chmielowiceszymanski2026howdifferentformsofsocialran: "Journal article",
       laustsen2025crossculturalevidencethatint: "Journal article",
