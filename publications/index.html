@@ -862,7 +862,7 @@
   
 
   <!-- Entry bib key -->
-  <div id="LiChengBensonInPress" class="col-sm-8">
+  <div id="li2026howleadersshapewellbeingandr" class="col-sm-8">
     <!-- Title -->
     <div class="title">How leaders shape well-being and retention: Dominant leaders undermine and prestigious leaders enhance follower psychological need satisfaction</div>
     <!-- Author -->
@@ -894,7 +894,7 @@
       <em>Journal of Experimental Psychology: General</em>,  in press
     </div>
     <div class="periodical">
-      
+      Advance online publication.
     </div>
 
     <!-- Links/Buttons -->
@@ -904,6 +904,8 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       
       
+        <a href="https://doi.org/10.1037/xge0001992" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
       
       
       
@@ -911,9 +913,13 @@
       
       
         
-          <a href="https://psycnet.apa.org/record/2028-14753-001" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          <a href="https://doi.org/10.1037/xge0001992" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
         
       
+      
+        
+          <a href="/assets/pdf/li2026howleadersshapewellbeingandr-onlinefirst.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        
       
       
       
@@ -950,10 +956,12 @@
     
       <!-- Hidden bibtex block -->
       <div class="bibtex hidden">
-        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">LiChengBensonInPress</span><span class="p">,</span>
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">li2026howleadersshapewellbeingandr</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Z and Cheng, JT and Benson, AJ}</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{How leaders shape well-being and retention: Dominant leaders undermine and prestigious leaders enhance follower psychological need satisfaction}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Journal of Experimental Psychology: General}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Advance online publication.}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1037/xge0001992}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{in press}</span>
 <span class="p">}</span></code></pre></figure>
       </div>
@@ -8916,8 +8924,10 @@
         /*
          * Most headings are a plain four-digit year. Some
          * entries (e.g. "in press") have a non-numeric year
-         * value instead — use the heading text as-is in that
-         * case so it still appears above the title.
+         * value instead — use the heading text as-is (verbatim,
+         * no forced capitalization) in that case so it still
+         * appears above the title exactly as written in the bib
+         * entry, e.g. "in press" rather than "In press".
          */
 
         const yearMatch =
@@ -8926,10 +8936,7 @@
         currentYearText =
           yearMatch
             ? yearMatch[0]
-            : headingText
-              ? headingText.charAt(0).toUpperCase() +
-                headingText.slice(1)
-              : "";
+            : headingText || "";
 
         return;
       }
@@ -9437,7 +9444,7 @@
        ======================================================= */
 
     const AUTHOR_MAP = {
-      LiChengBensonInPress: "Li, Z., Cheng, J. T., & Benson, A. J.",
+      li2026howleadersshapewellbeingandr: "Li, Z., Cheng, J. T., & Benson, A. J.",
       kuper2026culturaldifferencesinthepers: "Kuper, N., Gardiner, G., Baranski, E., Funder, D. C., Rauthmann, J. F., & Members of the International Situations Project",
       chmielowiceszymanski2026howdifferentformsofsocialran: "Chmielowice-Szymanski, N. S., Cheng, J. T., Millett, M. A., Cillessen, A. H. N., & Lansu, T. A. M.",
       laustsen2025crossculturalevidencethatint: "Laustsen, L., Sheng, X., Ahmad, M. G., Al-Shawaf, L., Banai, B., Banai, I. P., Barlev, M., Bastardoz, N., Bor, A., Cheng, J. T., Chmielińska, A., Cook, A., Fousiani, K., Garfield, Z. H., Ghossainy, M., Ha, S. E., Ji, T., Jones, B. C., Kandrik, M., . . . van Vugt, M.",
@@ -10621,7 +10628,7 @@
        ======================================================= */
 
     const TOPIC_MAP = {
-      LiChengBensonInPress: ["leadership", "dominance-prestige", "well-being"],
+      li2026howleadersshapewellbeingandr: ["leadership", "dominance-prestige", "well-being"],
       kuper2026culturaldifferencesinthepers: ["culture", "personality"],
       chmielowiceszymanski2026howdifferentformsofsocialran: ["status-hierarchy"],
       laustsen2025crossculturalevidencethatint: ["leadership", "culture", "dominance-prestige"],
@@ -10703,7 +10710,7 @@
        ======================================================= */
 
     const PUB_TYPE_MAP = {
-      LiChengBensonInPress: "Journal article",
+      li2026howleadersshapewellbeingandr: "Journal article",
       kuper2026culturaldifferencesinthepers: "Journal article",
       chmielowiceszymanski2026howdifferentformsofsocialran: "Journal article",
       laustsen2025crossculturalevidencethatint: "Journal article",
