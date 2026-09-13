@@ -459,6 +459,13 @@ nav_order: 4
     <div class="grid-person-topic">Loneliness &amp; Social Isolation</div>
   </div>
 
+  <div class="grid-person">
+    <img class="grid-person-photo" src="{{ '/assets/img/profile-nguyenthu.jpg' | relative_url }}" alt="Thư Nguyen">
+    <div class="grid-person-name">Thư Nguyen</div>
+    <div class="grid-person-role">RAY Student</div>
+    <div class="grid-person-topic">Data Science</div>
+  </div>
+
 </div>
 
 </section>
